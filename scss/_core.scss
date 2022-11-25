@@ -1,9 +1,18 @@
-@mixin font-style-intro($fz_intro, $color_intro) {
-    font-family: 'Intro Demo', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: $fz_intro;
-    line-height: $fz_intro*1.5;
-    color: $color_intro;
-}
+
+$bg_color: #e8e4ef;
+$bg2_color: #A682DF;
+$text_color:#54269E;
+$text-footer_color:#F1E9FF;
+$text-caption_color:#9747FF;
+$text-subtitle_color:#54269E;
+
+@mixin font-style-Nunito($fw_Nunito,$fz_Nunito, $fh_Nunito,$color_Nunito)
+{
+font-family: 'Nunito';
+font-style: normal;
+font-weight: $fw_Nunito;
+font-size: $fz_Nunito;
+line-height:$fh_Nunito;
+letter-spacing: 0.005em;
+color: $color_Nunito;}
 
