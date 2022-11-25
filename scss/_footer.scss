@@ -1,4 +1,41 @@
-.footer__text
-{@include font-style-Nunito(400,1.125em,1.2,$text-footer_color);}
-footer
-{background-color: $bg2_color;}
+
+footer{ 
+    display: grid;
+    width: 62%;
+    grid-template-areas: "header header header"
+    "social-network social-network social-network"
+     "contacts links team";
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 40px 40px auto;
+    gap: 0rem;
+    background-color: $bg2_color;
+    padding-left:19%;
+    padding-right:19%;
+    }
+    .footer__header{
+        grid-area:header;
+        text-align: center;
+        }
+    .footer__social-network{
+        grid-area:social-network;
+        text-align: center;
+         }
+    .footer__contacts{
+        grid-area:contacts;
+        }
+    .footer__links{
+        grid-area:links;
+         }
+    .footer__team{
+        grid-area:team;
+        }
+    .footer__header{
+        @include font-style-Nunito(400,0.875em,1.2,$text-footer_color);
+    }
+    .footer__subtitle{
+        @include font-style-Nunito(700,1.25em,1.2,$text-footer_color);
+        }
+    .footer__text{
+        @include font-style-Nunito(400,1.125em,1.2,$text-footer_color);
+        }
+
