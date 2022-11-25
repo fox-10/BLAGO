@@ -1,5 +1,74 @@
+footer {
+  display: grid;
+  width: 62%;
+  grid-template-areas: "blagodaru blagodaru blagodaru" "header header header" "social-network social-network social-network" "contacts documents team";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0rem;
+  background-color: #e8e4ef;
+  padding-left: 19%;
+  padding-right: 19%;
+  background-image: url(../assets/images/footer/line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__blagodaru {
+  grid-area: blagodaru;
+  justify-self: center;
+  width: 236px;
+  padding-top: 150px;
+}
+
+.footer__header {
+  grid-area: header;
+  text-align: center;
+}
+
+.social-network {
+  grid-area: social-network;
+  text-align: center;
+}
+
+.footer__contacts {
+  grid-area: contacts;
+  background-color: #A682DF;
+}
+
+.footer__documents {
+  grid-area: documents;
+  background-color: #A682DF;
+}
+
+.footer__team {
+  grid-area: team;
+  background-color: #A682DF;
+}
+
+.footer__header {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #F1E9FF;
+  padding-bottom: 16px;
+  padding-top: 40px;
+}
+
+.footer__subtitle {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #F1E9FF;
+}
+
 .footer__text {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125em;
@@ -8,8 +77,19 @@
   color: #F1E9FF;
 }
 
-footer {
-  background-color: #A682DF;
+.footer__liks {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #F1E9FF;
+  text-decoration: none;
+}
+
+.social-network__link {
+  padding: 16px;
 }
 
 .bg-color {
