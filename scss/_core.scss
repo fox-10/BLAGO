@@ -1,0 +1,9 @@
+@mixin font-style-intro($fz_intro, $color_intro) {
+    font-family: 'Intro Demo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fz_intro;
+    line-height: $fz_intro*1.5;
+    color: $color_intro;
+}
+
