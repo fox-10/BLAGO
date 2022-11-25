@@ -1,0 +1,48 @@
+.ourGoal {
+    // width: 400px;
+    width:25vw;
+    object-fit: contain;
+}
+
+.heartLogo {
+    width: 35px;
+}
+
+h3 {
+    text-align: center;
+    padding: 3vw;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.aboutSecondColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.whoWe {
+    align-self: start;
+    width: 70%;
+}
+
+.weDo {
+    width: 70%;
+    align-self: flex-end;
+}
+
+.whoTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.weDoTitle {
+    display: flex;
+    flex-direction: row;
+}

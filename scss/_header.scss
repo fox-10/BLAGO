@@ -1,0 +1,18 @@
+.logoImg {
+    width: 140px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
