@@ -1,0 +1,27 @@
+.projectSlider {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70vw;
+    margin: auto;
+}
+
+.projectImg {
+    width: 30vw;
+    border:1px solid green;
+    margin: auto;
+}
+
+.progectDiv {
+    width: 30vw;
+    border:1px solid violet;
+    margin: auto;
+}
+
