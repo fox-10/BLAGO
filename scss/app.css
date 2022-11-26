@@ -63,6 +63,9 @@ h2 {
   width: 70vw;
   margin: auto;
   justify-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -203,14 +206,14 @@ a {
 
 footer {
   display: grid;
-  width: 62%;
+  width: 68%;
   grid-template-areas: "blagodaru blagodaru blagodaru" "header header header" "social-network social-network social-network" "contacts documents team";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   gap: 0rem;
   background-color: #e8e4ef;
-  padding-left: 19%;
-  padding-right: 19%;
+  padding-left: 16%;
+  padding-right: 16%;
   background-image: url(../assets/images/footer/line.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,6 +301,10 @@ footer {
 .projectSlider {
   display: flex;
   flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 30px;
   justify-items: left;
 }
@@ -367,18 +374,21 @@ footer {
   padding-left: 10vw;
   padding-bottom: 40px;
   padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .team__opred2 {
   grid-area: opred2;
   width: 60%;
   padding-left: 5vw;
+  padding-bottom: 40px;
 }
 
 .team__opred3 {
   grid-area: opred3;
   width: 70%;
   padding-left: 10vw;
+  padding-bottom: 40px;
 }
 
 .team__button {
