@@ -349,7 +349,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid red;
   margin-top: 30px;
   justify-items: left;
 }
