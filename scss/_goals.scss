@@ -67,3 +67,9 @@ a {
     @include font-style-Nunito(700,20px,1.2,$text-caption_color);
     }
 
+    .whoLogo {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+

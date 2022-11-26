@@ -3,28 +3,16 @@
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 70vw;
   margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -70,33 +58,19 @@ h2 {
 }
 
 .fund {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 70vw;
   margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: left;
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .firstColumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .volButton,
@@ -177,63 +151,38 @@ h2 {
 }
 
 .aboutUs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 70vw;
   margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .aboutSecondColumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .whoWe {
-  -ms-flex-item-align: start;
-      align-self: start;
+  align-self: start;
   width: 70%;
   margin-bottom: 20px;
 }
 
 .weDo {
   width: 70%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .whoTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .weDoTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 a {
@@ -244,6 +193,12 @@ a {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #9747FF;
+}
+
+.whoLogo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
 }
 
 footer {
@@ -341,14 +296,8 @@ footer {
 }
 
 .projectSlider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin-top: 30px;
   justify-items: left;
 }
@@ -379,72 +328,6 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #9747FF;
-}
-
-.team {
-  display: grid;
-  width: 62%;
-  grid-template-areas: "header header " "opred1 opred1" "img  opred2" "img button";
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 0rem;
-  background-color: #e8e4ef;
-  padding-left: 19%;
-  padding-right: 19%;
-}
-
-.team_img {
-  grid-area: img;
-  width: 100%;
-  height: auto;
-}
-
-.team__header {
-  grid-area: header;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #9747FF;
-  text-align: center;
-}
-
-.team__opred1 {
-  grid-area: opred1;
-  width: 60%;
-  padding-left: 10vw;
-  padding-bottom: 40px;
-  padding-top: 24px;
-}
-
-.team__opred2 {
-  grid-area: opred2;
-}
-
-.team__button {
-  grid-area: button;
-}
-
-.team__text {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #000000;
-}
-
-.team__span {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #54269E;
 }
 
 .team {
@@ -524,7 +407,7 @@ footer {
 
 .bg-color {
   margin-top: 0;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #e8e4ef;
 }
 
@@ -533,4 +416,4 @@ footer {
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-}
+}/*# sourceMappingURL=app.css.map */
