@@ -1,5 +1,14 @@
 .fundHeartImg {
-    width: 25vw;
+    width: 35vw;
+    margin-left: 70px;
+}
+
+h2 {
+    @include font-style-Nunito(700,42px,1.2,#6A68B0);
+}
+
+.fundSubtitle {
+    @include font-style-Nunito(400,20px,1.2,#5B5A7A);
 }
 
 .fund {
@@ -7,9 +16,10 @@
     flex-direction: row;
     width: 70vw;
     margin: auto;
-    justify-content: space-between;
+    justify-content: left;
     padding-top: 30px;
     padding-bottom: 50px;
+
 }
 
 .firstColumn {
@@ -17,3 +27,29 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.volButton,
+.partButton {
+    height: 4vw;
+    width: 16vw;
+    border-radius: 20px;
+}
+
+.volButton {
+    border: none;
+    background-color: $text_color;
+    @include font-style-Nunito(700,1.1em,1.2, white);
+}
+
+.partButton {
+    border: 2px solid $text_color;
+    margin-left: 15px;
+    @include font-style-Nunito(700,1.1em,1.2, #5B5A7A);
+}
+
+
+
+
+
+
+

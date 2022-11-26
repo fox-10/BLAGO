@@ -17,8 +17,44 @@ header {
   padding-bottom: 30px;
 }
 
+.menuTitle {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #565656;
+}
+
+.gamburger {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
 .fundHeartImg {
-  width: 25vw;
+  width: 35vw;
+  margin-left: 70px;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #6A68B0;
+}
+
+.fundSubtitle {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5B5A7A;
 }
 
 .fund {
@@ -26,7 +62,7 @@ header {
   flex-direction: row;
   width: 70vw;
   margin: auto;
-  justify-content: space-between;
+  justify-content: left;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -37,6 +73,37 @@ header {
   justify-content: center;
 }
 
+.volButton,
+.partButton {
+  height: 4vw;
+  width: 16vw;
+  border-radius: 20px;
+}
+
+.volButton {
+  border: none;
+  background-color: #54269E;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: white;
+}
+
+.partButton {
+  border: 2px solid #54269E;
+  margin-left: 15px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5B5A7A;
+}
+
 .ourGoal {
   width: 25vw;
   -o-object-fit: contain;
@@ -44,12 +111,43 @@ header {
 }
 
 .heartLogo {
-  width: 35px;
+  width: 25px;
 }
 
-h3 {
-  margin: auto;
+.goalsH3 {
+  text-align: center;
+  margin-left: 15vw;
   width: 70vw;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #9747FF;
+}
+
+.whoSubtitle {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269E;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.whoWeText,
+.weDoText {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #565656;
 }
 
 .aboutUs {
@@ -69,6 +167,7 @@ h3 {
 .whoWe {
   align-self: start;
   width: 70%;
+  margin-bottom: 20px;
 }
 
 .weDo {
@@ -84,6 +183,16 @@ h3 {
 .weDoTitle {
   display: flex;
   flex-direction: row;
+}
+
+a {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #9747FF;
 }
 
 footer {
@@ -183,9 +292,8 @@ footer {
 .projectSlider {
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
   margin-top: 30px;
-  justify-items: center;
+  justify-items: left;
 }
 
 .projects {
@@ -197,14 +305,89 @@ footer {
 
 .projectImg {
   width: 30vw;
-  border: 1px solid green;
-  margin: auto;
+  border: 10px solid #6C68AF;
+  border-radius: 35px;
+  background-color: #6C68AF;
 }
 
 .progectDiv {
-  width: 30vw;
-  border: 1px solid violet;
-  margin: auto;
+  margin-right: 50px;
+}
+
+.projectsH3 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #9747FF;
+}
+
+.team {
+  display: grid;
+  width: 62%;
+  grid-template-areas: "header header " "opred1 opred1" "img  opred2" "img button";
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0rem;
+  background-color: #e8e4ef;
+  padding-left: 19%;
+  padding-right: 19%;
+}
+
+.team_img {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+
+.team__header {
+  grid-area: header;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #9747FF;
+  text-align: center;
+}
+
+.team__opred1 {
+  grid-area: opred1;
+  width: 60%;
+  padding-left: 10vw;
+  padding-bottom: 40px;
+  padding-top: 24px;
+}
+
+.team__opred2 {
+  grid-area: opred2;
+}
+
+.team__button {
+  grid-area: button;
+}
+
+.team__text {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #000000;
+}
+
+.team__span {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269E;
 }
 
 .bg-color {

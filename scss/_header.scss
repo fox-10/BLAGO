@@ -16,3 +16,12 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.menuTitle {
+    @include font-style-Nunito(700,20px,1.2,#565656);
+}
+
+.gamburger {
+    margin-left: 30px;
+    margin-right: 10px;
+}
