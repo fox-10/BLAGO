@@ -79,9 +79,9 @@ h2 {
           flex-direction: row;
   width: 70vw;
   margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -248,14 +248,14 @@ a {
 
 footer {
   display: grid;
-  width: 62%;
+  width: 68%;
   grid-template-areas: "blagodaru blagodaru blagodaru" "header header header" "social-network social-network social-network" "contacts documents team";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   gap: 0rem;
   background-color: #e8e4ef;
-  padding-left: 19%;
-  padding-right: 19%;
+  padding-left: 16%;
+  padding-right: 16%;
   background-image: url(../assets/images/footer/line.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -344,7 +344,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -384,72 +383,6 @@ footer {
 .team {
   display: grid;
   width: 62%;
-  grid-template-areas: "header header " "opred1 opred1" "img  opred2" "img button";
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 0rem;
-  background-color: #e8e4ef;
-  padding-left: 19%;
-  padding-right: 19%;
-}
-
-.team_img {
-  grid-area: img;
-  width: 100%;
-  height: auto;
-}
-
-.team__header {
-  grid-area: header;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #9747FF;
-  text-align: center;
-}
-
-.team__opred1 {
-  grid-area: opred1;
-  width: 60%;
-  padding-left: 10vw;
-  padding-bottom: 40px;
-  padding-top: 24px;
-}
-
-.team__opred2 {
-  grid-area: opred2;
-}
-
-.team__button {
-  grid-area: button;
-}
-
-.team__text {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #000000;
-}
-
-.team__span {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #54269E;
-}
-
-.team {
-  display: grid;
-  width: 62%;
   grid-template-areas: "header header " "opred1 opred1" "img  opred2" "img  opred3" "img button";
   grid-template-columns: 30% 1fr;
   grid-template-rows: auto auto auto auto auto;
@@ -484,18 +417,21 @@ footer {
   padding-left: 10vw;
   padding-bottom: 40px;
   padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .team__opred2 {
   grid-area: opred2;
   width: 60%;
   padding-left: 5vw;
+  padding-bottom: 40px;
 }
 
 .team__opred3 {
   grid-area: opred3;
   width: 70%;
   padding-left: 10vw;
+  padding-bottom: 40px;
 }
 
 .team__button {

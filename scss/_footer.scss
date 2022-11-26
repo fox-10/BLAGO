@@ -1,17 +1,17 @@
 
 footer{ 
     display:grid;
-    width: 62%;
+    width: 68%;
     grid-template-areas: "blagodaru blagodaru blagodaru"
     "header header header"
     "social-network social-network social-network"
      "contacts documents team";
-    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto auto auto auto;
     gap: 0rem;
     background-color: $bg_color;
-    padding-left:19%;
-    padding-right:19%;
+    padding-left:16%;
+    padding-right:16%;
     background-image: url(../assets/images/footer/line.svg);
     background-repeat: no-repeat;
     background-size: cover;
