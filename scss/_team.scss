@@ -5,13 +5,15 @@
     "header header "
     "opred1 opred1"
     "img  opred2"
+    "img  opred3"
      "img button";
     grid-template-columns:30% 1fr ;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     gap: 0rem;
     background-color: $bg_color;
     padding-left:19%;
-    padding-right:19%;
+    padding-right:19%;  
+    padding-bottom: 144px;
 }
 .team_img{
     grid-area:img;
@@ -32,6 +34,13 @@
 }
 .team__opred2{
     grid-area:opred2;
+    width: 60%;
+    padding-left: 5vw;
+}
+.team__opred3{
+    grid-area:opred3;
+    width: 70%;
+    padding-left: 10vw;
 }
 .team__button{
     grid-area:button;
