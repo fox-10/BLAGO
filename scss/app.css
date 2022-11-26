@@ -1,4 +1,3 @@
-
 .logoImg {
   width: 140px;
 }
@@ -19,7 +18,7 @@ header {
 }
 
 .fundHeartImg {
-  width: 400px;
+  width: 25vw;
 }
 
 .fund {
@@ -32,10 +31,16 @@ header {
   padding-bottom: 50px;
 }
 
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .ourGoal {
   width: 25vw;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 .heartLogo {
@@ -43,8 +48,8 @@ header {
 }
 
 h3 {
-  text-align: center;
-  padding: 3vw;
+  margin: auto;
+  width: 70vw;
 }
 
 .aboutUs {
@@ -79,7 +84,7 @@ h3 {
 .weDoTitle {
   display: flex;
   flex-direction: row;
-} 
+}
 
 footer {
   display: grid;
@@ -173,6 +178,33 @@ footer {
 
 .social-network__link {
   padding: 16px;
+}
+
+.projectSlider {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 70vw;
+  margin: auto;
+}
+
+.projectImg {
+  width: 30vw;
+  border: 1px solid green;
+  margin: auto;
+}
+
+.progectDiv {
+  width: 30vw;
+  border: 1px solid violet;
+  margin: auto;
 }
 
 .bg-color {
