@@ -1,0 +1,44 @@
+.team{
+    display:grid;
+    width: 62%;
+    grid-template-areas: 
+    "header header "
+    "opred1 opred1"
+    "img  opred2"
+     "img button";
+    grid-template-columns:30% 1fr ;
+    grid-template-rows: auto auto auto auto;
+    gap: 0rem;
+    background-color: $bg_color;
+    padding-left:19%;
+    padding-right:19%;
+}
+.team_img{
+    grid-area:img;
+    width: 100%;
+    height: auto;
+}
+.team__header{
+    grid-area:header;
+    @include font-style-Nunito(700,36px,1.2,$text-caption_color);
+    text-align: center;
+}
+.team__opred1{
+    grid-area:opred1;
+    width: 60%;
+    padding-left: 10vw;
+    padding-bottom: 40px;
+    padding-top: 24px;
+}
+.team__opred2{
+    grid-area:opred2;
+}
+.team__button{
+    grid-area:button;
+}
+.team__text{
+    @include font-style-Nunito(400,18px,1.2,#000000);
+}
+.team__span{
+    @include font-style-Nunito(800,18px,1.2, #54269E);
+}
