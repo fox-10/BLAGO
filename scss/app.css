@@ -4,16 +4,28 @@
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 70vw;
   margin: auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -58,19 +70,33 @@ h2 {
 }
 
 .fund {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 70vw;
   margin: auto;
-  justify-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .firstColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 30px;
 }
 
@@ -91,6 +117,8 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -111,6 +139,8 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #5B5A7A;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -126,6 +156,8 @@ h2 {
   border-radius: 20px;
   color: white;
   background-color: #6C68AF;
+  -webkit-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
 }
 
@@ -182,38 +214,63 @@ h2 {
 }
 
 .aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 70vw;
   margin: auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .aboutSecondColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .whoWe {
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
   width: 70%;
   margin-bottom: 20px;
 }
 
 .weDo {
   width: 70%;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .whoTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .weDoTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 a {
@@ -227,8 +284,12 @@ a {
 }
 
 .whoLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 5px;
 }
 
@@ -327,8 +388,13 @@ footer {
 }
 
 .projectSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 30px;
   justify-items: left;
 }
@@ -363,14 +429,14 @@ footer {
 
 .team {
   display: grid;
-  width: 100%;
+  width: 64%;
   grid-template-areas: "header header " "opred1 opred1" "img  opred2" "img  opred3" "img button";
   grid-template-columns: 30% 1fr;
   grid-template-rows: auto auto auto auto auto;
   gap: 0rem;
   background-color: #e8e4ef;
-  padding-left: 0%;
-  padding-right: 0%;
+  padding-left: 18%;
+  padding-right: 18%;
   padding-bottom: 144px;
 }
 
@@ -468,6 +534,8 @@ body {
   height: 3px; /*задаём высоту линии*/
   width: 0%; /*задаём начальную ширину элемента (линии)*/
   background-color: #9747FF; /*цвет фона элемента*/
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
 
@@ -510,4 +578,4 @@ body {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #5B5A7A;
-}/*# sourceMappingURL=app.css.map */
+}
