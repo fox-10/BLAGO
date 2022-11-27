@@ -1,6 +1,6 @@
 .team{
     display:grid;
-    width: 62%;
+    width: 100%;
     grid-template-areas: 
     "header header "
     "opred1 opred1"
@@ -11,8 +11,8 @@
     grid-template-rows: auto auto auto auto auto;
     gap: 0rem;
     background-color: $bg_color;
-    padding-left:19%;
-    padding-right:19%;  
+    padding-left:0%;
+    padding-right:0%;  
     padding-bottom: 144px;
 }
 .team_img{
