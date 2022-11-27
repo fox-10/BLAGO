@@ -439,6 +439,10 @@ footer {
   color: #54269E;
 }
 
+body {
+  background-color: #e8e4ef;
+}
+
 .bg-color {
   margin-top: 0;
   background-color: #e8e4ef;

@@ -7,10 +7,16 @@
 @import "team.scss";
 @import "team_page.scss";
 
+body {
+    background-color: $bg_color;
+
+}
+
 
 .bg-color{
     margin-top: 0;
-    background-color: $bg_color;}
+    background-color: $bg_color;
+}
 
 .root {
     min-width: 360px;
