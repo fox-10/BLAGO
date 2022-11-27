@@ -13,12 +13,25 @@
     margin: auto;
 }
 
+.progectDiv {
+    position: relative;
+}
+
 .projectImg {
     width: 30vw;
-    // margin: auto;
     border: 10px solid #6C68AF;
     border-radius: 35px;
     background-color:#6C68AF;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.feedImg {
+    width: 5vw;
+    z-index: 3;
+    top: -100px;
+    left: 20px;
 }
 
 .progectDiv {
