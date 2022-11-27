@@ -1,6 +1,6 @@
 .fundHeartImg {
     width: 35vw;
-    margin-left: 70px;
+    // margin-left: 70px;
 }
 
 h2 {
@@ -26,12 +26,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 30px;
 }
+
 
 .volButton,
 .partButton {
-    height: 4vw;
-    width: 16vw;
+    height: 50px;
+    width: 220px;
     border-radius: 20px;
 }
 
@@ -39,13 +41,54 @@ h2 {
     border: none;
     background-color: $text_color;
     @include font-style-Nunito(700,1.1em,1.2, white);
+    transition: all .5s ease-in-out;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
+
+.volButton:hover {
+  color: $text_color;
+  border: 2px solid $text_color;
+  background-color: white;
+}
+
 
 .partButton {
     border: 2px solid $text_color;
-    margin-left: 15px;
+    // margin-left: 15px;
     @include font-style-Nunito(700,1.1em,1.2, #5B5A7A);
+    transition: all .5s ease-in-out;
 }
+
+.partButton:hover {
+  color: white;
+  background-color: $bg2_color
+}
+
+
+
+
+
+
+
+
+
+.sixth {
+    width: 150px;
+    height: 45px;
+    border: 2px solid #54269E;
+    border-radius: 20px;
+    color: white; 
+    background-color: #6C68AF;
+    transition: all .9s ease-in-out;
+  }
+  
+  .sixth:hover,
+  .sixth:focus {
+    color: #5B5A7A;
+    background-color: white;
+  }
+
 
 
 
