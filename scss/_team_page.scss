@@ -1,68 +1,68 @@
-main{ 
-    display:grid;
-    width: 68%;
-    grid-template-areas: " header         header     header-img"
-                         " personal_1-img personal_1 personal_1"
-                         " personal_1     personal_1 personal_1-img"
-                         " personal_3-img personal_3 personal_3"
-                         " personal_4-    personal_4 personal_4-img";
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 0rem;
-    background-color: $bg_color;
-    padding-left:16%;
-    padding-right:16%;
-    background-image: url(../assets/images/footer/line.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-    .main__header{
-        grid-area:header;
+// main{ 
+//     display:grid;
+//     width: 68%;
+//     grid-template-areas: " header         header     header-img"
+//                          " personal_1-img personal_1 personal_1"
+//                          " personal_1     personal_1 personal_1-img"
+//                          " personal_3-img personal_3 personal_3"
+//                          " personal_4-    personal_4 personal_4-img";
+//     grid-template-columns: 1fr 1fr 1fr ;
+//     grid-template-rows: auto auto auto auto auto;
+//     gap: 0rem;
+//     background-color: $bg_color;
+//     padding-left:16%;
+//     padding-right:16%;
+//     background-image: url(../assets/images/footer/line.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     }
+//     .main__header{
+//         grid-area:header;
         
-        }
-    .main__header-img{
-            grid-area:header-img;
-            }
-    .main__personal_1{
-                grid-area:personal_1;
-                }
-    .main__personal_1-img{
-                    grid-area:personal_1-img;
-                    }
-    .main__personal_2{
-            grid-area:personal_2;
-                }
-    .main__personal_2-img{
-            grid-area:personal_2-img;
-                    }
-    .main__personal_3{
-            grid-area:personal_3;
-                                }
-    .main__personal_3-img{
-            grid-area:personal_3-img;
-                            }
-    .main__personal_4{
-                grid-area:personal_4;
-                                }
-    .main__personal_4-img{
-                grid-area:personal_4-img;
-                                }
-    .personal{
-        display:grid;
-        width: 68%;
-    }
-    .personal__img{
+//         }
+//     .main__header-img{
+//             grid-area:header-img;
+//             }
+//     .main__personal_1{
+//                 grid-area:personal_1;
+//                 }
+//     .main__personal_1-img{
+//                     grid-area:personal_1-img;
+//                     }
+//     .main__personal_2{
+//             grid-area:personal_2;
+//                 }
+//     .main__personal_2-img{
+//             grid-area:personal_2-img;
+//                     }
+//     .main__personal_3{
+//             grid-area:personal_3;
+//                                 }
+//     .main__personal_3-img{
+//             grid-area:personal_3-img;
+//                             }
+//     .main__personal_4{
+//                 grid-area:personal_4;
+//                                 }
+//     .main__personal_4-img{
+//                 grid-area:personal_4-img;
+//                                 }
+//     .personal{
+//         display:grid;
+//         width: 68%;
+//     }
+//     .personal__img{
 
-    }
-    .personal__header{
+//     }
+//     .personal__header{
 
-    }
-    .personal__text{
+//     }
+//     .personal__text{
 
-    }
-    .personal__link{
+//     }
+//     .personal__link{
 
-    }
+//     }
 
             
 
