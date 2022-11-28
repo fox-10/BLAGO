@@ -505,6 +505,91 @@ footer {
   color: #54269E;
 }
 
+.personal {
+  display: grid;
+  width: 63%;
+  grid-template-areas: " personal__img personal__article" " personal__img personal__link";
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: auto auto;
+  gap: 0rem;
+  padding-left: 15%;
+  padding-right: 22%;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.personal__img {
+  grid-area: personal__img;
+  width: 100%;
+}
+
+.personal__article {
+  grid-area: personal__article;
+}
+
+.personal__header {
+  grid-area: personal__header;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  margin-bottom: 0px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269E;
+}
+
+.personal__text {
+  grid-area: personal__text;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5B5A7A;
+  margin-top: 0%;
+}
+
+.personal__link {
+  grid-area: personal__link;
+  padding-left: 20px;
+}
+
+.personal-left {
+  grid-template-areas: " personal__article personal__img" " personal__link  personal__img";
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: auto auto;
+  padding-left: 22%;
+  padding-right: 15%;
+}
+
+.personal-heart {
+  width: 70%;
+  grid-template-areas: " personal__caption personal__img" " personal__text  personal__img";
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: auto auto;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.personal__caption {
+  grid-area: personal__caption;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  margin-bottom: 0px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269E;
+}
+
 .bg-color {
   margin-top: 0;
   background-color: #e8e4ef;

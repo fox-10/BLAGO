@@ -1,68 +1,63 @@
-// main{ 
-//     display:grid;
-//     width: 68%;
-//     grid-template-areas: " header         header     header-img"
-//                          " personal_1-img personal_1 personal_1"
-//                          " personal_1     personal_1 personal_1-img"
-//                          " personal_3-img personal_3 personal_3"
-//                          " personal_4-    personal_4 personal_4-img";
-//     grid-template-columns: 1fr 1fr 1fr ;
-//     grid-template-rows: auto auto auto auto auto;
-//     gap: 0rem;
-//     background-color: $bg_color;
-//     padding-left:16%;
-//     padding-right:16%;
-//     background-image: url(../assets/images/footer/line.svg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     }
-//     .main__header{
-//         grid-area:header;
+.personal{ 
+     display:grid;
+     width: 63%;
+     grid-template-areas: " personal__img personal__article"
+                          " personal__img personal__link";
+     grid-template-columns: 30% 1fr ;
+     grid-template-rows: auto auto ;
+     gap: 0rem;
+     padding-left:15%;
+     padding-right:22%;
+     margin-top: 34px;
+     margin-bottom: 34px;
+      }
+      .personal__img{
+        grid-area:personal__img;
+        width: 100%;}
+    .personal__article{
+        grid-area: personal__article;
+    }
+    .personal__header{
+          grid-area:personal__header;
+          padding-left: 20px;
+          padding-bottom: 13px;
+          margin-bottom: 0px;
+          @include font-style-Nunito(700,32px,1.2,#54269E);
+              }
+     .personal__text{
+           grid-area:personal__text;
+           padding-left: 20px;
+           @include font-style-Nunito(400,18px,1.2,#5B5A7A);
+           margin-top: 0%;
+           }
+     .personal__link{
+         grid-area:personal__link;
+         padding-left: 20px;
+         }
+    .personal-left{ 
         
-//         }
-//     .main__header-img{
-//             grid-area:header-img;
-//             }
-//     .main__personal_1{
-//                 grid-area:personal_1;
-//                 }
-//     .main__personal_1-img{
-//                     grid-area:personal_1-img;
-//                     }
-//     .main__personal_2{
-//             grid-area:personal_2;
-//                 }
-//     .main__personal_2-img{
-//             grid-area:personal_2-img;
-//                     }
-//     .main__personal_3{
-//             grid-area:personal_3;
-//                                 }
-//     .main__personal_3-img{
-//             grid-area:personal_3-img;
-//                             }
-//     .main__personal_4{
-//                 grid-area:personal_4;
-//                                 }
-//     .main__personal_4-img{
-//                 grid-area:personal_4-img;
-//                                 }
-//     .personal{
-//         display:grid;
-//         width: 68%;
-//     }
-//     .personal__img{
-
-//     }
-//     .personal__header{
-
-//     }
-//     .personal__text{
-
-//     }
-//     .personal__link{
-
-//     }
+        grid-template-areas: " personal__article personal__img"
+                             " personal__link  personal__img";
+        grid-template-columns:1fr 30%  ;
+        grid-template-rows: auto auto ;
+        padding-left:22%;
+        padding-right:15%;
+         }
+         .personal-heart{ 
+            width: 70%;
+            grid-template-areas: " personal__caption personal__img"
+                                 " personal__text  personal__img";
+            grid-template-columns:1fr 30%  ;
+            grid-template-rows: auto auto ;
+            padding-left:15%;
+            padding-right:15%;
+             }
+             .personal__caption{
+                grid-area:personal__caption;
+                padding-left: 20px;
+                padding-bottom: 13px;
+                margin-bottom: 0px;
+                @include font-style-Nunito(700,42px,1.2,#54269E);}
 
             
 
