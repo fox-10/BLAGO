@@ -11,31 +11,57 @@
     padding-bottom: 50px;
     width: 70vw;
     margin: auto;
+    // border: 1px solid red;
 }
 
-.progectDiv {
+.progectDiv IMG {
     position: relative;
 }
 
 .projectImg {
-    width: 30vw;
-    border: 10px solid #6C68AF;
-    border-radius: 35px;
-    background-color:#6C68AF;
-    z-index: 1;
+    height: 18vw;
+    z-index: 5;
+    top: 0;
+    left:0;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    margin: 0;
+}
+
+.projectImg:hover {
+    height: 18vw;
+    // outline: 10px solid #6C68AF;
+    // outline-offset: -9px;
+    // border-radius: 25px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.projectCover {
+    height: 18vw;
+    position: absolute;
+   
+    // outline: 10px solid #6C68AF;
+    // outline-offset: -9px;
+    border-radius: 25px;
+    z-index: 4;
     top: 0;
     left: 0;
 }
 
-.feedImg {
-    width: 5vw;
-    z-index: 3;
-    top: -100px;
-    left: 20px;
-}
 
 .progectDiv {
     margin-right: 50px;
+    width: max-content;
+    height: max-content;
+    // border: 10px solid #6C68AF;
+    // background-color: #6C68AF;
+    // outline: 10px solid #6C68AF;
+    // outline-offset: -10px;
+    // border-radius: 35px
 }
 
 .projectsH3 {
