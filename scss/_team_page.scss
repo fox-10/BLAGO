@@ -11,6 +11,8 @@
      margin-top: 34px;
      margin-bottom: 34px;
       }
+    
+    
       .personal__img{
         grid-area:personal__img;
         width: 100%;}
@@ -34,7 +36,7 @@
          grid-area:personal__link;
          padding-left: 20px;
          }
-    .personal-left{ 
+.personal-left{ 
         
         grid-template-areas: " personal__article personal__img"
                              " personal__link  personal__img";
@@ -43,7 +45,7 @@
         padding-left:22%;
         padding-right:15%;
          }
-         .personal-heart{ 
+.personal-heart{ 
             width: 70%;
             grid-template-areas: " personal__caption personal__img"
                                  " personal__text  personal__img";
@@ -52,14 +54,69 @@
             padding-left:15%;
             padding-right:15%;
              }
-             .personal__caption{
+.personal__caption{
                 grid-area:personal__caption;
                 padding-left: 20px;
                 padding-bottom: 13px;
                 margin-bottom: 0px;
                 @include font-style-Nunito(700,42px,1.2,#54269E);}
+    
+@media (min-width: 700px) and (max-width: 1000px) {
+    .personal{ 
+        width: 90%;
+        padding-left:5%;
+        padding-right:5%;
+         } 
+.personal-heart  {
+    width: 90%;
+    padding-left:5%;
+    padding-right:5%;
+} 
+.personal-heart{
+    width: 90%;
+    padding-left:5%;
+    padding-right:5%;
+} 
 
+
+                    }
+
+
+
+
+@media screen and (max-width: 700px) {
+    .personal{ 
+        display:grid;
+        width: 90%;
+        grid-template-areas: " personal__img" 
+                             "personal__article"
+                            " personal__link";
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto ;
+        padding-left:5%;
+        padding-right:5%;
+         }
+         .personal-left{ 
+         
+            grid-template-areas: "personal__img"
+                                " personal__article" 
+                                 " personal__link";
+            grid-template-columns:1fr;
+            grid-template-rows: auto auto auto;
             
+             }
+    .personal-heart{ 
+                width: 70%;
+                grid-template-areas:"personal__img"
+                                    "personal__caption"
+                                    "personal__text";
+                grid-template-columns:1fr   ;
+                grid-template-rows: auto auto auto;
+                padding-left:15%;
+                padding-right:15%;
+                 }
+                   
+                    }
 
         
     

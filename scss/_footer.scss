@@ -62,4 +62,28 @@ footer{
     .social-network__link{
         padding: 16px;
     }
-
+    @media (min-width: 700px) and (max-width: 1000px){
+        footer{             
+            width: 90%;
+            padding-left:5%;
+            padding-right:5%;
+    }
+}
+    @media screen and (max-width: 700px) {
+        footer{             
+            width: 88%;
+            grid-template-areas: 
+            "..."
+            "blagodaru "
+            "header "
+            "social-network "
+             "contacts"
+             "documents"
+             "team";
+            grid-template-columns: 1fr  ;
+            grid-template-rows:30px auto auto auto auto auto auto;
+            padding-left:7%;
+            padding-right:5%;
+            background-image: url(../assets/images/footer/line-min.svg);
+            }
+    }
