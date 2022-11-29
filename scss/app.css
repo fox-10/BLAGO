@@ -690,12 +690,6 @@ footer {
   gap: 15px;
 }
 
-input {
-  border: 2px solid #54269E;
-  border-radius: 1em;
-  min-height: 4em;
-}
-
 .formVolButton {
   background-color: #54269E;
   width: 20em;
@@ -807,10 +801,28 @@ input {
   gap: 15px;
 }
 
-input {
+.inputForm {
+  width: 95%;
   border: 2px solid #54269E;
   border-radius: 1em;
-  min-height: 4em;
+  height: 3em;
+  padding-top: 1.5em;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #7D66A3;
+}
+
+.inputForm::-webkit-input-placeholder {
+  color: #7D66A3;
+}
+
+.inputForm::-moz-placeholder {
+  color: #7D66A3;
 }
 
 .formParButton {
@@ -840,6 +852,23 @@ input {
 
 .closeButton {
   width: 40px;
+}
+
+.inputPlaceholder1 {
+  position: absolute;
+  top: -0.2em;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269E;
+}
+
+.inputDiv {
+  position: relative;
 }
 
 body {

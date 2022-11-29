@@ -75,10 +75,22 @@
     gap: 15px;
 }
 
-input {
+.inputForm {
+    width: 95%;
     border: 2px solid $text-subtitle_color;
     border-radius: 1em;
-    min-height: 4em;
+    height: 3em;
+    padding-top: 1.5em;
+    padding-left: 20px;
+    @include font-style-Nunito(400,18px ,1.2, #7D66A3);
+}
+
+.inputForm::-webkit-input-placeholder {
+    color: #7D66A3;
+} 
+
+.inputForm::-moz-placeholder {
+    color: #7D66A3;
 }
 
 .formParButton {
@@ -102,4 +114,15 @@ input {
 
 .closeButton {
     width: 40px;
+}
+
+.inputPlaceholder1 {
+    position: absolute;
+    top: -0.2em;
+    padding-left: 20px;
+    @include font-style-Nunito(700,18px ,1.2, $text-subtitle_color);
+}
+
+.inputDiv {
+    position: relative;
 }
