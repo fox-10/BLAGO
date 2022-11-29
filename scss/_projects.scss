@@ -1,3 +1,4 @@
+
 .projectSlider {
     display: flex;
     flex-direction: row;
@@ -14,18 +15,24 @@
     // border: 1px solid red;
 }
 
-.progectDiv IMG {
+.progectDiv {
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 .projectImg {
     height: 18vw;
     z-index: 5;
+    position: absolute;
     top: 0;
     left:0;
     transition: all 0.5s ease-in-out;
-    position: absolute;
+    // position: absolute;
     margin: 0;
+    outline: 10px solid #6C68AF;
+    outline-offset:-9px;
+    border-radius: 25px;
 }
 
 .projectImg:hover {
@@ -42,7 +49,7 @@
 
 .projectCover {
     height: 18vw;
-    position: absolute;
+    // position: absolute;
    
     // outline: 10px solid #6C68AF;
     // outline-offset: -9px;
@@ -50,18 +57,25 @@
     z-index: 4;
     top: 0;
     left: 0;
+    position: absolute;
+    outline: 10px solid #6C68AF;
+    outline-offset:-9px;
+    border-radius: 25px;
 }
 
 
 .progectDiv {
     margin-right: 50px;
-    width: max-content;
-    height: max-content;
+    height: 18vw;
+    width: 29vw;
+    // width: fit-content;
+    // width: max-content;
+    // height: max-content;
     // border: 10px solid #6C68AF;
     // background-color: #6C68AF;
-    // outline: 10px solid #6C68AF;
-    // outline-offset: -10px;
-    // border-radius: 35px
+
+    // border: 1px solid red;
+    // z-index: 11;
 }
 
 .projectsH3 {

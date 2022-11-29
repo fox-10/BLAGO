@@ -358,18 +358,23 @@ footer {
   margin: auto;
 }
 
-.progectDiv IMG {
+.progectDiv {
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 .projectImg {
   height: 18vw;
   z-index: 5;
+  position: absolute;
   top: 0;
   left: 0;
   transition: all 0.5s ease-in-out;
-  position: absolute;
   margin: 0;
+  outline: 10px solid #6C68AF;
+  outline-offset: -9px;
+  border-radius: 25px;
 }
 
 .projectImg:hover {
@@ -383,21 +388,20 @@ footer {
 
 .projectCover {
   height: 18vw;
-  position: absolute;
   border-radius: 25px;
   z-index: 4;
   top: 0;
   left: 0;
+  position: absolute;
+  outline: 10px solid #6C68AF;
+  outline-offset: -9px;
+  border-radius: 25px;
 }
 
 .progectDiv {
   margin-right: 50px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 18vw;
+  width: 29vw;
 }
 
 .projectsH3 {
@@ -486,10 +490,6 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #54269E;
-}
-
-body {
-  background-color: #e8e4ef;
 }
 
 .personal {
@@ -618,6 +618,10 @@ body {
     padding-right: 15%;
   }
 }
+body {
+  background-color: #e8e4ef;
+}
+
 .bg-color {
   margin-top: 0;
   background-color: #e8e4ef;
