@@ -25,7 +25,11 @@
 <body>
     <div class="bg-color">
         <div class="root">
-            <header>
+
+
+
+
+            <header id="header">
 
                 <div class="logo">
                     <img class="logoImg" src="assets/images/logotype2.png" alt="лого">
@@ -48,8 +52,9 @@
                         <h2>Благотворительный фонд</h2>
                         <p class="fundSubtitle">Творить добро может каждый</p>
                         <div class="fundButtons">
-                            <button class="volButton">Стать волонтером</button>
-                            <button class="partButton">Стать партнером</button>
+                            <a href="#formVol"><button class="volButton">Стать волонтером</button></a>
+
+                            <a href="#formPar"><button class="partButton">Стать партнером</button></a>
                         </div>
                     </div>
                     <div class="secondColumn">
@@ -179,6 +184,47 @@
                 </div>
 
             </footer>
+
+
+            <div id="formVol" class="formVol">
+                <a href="#header" class="formVol__area"></a>
+                <div class="formVol__body">
+                    <div class="formVol__content">
+                        <a href="#" class="formVol__close"><img class="closeButton" src="/assets/images/closeButton.png"
+                                alt=""></a>
+                        <div class="formVol__title">Регистрация волонтера</div>
+                        <div class="formVol__text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <button class="formVolButton">Отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="formPar" class="formPar">
+                <a href="#header" class="formPar__area"></a>
+                <div class="formPar__body">
+                    <div class="formPar__content">
+                        <a href="#" class="formPar__close"><img class="closeButton" src="/assets/images/closeButton.png"
+                                alt=""></a>
+                        <div class="formPar__title">Регистрация партнера</div>
+                        <div class="formPar__text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <button class="formParButton">Отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
