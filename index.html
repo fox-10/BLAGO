@@ -187,6 +187,7 @@
 
             </footer>
 
+            <!-- Форма для волонтеров -->
 
             <div id="formVol" class="formVol">
                 <a href="#header" class="formVol__area"></a>
@@ -196,17 +197,32 @@
                                 alt=""></a>
                         <div class="formVol__title">Регистрация волонтера</div>
                         <div class="formVol__text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
+                            <div class="inputDiv">
+                                <p class="inputPlaceholder1">Фамилия Имя Отчество</p>
+                                <input class="inputForm" placeholder="Введи ФИО" type="text">
+                            </div>
+                            <div class="inputDiv">
+                                <p class="inputPlaceholder1">Название организации</p>
+                                <input class="inputForm" placeholder="Введи название огранизации" type="text">
+                            </div>
+                            <div class="inputDiv">
+                                <p class="inputPlaceholder1">Город</p>
+                                <input class="inputForm" placeholder="Липецк" type="text">
+                            </div>
+                            <div class="inputDiv">
+                                <p class="inputPlaceholder1">Чем можем быть полезны друг другу</p>
+                                <textarea name="" id="" cols="30" rows="20" class="inputForm"
+                                    style="padding-top: 40px; min-height: 10em;"
+                                    placeholder="Расскажи чем мы можем друг другу помочь"></textarea>
+                            </div>
                             <button class="formVolButton">Отправить заявку</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+            <!-- Форма для партнеров -->
 
             <div id="formPar" class="formPar">
                 <a href="#header" class="formPar__area"></a>
@@ -237,7 +253,8 @@
                                 <select name="" id="" class="inputForm" style="height: 4.5em; width: 99%;">
                                     <option class="inputForm" value="">
                                         Выбери
-                                        направление</option>
+                                        направление ᐯ
+                                    </option>
                                     <option value="">Корми с добром</option>
                                     <option value="">Навстречу переменам</option>
                                     <option value="">Другое</option>
