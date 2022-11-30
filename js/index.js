@@ -16,9 +16,9 @@ $(".user-form").submit(function (event) {
     }).done(function (response) {
         console.log(response)
         if (!response || !response.success) {
-            alert('РћС€РёР±РєР°! ' + response.errors.join('. '))
+            alert('Ошибка! ' + response.errors.join('. '))
         } else {
-            alert('Р—Р°СЏРІРєР° СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅР°')
+            alert('Заявка успешно отправлена')
         }
     });
 });
