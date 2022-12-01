@@ -90,7 +90,7 @@
         padding-left:5%;
         padding-right:5%;
          } 
-.personal-heart  {
+    .personal-heart  {
     width: 90%;
     padding-left:5%;
     padding-right:5%;
@@ -104,10 +104,7 @@
 .personal__inf{
     padding-top: 50px;
                     }
-
-
-
-
+                }
 @media screen and (max-width: 700px) {
     .personal{ 
         display:grid;
@@ -121,7 +118,6 @@
         padding-right:5%;
          }
          .personal-left{ 
-         
             grid-template-areas: "personal__img"
                                 " personal__article" 
                                  " personal__link";
@@ -165,8 +161,7 @@
     }
     .personal__text{
         padding-left: 0PX;}
-
-                   
+                  
                     }
 
         
