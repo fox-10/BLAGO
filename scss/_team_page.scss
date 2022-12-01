@@ -26,7 +26,7 @@
           margin-bottom: 0px;
           @include font-style-Nunito(700,32px,1.2,#54269E);
               }
-     .personal__text{
+    .personal__text{
            grid-area:personal__text;
            padding-left: 20px;
            @include font-style-Nunito(400,18px,1.2,#5B5A7A);
@@ -54,12 +54,35 @@
             padding-left:15%;
             padding-right:15%;
              }
+.personal-personal-page{ 
+                width: 70%;
+                grid-template-areas: " personal__link personal__img"
+                                     " personal__caption personal__img"
+                                     " personal__text  personal__img"
+                                     " personal__inf  personal__inf"      ;
+                grid-template-columns:auto auto ;
+                grid-template-rows: auto auto auto ;
+                padding-left:15%;
+                padding-right:15%;
+                 }
 .personal__caption{
                 grid-area:personal__caption;
                 padding-left: 20px;
                 padding-bottom: 13px;
                 margin-bottom: 0px;
                 @include font-style-Nunito(700,42px,1.2,#54269E);}
+.personal__inf{
+    grid-area:personal__inf;
+    padding-top: 100px;
+    
+}
+
+.personal__inf-img{
+    height: 25vw;
+    width: auto;
+    float:left;
+    margin-right: 20px;
+}
     
 @media (min-width: 700px) and (max-width: 1000px) {
     .personal{ 
@@ -72,7 +95,7 @@
     padding-left:5%;
     padding-right:5%;
 } 
-.personal-heart{
+.personal-personal-page{
     width: 90%;
     padding-left:5%;
     padding-right:5%;
@@ -115,6 +138,28 @@
                 padding-left:15%;
                 padding-right:15%;
                  }
+    .personal-personal-page{ 
+                    width: 90%;
+                    grid-template-areas:" personal__link"
+                                        "personal__img" 
+                                        " personal__text"
+                                        " personal__inf"      ;
+                    grid-template-columns:1FR ;
+                    grid-template-rows: auto auto auto auto;
+                    padding-left:5%;
+                    padding-right:5%;
+    }
+    .personal__img{
+        padding-bottom: 20PX;
+    }
+    .personal__inf-img{
+                    width:100%;
+                    height: auto;
+                    
+    }
+    .personal__text{
+        padding-left: 0PX;}
+
                    
                     }
 
