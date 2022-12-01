@@ -273,16 +273,6 @@ h2 {
           flex-direction: row;
 }
 
-a {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #9747FF;
-}
-
 .whoLogo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,15 +414,54 @@ footer {
   margin: auto;
 }
 
+.progectDiv {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .projectImg {
-  width: 30vw;
-  border: 10px solid #6C68AF;
-  border-radius: 35px;
-  background-color: #6C68AF;
+  height: 18vw;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+  outline: 10px solid #6C68AF;
+  outline-offset: -9px;
+  border-radius: 25px;
+}
+
+.projectImg:hover {
+  height: 18vw;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectCover {
+  height: 18vw;
+  border-radius: 25px;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  position: absolute;
+  outline: 10px solid #6C68AF;
+  outline-offset: -9px;
+  border-radius: 25px;
 }
 
 .progectDiv {
   margin-right: 50px;
+  height: 18vw;
+  width: 29vw;
 }
 
 .projectsH3 {
@@ -671,11 +700,14 @@ footer {
   }
   .personal-personal-page {
     width: 90%;
-    grid-template-areas: " personal__link" "personal__img" " personal__text" " personal__inf";
+    grid-template-areas: " personal__link" "personal__img" "personal__caption" " personal__text" " personal__inf";
     grid-template-columns: 1FR;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .personal__inf {
+    padding-top: 50px;
   }
   .personal__img {
     padding-bottom: 20PX;
@@ -688,6 +720,315 @@ footer {
     padding-left: 0PX;
   }
 }
+.formVol {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 0, 98, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.formVol__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.formVol:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.formVol:target .formVol__content {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.formVol__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.formVol__content {
+  background-color: white;
+  max-width: 1200px;
+  min-width: 55vw;
+  padding: 3em 6em;
+  border-radius: 2em;
+  margin: 0 0 1em 0;
+  position: relative;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+}
+
+.formVol__close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.formVol__title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #6A68B0;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.formVol__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.formVolButton {
+  background-color: #54269E;
+  width: 20em;
+  height: 3em;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.formVolButton:hover {
+  background-color: #9747FF;
+}
+
+.formVolButton:active {
+  background-color: #492287;
+}
+
+.closeButton {
+  width: 40px;
+}
+
+.formPar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 0, 98, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.formPar__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.formPar:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.formPar:target .formPar__content {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.formPar__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.formPar__content {
+  background-color: white;
+  max-width: 1200px;
+  min-width: 55vw;
+  padding: 3em 6em;
+  border-radius: 2em;
+  margin: 0 0 1em 0;
+  position: relative;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+}
+
+.formPar__close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.formPar__title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #6A68B0;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.formPar__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.inputForm {
+  width: 95%;
+  border: 2px solid #54269E;
+  border-radius: 1em;
+  height: 3em;
+  padding-top: 1.5em;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #7D66A3;
+}
+
+.inputForm::-webkit-input-placeholder {
+  color: #7D66A3;
+}
+
+.inputForm::-moz-placeholder {
+  color: #7D66A3;
+}
+
+.formParButton {
+  background-color: #54269E;
+  width: 20em;
+  height: 3em;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.formParButton:hover {
+  background-color: #9747FF;
+}
+
+.formParButton:active {
+  background-color: #492287;
+}
+
+.closeButton {
+  width: 40px;
+}
+
+.inputPlaceholder1 {
+  position: absolute;
+  top: -0.2em;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269E;
+}
+
+.inputDiv {
+  position: relative;
+}
+
+body {
+  background-color: #e8e4ef;
+}
+
 body {
   background-color: #e8e4ef;
 }

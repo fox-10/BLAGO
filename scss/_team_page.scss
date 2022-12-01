@@ -101,7 +101,8 @@
     padding-right:5%;
 } 
 
-
+.personal__inf{
+    padding-top: 50px;
                     }
 
 
@@ -142,12 +143,17 @@
                     width: 90%;
                     grid-template-areas:" personal__link"
                                         "personal__img" 
+                                        "personal__caption"
                                         " personal__text"
                                         " personal__inf"      ;
                     grid-template-columns:1FR ;
-                    grid-template-rows: auto auto auto auto;
+                    grid-template-rows: auto auto auto auto auto;
                     padding-left:5%;
                     padding-right:5%;
+    }
+    .personal__inf{
+        padding-top: 50px;
+        
     }
     .personal__img{
         padding-bottom: 20PX;
