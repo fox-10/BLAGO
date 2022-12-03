@@ -331,6 +331,7 @@ header {
   letter-spacing: 0.005em;
   color: white;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-bottom: 15px;
 }
@@ -351,6 +352,7 @@ header {
   letter-spacing: 0.005em;
   color: #5B5A7A;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -743,6 +745,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 10px solid #6C68AF;
@@ -756,6 +759,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -814,6 +818,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 10px solid #6C68AF;
@@ -827,6 +832,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -887,6 +893,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 3vw solid #6C68AF;
@@ -900,6 +907,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -1297,6 +1305,24 @@ footer {
     padding-left: 0PX;
   }
 }
+.personalButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.personalButton__caption {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .formVol {
   position: fixed;
   width: 100%;
@@ -1310,6 +1336,7 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -1328,8 +1355,41 @@ footer {
 
 .formVol:target .formVol__content {
   -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
+}
+
+.formVol__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.formVol__content {
+  background-color: white;
+  max-width: 1200px;
+  min-width: 55vw;
+  padding: 3em 6em;
+  border-radius: 2em;
+  margin: 0 0 1em 0;
+  position: relative;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
 }
 
 .formVol__close {
@@ -1362,6 +1422,25 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+}
+
+.formVolButton {
+  background-color: #54269E;
+  width: 20em;
+  height: 3em;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .formVolButton:hover {
@@ -1573,6 +1652,7 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -1591,8 +1671,41 @@ footer {
 
 .formPar:target .formPar__content {
   -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
+}
+
+.formPar__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.formPar__content {
+  background-color: white;
+  max-width: 1200px;
+  min-width: 55vw;
+  padding: 3em 6em;
+  border-radius: 2em;
+  margin: 0 0 1em 0;
+  position: relative;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
 }
 
 .formPar__close {
@@ -1635,6 +1748,28 @@ footer {
   color: #7D66A3;
 }
 
+<<<<<<< HEAD
+=======
+.formParButton {
+  background-color: #54269E;
+  width: 20em;
+  height: 3em;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+>>>>>>> 6ef4c9b7ee4b4505e87e5ea8a883e282adbf0237
 .formParButton:hover {
   background-color: #9747FF;
 }
@@ -1976,6 +2111,17 @@ body {
   /*Задаём цвет ссылки*/
 }
 
+.link-comand {
+  color: #5B5A7A;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5B5A7A;
+}
+
 .link a:after {
   display: block;
   /*превращаем его в блочный элемент*/
@@ -1988,6 +2134,7 @@ body {
   background-color: #9747FF;
   /*цвет фона элемента*/
   -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
@@ -2031,4 +2178,4 @@ body {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #5B5A7A;
-}/*# sourceMappingURL=app.css.map */
+}

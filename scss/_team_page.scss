@@ -163,7 +163,13 @@
         padding-left: 0PX;}
                   
                     }
-
-        
+.personalButton{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.personalButton__caption{
+    align-self: center;
+}   
     
     
