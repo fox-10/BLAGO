@@ -42,6 +42,11 @@ body {
     /*Задаём цвет ссылки*/
 }
 
+.link-comand{
+    color:  #5B5A7A;
+    @include font-style-Nunito(400, 18px, 1.2, #5B5A7A);
+}
+
 .link a:after {
     display: block;
     /*превращаем его в блочный элемент*/
@@ -61,6 +66,7 @@ body {
 .link a:focus:after {
     width: 100%;
 }
+
 
 .link a:hover {
     color: #9747FF;

@@ -251,6 +251,7 @@ header {
   letter-spacing: 0.005em;
   color: white;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-bottom: 15px;
 }
@@ -271,6 +272,7 @@ header {
   letter-spacing: 0.005em;
   color: #5B5A7A;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -663,6 +665,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 10px solid #6C68AF;
@@ -676,6 +679,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -734,6 +738,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 10px solid #6C68AF;
@@ -747,6 +752,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -807,6 +813,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 3vw solid #6C68AF;
@@ -820,6 +827,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -1217,6 +1225,24 @@ footer {
     padding-left: 0PX;
   }
 }
+.personalButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.personalButton__caption {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .formVol {
   position: fixed;
   width: 100%;
@@ -1230,6 +1256,7 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -1248,6 +1275,7 @@ footer {
 
 .formVol:target .formVol__content {
   -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -1276,9 +1304,11 @@ footer {
   margin: 0 0 1em 0;
   position: relative;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
   opacity: 0;
   -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
           transform: translate(0px, -100%);
 }
 
@@ -1329,6 +1359,7 @@ footer {
   border: none;
   border-radius: 1em;
   -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 
@@ -1357,6 +1388,7 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -1375,6 +1407,7 @@ footer {
 
 .formPar:target .formPar__content {
   -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -1403,9 +1436,11 @@ footer {
   margin: 0 0 1em 0;
   position: relative;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
   opacity: 0;
   -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
           transform: translate(0px, -100%);
 }
 
@@ -1480,6 +1515,7 @@ footer {
   border: none;
   border-radius: 1em;
   -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 
@@ -1543,6 +1579,17 @@ body {
   /*Задаём цвет ссылки*/
 }
 
+.link-comand {
+  color: #5B5A7A;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5B5A7A;
+}
+
 .link a:after {
   display: block;
   /*превращаем его в блочный элемент*/
@@ -1555,6 +1602,7 @@ body {
   background-color: #9747FF;
   /*цвет фона элемента*/
   -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
@@ -1598,4 +1646,4 @@ body {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #5B5A7A;
-}/*# sourceMappingURL=app.css.map */
+}
