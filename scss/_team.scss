@@ -1,57 +1,196 @@
-.team{
-    display:grid;
-    width: 64%;
-    grid-template-areas: 
-    "header header "
-    "opred1 opred1"
-    "img  opred2"
-    "img  opred3"
-     "img button";
-    grid-template-columns:30% 1fr ;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 0rem;
-    background-color: $bg_color;
-    padding-left:18%;
-    padding-right:18%;  
-    padding-bottom: 144px;
+@media (min-width: 1101px) and (max-width: 2500px) {
+    .team__header {
+        grid-area: header;
+        @include font-style-Nunito(700, 36px, 1.2, $text-caption_color);
+        text-align: center;
+    }
+
+    .team {
+        display: grid;
+        width: 64%;
+        grid-template-areas:
+            "header header "
+            "opred1 opred1"
+            "img  opred2"
+            "img  opred3"
+            "img button";
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 0rem;
+        background-color: $bg_color;
+        padding-left: 18%;
+        padding-right: 18%;
+        padding-bottom: 144px;
+    }
+
+    .team_img {
+        grid-area: img;
+        width: 100%;
+        height: auto;
+    }
+
+    .team__opred1 {
+        grid-area: opred1;
+        width: 60%;
+        padding-left: 10vw;
+        padding-bottom: 40px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .team__opred2 {
+        grid-area: opred2;
+        width: 60%;
+        padding-left: 5vw;
+        padding-bottom: 40px;
+    }
+
+    .team__opred3 {
+        grid-area: opred3;
+        width: 70%;
+        padding-left: 10vw;
+        padding-bottom: 40px;
+    }
+
+    .team__button {
+        grid-area: button;
+    }
+
+    .team__text {
+        @include font-style-Nunito(400, 18px, 1.2, #000000);
+    }
+
+    .team__span {
+        @include font-style-Nunito(800, 18px, 1.2, #54269E);
+    }
 }
-.team_img{
-    grid-area:img;
-    width: 100%;
-    height: auto;
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .team__header {
+        grid-area: header;
+        @include font-style-Nunito(700, 1.7em, 1.2, $text-caption_color);
+        text-align: center;
+    }
+
+    .team {
+        display: grid;
+        width: 64%;
+        grid-template-areas:
+            "header header "
+            "opred1 opred1"
+            "img  opred2"
+            "img  opred3"
+            "img button";
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 0rem;
+        background-color: $bg_color;
+        padding-left: 18%;
+        padding-right: 18%;
+        padding-bottom: 144px;
+    }
+
+    .team_img {
+        grid-area: img;
+        width: 100%;
+        height: auto;
+    }
+
+    .team__opred1 {
+        grid-area: opred1;
+        width: 60%;
+        padding-left: 10vw;
+        padding-bottom: 40px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .team__opred2 {
+        grid-area: opred2;
+        width: 60%;
+        padding-left: 5vw;
+        padding-bottom: 40px;
+    }
+
+    .team__opred3 {
+        grid-area: opred3;
+        width: 70%;
+        padding-left: 10vw;
+        padding-bottom: 40px;
+    }
+
+    .team__button {
+        grid-area: button;
+    }
+
+    .team__text {
+        @include font-style-Nunito(400, 18px, 1.2, #000000);
+    }
+
+    .team__span {
+        @include font-style-Nunito(800, 18px, 1.2, #54269E);
+    }
 }
-.team__header{
-    grid-area:header;
-    @include font-style-Nunito(700,36px,1.2,$text-caption_color);
-    text-align: center;
-}
-.team__opred1{
-    grid-area:opred1;
-    width: 60%;
-    padding-left: 10vw;
-    padding-bottom: 40px;
-    padding-top: 24px;
-    padding-bottom: 40px;
-}
-.team__opred2{
-    grid-area:opred2;
-    width: 60%;
-    padding-left: 5vw;
-    padding-bottom: 40px;
-}
-    
-.team__opred3{
-    grid-area:opred3;
-    width: 70%;
-    padding-left: 10vw;
-    padding-bottom: 40px;
-}
-.team__button{
-    grid-area:button;
-}
-.team__text{
-    @include font-style-Nunito(400,18px,1.2,#000000);
-}
-.team__span{
-    @include font-style-Nunito(800,18px,1.2, #54269E);
+
+@media screen and (max-width: 700px) {
+    .team__header {
+        grid-area: header;
+        @include font-style-Nunito(700, 1.5em, 1.2, $text-caption_color);
+        text-align: center;
+    }
+
+    .team {
+        display: grid;
+        width: 80vw;
+        margin: auto;
+        grid-template-areas:
+            "header"
+            "img"
+            "opred1"
+            "opred2"
+            "opred3"
+            "button";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 0rem;
+        background-color: $bg_color;
+    }
+
+    .team_img {
+        grid-area: img;
+        width: 100%;
+        height: auto;
+    }
+
+    .team__opred1 {
+        grid-area: opred1;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .team__opred2 {
+        grid-area: opred2;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .team__opred3 {
+        grid-area: opred3;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .team__button {
+        grid-area: button;
+        margin-bottom: 50px;
+    }
+
+    .team__text {
+        @include font-style-Nunito(400, 18px, 1.2, #000000);
+    }
+
+    .team__span {
+        @include font-style-Nunito(800, 18px, 1.2, #54269E);
+    }
 }

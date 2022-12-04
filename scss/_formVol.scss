@@ -11,6 +11,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.6s ease 0s;
+
 }
 
 .formVol__area {
@@ -31,29 +32,6 @@
     opacity: 1;
 }
 
-
-
-.formVol__body {
-    min-height: 100%;
-    display: flex;z-index: 100;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
-}
-
-.formVol__content {
-    background-color: white;
-    max-width: 1200px;
-    min-width: 55vw;
-    padding: 3em 6em;
-    border-radius: 2em;
-    margin: 0 0 1em 0;
-    position: relative;
-    transition: all 0.6s ease 0s;
-    opacity: 0;
-    transform: translate(0px, -100%);
-}
-
 .formVol__close {
     position: absolute;
     right: 30px;
@@ -64,7 +42,7 @@
 }
 
 .formVol__title {
-    @include font-style-Nunito(700,2em,1.2, #6A68B0);
+    @include font-style-Nunito(700, 2em, 1.2, #6A68B0);
     text-align: center;
     margin-bottom: 1em;
 }
@@ -73,23 +51,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-// input {
-//     border: 2px solid $text-subtitle_color;
-//     border-radius: 1em;
-//     min-height: 4em;
-// }
-
-.formVolButton {
-    background-color: $text-subtitle_color;
-    width: 20em;
-    height:3em;
-    margin: auto;
-    @include font-style-Nunito(700,1.2em ,1.2, white);
-    border: none;
-    border-radius: 1em;
-    transition: all 0.4s ease 0s;
 }
 
 .formVolButton:hover {
@@ -102,4 +63,142 @@
 
 .closeButton {
     width: 40px;
+}
+
+@media (min-width: 1101px) and (max-width: 2500px) {
+    .formVol__body {
+        min-height: 100%;
+        display: flex;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+
+    .formVol__content {
+        background-color: white;
+        max-width: 80vw;
+        min-width: 55vw;
+        padding: 3em 6em;
+        border-radius: 2em;
+        margin: 0 0 1em 0;
+        position: relative;
+        transition: all 0.6s ease 0s;
+        opacity: 0;
+        transform: translate(0px, -100%);
+    }
+
+    .formVolButton {
+        background-color: $text-subtitle_color;
+        width: 20em;
+        height: 3em;
+        margin: auto;
+        @include font-style-Nunito(700, 1.2em, 1.2, white);
+        border: none;
+        border-radius: 1em;
+        transition: all 0.4s ease 0s;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    .formVol__body {
+        min-height: 100%;
+        display: flex;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+
+    .formVol__content {
+        background-color: white;
+        max-width: 80vw;
+        min-width: 55vw;
+        padding: 3em 5vw;
+        border-radius: 2em;
+        margin: 0 0 1em 0;
+        position: relative;
+        transition: all 0.6s ease 0s;
+        opacity: 0;
+        transform: translate(0px, -100%);
+    }
+
+    .formVolButton {
+        background-color: $text-subtitle_color;
+        width: 20em;
+        height: 3em;
+        margin: auto;
+        @include font-style-Nunito(700, 1em, 1.2, white);
+        border: none;
+        border-radius: 1em;
+        transition: all 0.4s ease 0s;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 700px) {
+    .formVol__body {
+        min-height: 100%;
+        display: flex;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        // padding: 30px 10px;
+    }
+
+    .formVol__content {
+        background-color: white;
+        width: 90vw;
+        padding: 3em 5vw;
+        border-radius: 2em;
+        margin: 20px;
+        position: relative;
+        transition: all 0.6s ease 0s;
+        opacity: 0;
+        transform: translate(0px, -100%);
+    }
+
+    .formVolButton {
+        background-color: $text-subtitle_color;
+        width: 60vw;
+        height: 15vw;
+        margin: auto;
+        @include font-style-Nunito(700, 1.2em, 1.2, white);
+        border: none;
+        border-radius: 5vw;
+        transition: all 0.4s ease 0s;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .formVol__body {
+        min-height: 100%;
+        display: flex;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        // padding: 30px 10px;
+    }
+
+    .formVol__content {
+        background-color: white;
+        width: 90vw;
+        padding: 3em 5vw;
+        border-radius: 2em;
+        margin: 20px;
+        position: relative;
+        transition: all 0.6s ease 0s;
+        opacity: 0;
+        transform: translate(0px, -100%);
+    }
+
+    .formVolButton {
+        background-color: $text-subtitle_color;
+        width: 60vw;
+        height: 15vw;
+        margin: auto;
+        @include font-style-Nunito(700, 1.2em, 1.2, white);
+        border: none;
+        border-radius: 5vw;
+        transition: all 0.4s ease 0s;
+    }
 }

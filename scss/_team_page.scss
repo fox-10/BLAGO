@@ -11,6 +11,11 @@
      margin-top: 34px;
      margin-bottom: 34px;
       }
+.personal-slaider{
+    grid-template-areas: " personal__img personal__text";
+     grid-template-columns: 30% 1fr ;
+     grid-template-rows: auto ;
+}
     
     
       .personal__img{
@@ -163,7 +168,22 @@
         padding-left: 0PX;}
                   
                     }
-
-        
+.personalButton{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   padding-bottom: 100px;
+}
+.personalButton__caption{
+    @include font-style-Nunito(700,36px,1.2,#9747FF);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin:0;
+}
+.personalButton__text{
+    @include font-style-Nunito(400,18px,1.2,#5B5A7A);
+    padding-bottom: 55px;
+    margin:0;
+}
     
     
