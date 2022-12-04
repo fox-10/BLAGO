@@ -8,6 +8,8 @@
 @import "team_page.scss";
 @import "formVol.scss";
 @import "formPar.scss";
+@import "team_page.scss";
+
 
 
 body {
@@ -42,8 +44,8 @@ body {
     /*Задаём цвет ссылки*/
 }
 
-.link-comand{
-    color:  #5B5A7A;
+.link-comand {
+    color: #5B5A7A;
     @include font-style-Nunito(400, 18px, 1.2, #5B5A7A);
 }
 
