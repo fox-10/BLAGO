@@ -3,15 +3,285 @@
   width: 140px;
 }
 
+.header {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.header__container {
+  max-width: 70vw;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-height: 130px;
+  align-items: center;
+  padding: 15px 0px;
+}
+.header__logo {
+  z-index: 3;
+}
+.header__logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+}
+.header__logo-image img {
+  max-width: 100%;
+  display: block;
+}
+.header__menu {
+  margin-left: 20px;
+}
+.header__list {
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+  padding: 0px;
+  margin: 0px;
+}
+.header__list li {
+  margin-right: 20px;
+  list-style: none;
+}
+.header__list li a {
+  text-decoration: none;
+}
+.header__item {
+  margin-right: 30px;
+}
+.header__link {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.36;
+  letter-spacing: 0.005em;
+  color: #54269e;
+  letter-spacing: -0.005em;
+}
+.header__link:hover {
+  color: #a682df;
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header::before {
+    height: 120px;
+  }
+  .header__body {
+    min-height: 90px;
+    padding: 15px;
+  }
+  .header__logo {
+    flex: 0 0 40px;
+  }
+  .header__link {
+    font-size: 24px;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #54269e;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #54269e;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active {
+    margin: 0 auto;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    width: 55%;
+    height: 370px;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #cab8e6;
+    padding: 100px 10px 20px 10px;
+    border-radius: 15px;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+  .header__list {
+    display: block;
+    padding-left: 70px;
+  }
+  .header__list li {
+    margin: 50px 0px 20px 0px;
+  }
+  .content {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 560px) {
+  .header__menu {
+    width: 45%;
+    height: 350px;
+  }
+  .header__list {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .header__menu {
+    width: 45%;
+    height: 300px;
+  }
+  .header__list li {
+    margin: 40px 0px 10px 0px;
+  }
+  .header__link {
+    font-size: 20px;
+  }
+}
+.volButton_h,
+.partButton_h {
+  border-radius: 20px;
+  align-items: center;
+  padding: 5px 20px;
+  min-height: 48px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 105%;
+  text-align: center;
+  margin: 8px;
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 105%;
+  text-align: center;
+  margin: 0px 5px;
+}
+
+.partButton_h {
+  border-radius: 20px;
+  align-items: center;
+  padding: 5px 20px;
+  min-height: 48px;
+  letter-spacing: 0.2px;
+}
+
+.volButton_h {
+  border: none;
+  background-color: #54269e;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.volButton_h:hover {
+  color: #54269e;
+  border: 2px solid #54269e;
+  background-color: white;
+}
+
+.partButton_h {
+  border: 2px solid #54269e;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5b5a7a;
+  transition: all 0.5s ease-in-out;
+}
+
+.partButton_h:hover {
+  color: white;
+  background-color: #a682df;
+}
+
+.fundButtonsHeader {
+  z-index: 3;
+}
+
+.fundButtons_h {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+
+@media (max-width: 2500px) {
+  .header__menu {
+    margin-left: 40px;
+  }
+  .header__list li {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__item {
+    margin-right: 20px;
+  }
+  .header__menu {
+    margin-left: 20px;
+  }
+  .header__list li {
+    margin-right: 30px;
+  }
+}
 @media (min-width: 1001px) and (max-width: 2500px) {
   .logoAndButtons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 @media (min-width: 701px) and (max-width: 1000px) {
@@ -19,13 +289,20 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
-  .logo {
-    margin-right: 50px;
+  .volButton_h,
+  .partButton_h {
+    border-radius: 15px;
+    align-items: center;
+    padding: 3px 15px;
+    min-height: 35px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 105%;
+    text-align: center;
+    margin: 8px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -39,57 +316,17 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: auto;
   }
 }
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 80vw;
-  margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.menuTitle {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #565656;
-}
-
-.gamburger {
-  margin-left: 30px;
-  margin-right: 10px;
-}
-
 @media (min-width: 1301px) and (max-width: 2500px) {
   .firstColumn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin-right: 30px;
     grid-area: firstColumn;
     width: 40vw;
@@ -101,15 +338,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 70vw;
     margin: auto;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
     padding-top: 10px;
     padding-bottom: 50px;
   }
@@ -120,10 +352,10 @@ header {
     font-size: 3em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 50px;
     width: 220px;
     border-radius: 20px;
@@ -135,7 +367,7 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
   }
 }
 @media (min-width: 1101px) and (max-width: 1300px) {
@@ -146,19 +378,14 @@ header {
     font-size: 2.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
   }
   .firstColumn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin-right: 30px;
     grid-area: firstColumn;
     width: 40vw;
@@ -170,20 +397,15 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 70vw;
     margin: auto;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
     padding-top: 10px;
     padding-bottom: 50px;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 50px;
     width: 220px;
     border-radius: 20px;
@@ -195,7 +417,7 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -206,19 +428,14 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
   }
   .firstColumn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin-right: 30px;
     grid-area: firstColumn;
     width: 40vw;
@@ -230,15 +447,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 70vw;
     margin: auto;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
     padding-top: 30px;
     padding-bottom: 50px;
   }
@@ -249,10 +461,10 @@ header {
     font-size: 2em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 56px;
     width: 200px;
     border-radius: 20px;
@@ -263,13 +475,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     grid-area: firstColumn;
     margin: auto;
   }
@@ -294,7 +501,7 @@ header {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
     text-align: center;
   }
   .fundSubtitle {
@@ -304,11 +511,11 @@ header {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
     text-align: center;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 15vw;
     width: 70vw;
     max-width: 300px;
@@ -322,7 +529,7 @@ header {
 
 .volButton {
   border: none;
-  background-color: #54269E;
+  background-color: #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -337,41 +544,37 @@ header {
 }
 
 .volButton:hover {
-  color: #54269E;
-  border: 2px solid #54269E;
+  color: #54269e;
+  border: 2px solid #54269e;
   background-color: white;
 }
 
 .partButton {
-  border: 2px solid #54269E;
+  border: 2px solid #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.1em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  color: #5b5a7a;
   transition: all 0.5s ease-in-out;
 }
 
 .partButton:hover {
   color: white;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 @media (min-width: 1101px) and (max-width: 2500px) {
   .whoWe {
-    -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
     width: 45vw;
     margin-bottom: 20px;
   }
   .weDo {
     width: 45vw;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
   .goals {
     margin: auto;
@@ -386,7 +589,7 @@ header {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -395,7 +598,7 @@ header {
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
     margin-bottom: 10px;
     margin-left: 5px;
   }
@@ -403,33 +606,26 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 70vw;
     margin: auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .ourGoal {
     width: 25vw;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
   .whoWe {
-    -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
     width: 45vw;
     margin-bottom: 20px;
   }
   .weDo {
     width: 45vw;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
   .goals {
     margin: auto;
@@ -444,7 +640,7 @@ header {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -453,7 +649,7 @@ header {
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
     margin-bottom: 10px;
     margin-left: 5px;
   }
@@ -461,33 +657,26 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 70vw;
     margin: auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .ourGoal {
     width: 25vw;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 700px) {
   .whoWe {
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     width: 80vw;
     margin-bottom: 60px;
   }
   .weDo {
     width: 80vw;
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
   .goals {
     width: 80vw;
@@ -503,7 +692,7 @@ header {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -512,7 +701,7 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
     margin-bottom: 10px;
     margin-left: 5px;
   }
@@ -520,20 +709,15 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 70vw;
     margin: auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .ourGoal {
     width: 80vw;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     margin: auto;
   }
 }
@@ -556,41 +740,29 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .whoTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .weDoTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .whoLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-bottom: 5px;
 }
 
@@ -628,17 +800,17 @@ footer {
 
 .footer__contacts {
   grid-area: contacts;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .footer__documents {
   grid-area: documents;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .footer__team {
   grid-area: team;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .footer__header {
@@ -648,7 +820,7 @@ footer {
   font-size: 0.875em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
   padding-bottom: 16px;
   padding-top: 40px;
 }
@@ -660,7 +832,7 @@ footer {
   font-size: 1.25em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
 }
 
 .footer__text {
@@ -670,7 +842,7 @@ footer {
   font-size: 1.125em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
 }
 
 .footer__liks {
@@ -680,7 +852,7 @@ footer {
   font-size: 1.125em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
   text-decoration: none;
 }
 
@@ -714,16 +886,13 @@ footer {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .projectSlider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top: 30px;
     justify-items: left;
   }
@@ -748,7 +917,7 @@ footer {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -769,7 +938,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -787,16 +956,13 @@ footer {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .projectSlider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top: 30px;
     justify-items: left;
   }
@@ -821,7 +987,7 @@ footer {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -842,7 +1008,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -860,17 +1026,14 @@ footer {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .projectSlider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 30px;
     justify-items: left;
   }
@@ -896,7 +1059,7 @@ footer {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 3vw solid #6C68AF;
+    outline: 3vw solid #6c68af;
     outline-offset: -2.99vw;
     border-radius: 6vw;
   }
@@ -917,7 +1080,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 3vw solid #6C68AF;
+    outline: 3vw solid #6c68af;
     outline-offset: -2.99vw;
     border-radius: 6vw;
   }
@@ -935,7 +1098,7 @@ footer {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .team {
@@ -994,7 +1157,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -1006,7 +1169,7 @@ footer {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .team {
@@ -1065,7 +1228,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1077,7 +1240,7 @@ footer {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .team {
@@ -1131,7 +1294,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
 }
 .personal {
@@ -1173,7 +1336,7 @@ footer {
   font-size: 32px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #54269E;
+  color: #54269e;
 }
 
 .personal__text {
@@ -1185,7 +1348,7 @@ footer {
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
+  color: #5b5a7a;
   margin-top: 0%;
 }
 
@@ -1231,7 +1394,93 @@ footer {
   font-size: 42px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #54269E;
+  color: #54269e;
+}
+
+.personal__inf {
+  grid-area: personal__inf;
+  padding-top: 100px;
+}
+
+.personal__img {
+  grid-area: personal__img;
+  width: 100%;
+}
+
+.personal__article {
+  grid-area: personal__article;
+}
+
+.personal__header {
+  grid-area: personal__header;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  margin-bottom: 0px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269e;
+}
+
+.personal__text {
+  grid-area: personal__text;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5b5a7a;
+  margin-top: 0%;
+}
+
+.personal__link {
+  grid-area: personal__link;
+  padding-left: 20px;
+}
+
+.personal-left {
+  grid-template-areas: " personal__article personal__img" " personal__link  personal__img";
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: auto auto;
+  padding-left: 22%;
+  padding-right: 15%;
+}
+
+.personal-heart {
+  width: 70%;
+  grid-template-areas: " personal__caption personal__img" " personal__text  personal__img";
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: auto auto;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.personal-personal-page {
+  width: 70%;
+  grid-template-areas: " personal__link personal__img" " personal__caption personal__img" " personal__text  personal__img" " personal__inf  personal__inf";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.personal__caption {
+  grid-area: personal__caption;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  margin-bottom: 0px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #54269e;
 }
 
 .personal__inf {
@@ -1301,53 +1550,261 @@ footer {
     padding-top: 50px;
   }
   .personal__img {
-    padding-bottom: 20PX;
+    padding-bottom: 20px;
   }
   .personal__inf-img {
     width: 100%;
     height: auto;
   }
   .personal__text {
-    padding-left: 0PX;
+    padding-left: 0px;
   }
 }
 .personalButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  padding-bottom: 100px;
+  flex-direction: column;
+  max-width: 70vw;
+  padding: 100px 15% 100px;
+  margin: 0px auto;
 }
-
-.personalButton__caption {
+.crew__body {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px -20px;
+}
+.crew__title {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
-  padding-top: 100px;
-  padding-bottom: 20px;
-  margin: 0;
+  color: #9747ff;
+  letter-spacing: -0.005em;
 }
-
-.personalButton__text {
+.crew__item {
+  flex: 0 1 25%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.crew__item-image img {
+  width: 100%;
+}
+.crew__item-title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.38;
+  letter-spacing: 0.005em;
+  color: #54269e;
+}
+.crew__item-text {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
-  padding-bottom: 55px;
-  margin: 0;
+  color: #5b5a7a;
 }
 
+.change {
+  max-width: 70vw;
+  padding: 50px 15% 50px;
+  margin: 0px auto;
+}
+.change__video {
+  position: relative;
+  flex: 0 1 90%;
+  position: relative;
+  padding: 0px 0px 53% 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 53% 0px;
+}
+.change__video-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.partners__container {
+  max-width: 70vw;
+  padding: 50px 15% 50px;
+  margin: 0px auto;
+}
+.partners__title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+  letter-spacing: 0.005em;
+  color: #9747ff;
+  letter-spacing: -0.005em;
+  padding: 20px 0px 30px;
+}
+.partners__body {
+  display: flex;
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-bottom: 40px;
+}
+.partners__item {
+  padding: 0px 5px;
+  height: 100%;
+}
+.partners__item-image img {
+  width: 100%;
+}
+.partners__item-title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: #5b5a7a;
+  letter-spacing: -0.005em;
+  padding-top: 5px;
+}
+
+.projects__projectsH3_2 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+  letter-spacing: 0.005em;
+  color: #9747ff;
+}
+
+@media (max-width: 950px) {
+  .crew__container {
+    padding: 50px 15% 50px;
+  }
+  .crew__item-title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.38;
+    letter-spacing: 0.005em;
+    color: #54269e;
+  }
+  .crew__item-text {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+  }
+  .crew__body {
+    margin: 0px -10px;
+  }
+  .crew__item {
+    padding: 10px;
+  }
+  .partners__container {
+    padding: 50px 15% 50px;
+  }
+  .partners__body {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .partners__item-17 {
+    grid-column-start: 2;
+  }
+  .partners__item-18 {
+    grid-column-start: 3;
+  }
+}
+@media (max-width: 700px) {
+  .crew__container {
+    padding: 20px 15% 20px;
+  }
+  .crew__body {
+    flex-wrap: wrap;
+  }
+  .crew__item {
+    flex: 0 1 45%;
+    padding: 10px;
+  }
+  .crew__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747ff;
+    justify-content: center;
+  }
+  .crew__item-text {
+    text-align: center;
+  }
+  .crew__item-title {
+    text-align: center;
+  }
+  .partners__container {
+    padding: 20px 15% 20px;
+  }
+  .partners__body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .partners__item-17 {
+    grid-column-start: auto;
+  }
+  .partners__item-18 {
+    grid-column-start: auto;
+  }
+  .partners__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747ff;
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .crew__item {
+    padding: 5px;
+  }
+}
+@media (max-width: 470px) {
+  .partners__body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .change {
+    padding: 20px 15% 20px;
+  }
+}
+@media (max-width: 400px) {
+  .crew__item {
+    flex: 0 1 70%;
+    padding: 10px;
+  }
+}
 .formVol {
   position: fixed;
   width: 100%;
@@ -1379,9 +1836,7 @@ footer {
 }
 
 .formVol:target .formVol__content {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   opacity: 1;
 }
 
@@ -1401,7 +1856,7 @@ footer {
   font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6A68B0;
+  color: #6a68b0;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -1410,15 +1865,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
 
 .formVolButton:hover {
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 .formVolButton:active {
@@ -1436,12 +1888,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     padding: 30px 10px;
   }
   .formVol__content {
@@ -1456,12 +1904,10 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1486,12 +1932,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     padding: 30px 10px;
   }
   .formVol__content {
@@ -1506,12 +1948,10 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1536,12 +1976,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .formVol__content {
     background-color: white;
@@ -1554,12 +1990,10 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1584,12 +2018,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .formVol__content {
     background-color: white;
@@ -1602,12 +2032,10 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1656,9 +2084,7 @@ footer {
 }
 
 .formPar:target .formPar__content {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   opacity: 1;
 }
 
@@ -1678,7 +2104,7 @@ footer {
   font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6A68B0;
+  color: #6a68b0;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -1687,23 +2113,20 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
 
 .inputForm::-webkit-input-placeholder {
-  color: #7D66A3;
+  color: #7d66a3;
 }
 
 .inputForm::-moz-placeholder {
-  color: #7D66A3;
+  color: #7d66a3;
 }
 
 .formParButton:hover {
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 .formParButton:active {
@@ -1731,10 +2154,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1757,12 +2180,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     padding: 30px 10px;
   }
   .formPar__content {
@@ -1777,13 +2196,11 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -1794,7 +2211,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -1808,10 +2225,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1834,12 +2251,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     padding: 30px 10px;
   }
   .formPar__content {
@@ -1854,13 +2267,11 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -1871,7 +2282,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 @media (min-width: 415px) and (max-width: 700px) {
@@ -1885,10 +2296,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1911,12 +2322,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .formPar__content {
     background-color: white;
@@ -1929,13 +2336,11 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -1946,7 +2351,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 @media screen and (max-width: 414px) {
@@ -1960,10 +2365,10 @@ footer {
     font-size: 0.8em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1986,12 +2391,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     z-index: 100;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .formPar__content {
     background-color: white;
@@ -2004,13 +2405,11 @@ footer {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
-    -webkit-transform: translate(0px, -100%);
-        -ms-transform: translate(0px, -100%);
-            transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
   }
   .inputForm {
     width: 92%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2021,7 +2420,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 body {
@@ -2051,19 +2450,19 @@ body {
   /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
   line-height: 1;
   /*Задаём высоту строки (можно в пикселях)*/
-  color: #9747FF;
+  color: #9747ff;
   /*Задаём цвет ссылки*/
 }
 
 .link-comand {
-  color: #5B5A7A;
+  color: #5b5a7a;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
+  color: #5b5a7a;
 }
 
 .link a:after {
@@ -2075,7 +2474,7 @@ body {
   /*задаём высоту линии*/
   width: 0%;
   /*задаём начальную ширину элемента (линии)*/
-  background-color: #9747FF;
+  background-color: #9747ff;
   /*цвет фона элемента*/
   -webkit-transition: width 0.4s ease-in-out;
   -o-transition: width 0.4s ease-in-out;
@@ -2089,7 +2488,7 @@ body {
 }
 
 .link a:hover {
-  color: #9747FF;
+  color: #9747ff;
 }
 
 /* попытаюсь анимировать кнопки*/
@@ -2102,7 +2501,7 @@ body {
 
 .vol_Button {
   border: none;
-  background-color: #54269E;
+  background-color: #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2113,7 +2512,7 @@ body {
 }
 
 .part_Button {
-  border: 2px solid #54269E;
+  border: 2px solid #54269e;
   margin-left: 15px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
@@ -2121,5 +2520,5 @@ body {
   font-size: 1.1em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
-}
+  color: #5b5a7a;
+} /*# sourceMappingURL=app.css.map */
