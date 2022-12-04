@@ -1,12 +1,12 @@
 @media (min-width: 1101px) and (max-width: 2500px) {
     .whoWe {
         align-self: start;
-        width: 70vw;
+        width: 45vw;
         margin-bottom: 20px;
     }
 
     .weDo {
-        width: 70vw;
+        width: 45vw;
         align-self: flex-end;
     }
 
@@ -46,12 +46,12 @@
 @media (min-width: 700px) and (max-width: 1100px) {
     .whoWe {
         align-self: start;
-        width: 70vw;
+        width: 45vw;
         margin-bottom: 20px;
     }
 
     .weDo {
-        width: 70vw;
+        width: 45vw;
         align-self: flex-end;
     }
 
@@ -63,7 +63,7 @@
         text-align: center;
         margin-left: 15vw;
         width: 70vw;
-        @include font-style-Nunito(700, 36px, 1.2, $text-caption_color);
+        @include font-style-Nunito(700, 1.7em, 1.2, $text-caption_color);
     }
 
     .whoSubtitle {
@@ -106,7 +106,7 @@
 
     .goalsH3 {
         text-align: center;
-        width: 70vw;
+        width: 80vw;
         margin: auto auto 30px auto;
         @include font-style-Nunito(700, 1.5em, 1.2, $text-caption_color);
     }
@@ -127,7 +127,7 @@
 
     .ourGoal {
         // width: 400px;
-        width: 70vw;
+        width: 80vw;
         object-fit: contain;
         margin: auto;
     }

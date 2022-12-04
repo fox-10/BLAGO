@@ -78,7 +78,7 @@ header {
   margin-right: 10px;
 }
 
-@media (min-width: 1101px) and (max-width: 2500px) {
+@media (min-width: 1301px) and (max-width: 2500px) {
   .firstColumn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -92,9 +92,10 @@ header {
             justify-content: center;
     margin-right: 30px;
     grid-area: firstColumn;
+    width: 40vw;
   }
   .fundHeartImg {
-    width: 37vw;
+    width: 30vw;
   }
   .fund {
     display: -webkit-box;
@@ -116,7 +117,7 @@ header {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 3em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #6A68B0;
@@ -127,8 +128,26 @@ header {
     width: 220px;
     border-radius: 20px;
   }
+  .fundSubtitle {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5B5A7A;
+  }
 }
-@media (min-width: 700px) and (max-width: 1100px) {
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .fundTitle {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #6A68B0;
+  }
   .firstColumn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -142,6 +161,67 @@ header {
             justify-content: center;
     margin-right: 30px;
     grid-area: firstColumn;
+    width: 40vw;
+  }
+  .fundHeartImg {
+    width: 30vw;
+  }
+  .fund {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70vw;
+    margin: auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .volButton,
+.partButton {
+    height: 50px;
+    width: 220px;
+    border-radius: 20px;
+  }
+  .fundSubtitle {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5B5A7A;
+  }
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .fundSubtitle {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5B5A7A;
+  }
+  .firstColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 30px;
+    grid-area: firstColumn;
+    width: 40vw;
   }
   .fundHeartImg {
     width: 30vw;
@@ -166,7 +246,7 @@ header {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #6A68B0;
@@ -194,16 +274,16 @@ header {
     margin: auto;
   }
   .fundHeartImg {
-    width: 60vw;
+    width: 80vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: auto;
+    margin: 30px auto 20px auto;
   }
   .fund {
     display: grid;
     width: 100%;
-    width: 70vw;
+    width: 80vw;
     margin: auto;
     grid-template-areas: "secondColumn" "firstColumn";
   }
@@ -211,7 +291,7 @@ header {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #6A68B0;
@@ -285,11 +365,11 @@ header {
   .whoWe {
     -ms-flex-item-align: start;
         align-self: start;
-    width: 70vw;
+    width: 45vw;
     margin-bottom: 20px;
   }
   .weDo {
-    width: 70vw;
+    width: 45vw;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -343,11 +423,11 @@ header {
   .whoWe {
     -ms-flex-item-align: start;
         align-self: start;
-    width: 70vw;
+    width: 45vw;
     margin-bottom: 20px;
   }
   .weDo {
-    width: 70vw;
+    width: 45vw;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -361,7 +441,7 @@ header {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #9747FF;
@@ -415,7 +495,7 @@ header {
   }
   .goalsH3 {
     text-align: center;
-    width: 70vw;
+    width: 80vw;
     margin: auto auto 30px auto;
     font-family: "Nunito", sans-serif;
     font-style: normal;
@@ -451,7 +531,7 @@ header {
             justify-content: space-between;
   }
   .ourGoal {
-    width: 70vw;
+    width: 80vw;
     -o-object-fit: contain;
        object-fit: contain;
     margin: auto;
@@ -704,7 +784,7 @@ footer {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #9747FF;
@@ -862,7 +942,7 @@ footer {
     display: grid;
     width: 64%;
     grid-template-areas: "header header " "opred1 opred1" "img  opred2" "img  opred3" "img button";
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 40% 1fr;
     grid-template-rows: auto auto auto auto auto;
     gap: 0rem;
     background-color: #e8e4ef;
@@ -923,7 +1003,7 @@ footer {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #9747FF;
@@ -1394,6 +1474,190 @@ footer {
   width: 40px;
 }
 
+@media (min-width: 1101px) and (max-width: 2500px) {
+  .formVol__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 10px;
+  }
+  .formVol__content {
+    background-color: white;
+    max-width: 80vw;
+    min-width: 55vw;
+    padding: 3em 6em;
+    border-radius: 2em;
+    margin: 0 0 1em 0;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .formVolButton {
+    background-color: #54269E;
+    width: 20em;
+    height: 3em;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .formVol__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 10px;
+  }
+  .formVol__content {
+    background-color: white;
+    max-width: 80vw;
+    min-width: 55vw;
+    padding: 3em 5vw;
+    border-radius: 2em;
+    margin: 0 0 1em 0;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .formVolButton {
+    background-color: #54269E;
+    width: 20em;
+    height: 3em;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+}
+@media (min-width: 415px) and (max-width: 700px) {
+  .formVol__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formVol__content {
+    background-color: white;
+    width: 90vw;
+    padding: 3em 5vw;
+    border-radius: 2em;
+    margin: 20px;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .formVolButton {
+    background-color: #54269E;
+    width: 60vw;
+    height: 15vw;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+}
+@media screen and (max-width: 414px) {
+  .formVol__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formVol__content {
+    background-color: white;
+    width: 90vw;
+    padding: 3em 5vw;
+    border-radius: 2em;
+    margin: 20px;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .formVolButton {
+    background-color: #54269E;
+    width: 60vw;
+    height: 15vw;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+}
 .formPar {
   position: fixed;
   width: 100%;
@@ -1495,22 +1759,6 @@ footer {
   gap: 15px;
 }
 
-.inputForm {
-  width: 95%;
-  border: 2px solid #54269E;
-  border-radius: 1em;
-  height: 3em;
-  padding-top: 1.5em;
-  padding-left: 20px;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #7D66A3;
-}
-
 .inputForm::-webkit-input-placeholder {
   color: #7D66A3;
 }
@@ -1519,6 +1767,8 @@ footer {
   color: #7D66A3;
 }
 
+<<<<<<< HEAD
+=======
 .formParButton {
   background-color: #54269E;
   width: 20em;
@@ -1538,6 +1788,7 @@ footer {
   transition: all 0.4s ease 0s;
 }
 
+>>>>>>> 6ef4c9b7ee4b4505e87e5ea8a883e282adbf0237
 .formParButton:hover {
   background-color: #9747FF;
 }
@@ -1550,23 +1801,304 @@ footer {
   width: 40px;
 }
 
-.inputPlaceholder1 {
-  position: absolute;
-  top: -0.2em;
-  padding-left: 20px;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.005em;
-  color: #54269E;
-}
-
 .inputDiv {
   position: relative;
+  width: 100%;
+  margin: auto;
 }
 
+@media (min-width: 1101px) and (max-width: 2500px) {
+  .inputPlaceholder1 {
+    position: absolute;
+    top: -0.2em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #54269E;
+  }
+  .formParButton {
+    background-color: #54269E;
+    width: 20em;
+    height: 3em;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  .formPar__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 10px;
+  }
+  .formPar__content {
+    background-color: white;
+    max-width: 80vw;
+    min-width: 55vw;
+    padding: 3em 6em;
+    border-radius: 2em;
+    margin: 0 0 1em 0;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .inputForm {
+    width: 95%;
+    border: 2px solid #54269E;
+    border-radius: 1em;
+    height: 3em;
+    padding-top: 1.5em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #7D66A3;
+  }
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .inputPlaceholder1 {
+    position: absolute;
+    top: -0.2em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #54269E;
+  }
+  .formParButton {
+    background-color: #54269E;
+    width: 20em;
+    height: 3em;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  .formPar__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 10px;
+  }
+  .formPar__content {
+    background-color: white;
+    max-width: 80vw;
+    min-width: 55vw;
+    padding: 3em 5vw;
+    border-radius: 2em;
+    margin: 0 0 1em 0;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .inputForm {
+    width: 95%;
+    border: 2px solid #54269E;
+    border-radius: 1em;
+    height: 3em;
+    padding-top: 1.5em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #7D66A3;
+  }
+}
+@media (min-width: 415px) and (max-width: 700px) {
+  .inputPlaceholder1 {
+    position: absolute;
+    top: -0.2em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #54269E;
+  }
+  .formParButton {
+    background-color: #54269E;
+    width: 60vw;
+    height: 15vw;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  .formPar__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formPar__content {
+    background-color: white;
+    width: 90vw;
+    padding: 3em 5vw;
+    border-radius: 2em;
+    margin: 20px;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .inputForm {
+    width: 95%;
+    border: 2px solid #54269E;
+    border-radius: 1em;
+    height: 3em;
+    padding-top: 1.5em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #7D66A3;
+  }
+}
+@media screen and (max-width: 414px) {
+  .inputPlaceholder1 {
+    position: absolute;
+    top: -0.2em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #54269E;
+  }
+  .formParButton {
+    background-color: #54269E;
+    width: 60vw;
+    height: 15vw;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  .formPar__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formPar__content {
+    background-color: white;
+    width: 90vw;
+    padding: 3em 5vw;
+    border-radius: 2em;
+    margin: 20px;
+    position: relative;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    -webkit-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+  }
+  .inputForm {
+    width: 92%;
+    border: 2px solid #54269E;
+    border-radius: 1em;
+    height: 3em;
+    padding-top: 1.5em;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #7D66A3;
+  }
+}
 body {
   background-color: #e8e4ef;
 }
