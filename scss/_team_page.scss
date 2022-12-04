@@ -166,10 +166,19 @@
 .personalButton{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+   text-align: center;
+   padding-bottom: 100px;
 }
 .personalButton__caption{
-    align-self: center;
-}   
+    @include font-style-Nunito(700,36px,1.2,#9747FF);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin:0;
+}
+.personalButton__text{
+    @include font-style-Nunito(400,18px,1.2,#5B5A7A);
+    padding-bottom: 55px;
+    margin:0;
+}
     
     
