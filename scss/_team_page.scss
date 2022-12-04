@@ -11,6 +11,11 @@
      margin-top: 34px;
      margin-bottom: 34px;
       }
+.personal-slaider{
+    grid-template-areas: " personal__img personal__text";
+     grid-template-columns: 30% 1fr ;
+     grid-template-rows: auto ;
+}
     
     
       .personal__img{
