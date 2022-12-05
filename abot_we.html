@@ -1,150 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/app.css">
-    <link rel="stylesheet" href="scss/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/app.css" />
+    <link rel="stylesheet" href="scss/normalize.css" />
     <title>благотварю</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-
-<body>
+  <body>
     <div class="bg-color">
-        <div class="root">
-            <header class="header">
-                <div class="header__container container">
-                    <div class="header__body">
-                        <div class="header__logo">
-                            <a href="index.html" class="header__logo-image">
-                                <img src="./assets/images/logotype2.png" alt="" />
-                            </a>
-                        </div>
-                        <div class="header__burger">
-                            <span></span>
-                        </div>
-                        <nav class="header__menu">
-                            <ul class="header__list">
-                                <li class="header__item">
-                                    <a href="abot_we.html" class="header__link">О&nbspнас</a>
-                                </li>
-                                <li class="header__item ">
-                                    <a href="team.html" class="header__link">Команда</a>
-                                </li>
+      <div class="root">
+        <header class="header">
+          <div class="header__container container">
+            <div class="header__body">
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-image">
+                  <img src="./assets/images/logotype2.png" alt="" />
+                </a>
+              </div>
+              <div class="header__burger">
+                <span></span>
+              </div>
+              <nav class="header__menu">
+                <ul class="header__list">
+                  <li class="header__item">
+                    <a href="abot_we.html" class="header__link">О&nbspнас</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="team.html" class="header__link">Команда</a>
+                  </li>
 
-                                <li class="header__item">
-                                    <a href="proects.html" class="header__link">Проекты</a>
-                                </li>
-                                <li class="header__item">
-                                    <a href="#contacts" class="header__link">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="fundButtonsHeader">
-                            <div class="fundButtons_h ">
-                                <a href="#formVol"><button class=" volButton_h">Стать волонтером</button></a>
+                  <li class="header__item">
+                    <a href="proects.html" class="header__link">Проекты</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#contacts" class="header__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="fundButtonsHeader">
+                <div class="fundButtons_h">
+                  <a href="#formVol"
+                    ><button class="volButton_h">Стать волонтером</button></a
+                  >
 
-                                <a href="#formPar"><button class=" partButton_h">Стать партнером</button></a>
-                            </div>
-                        </div>
+                  <a href="#formPar"
+                    ><button class="partButton_h">Стать партнером</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main>
+          <div class="personal personal-heart">
+            <img
+              src="assets/images/team_page/heart.svg"
+              alt="лого"
+              class="personal__img"
+            />
 
+            <p class="personal__caption">О нас</p>
+            <p class="personal__text">
+              Благотворительный фонд помощи людям, оказавшимся в трудной
+              жизненной ситуации, детским домам, людям с ограниченными
+              возможностями, детям сиротам, людям без определенного места
+              жительства.
+            </p>
+          </div>
+
+          <div class="personal personal-slaider">
+            <div class="personal__img">
+              <img
+                src="assets/images/abot_we/development1.png"
+                alt="фото"
+                class="personal__img"
+              />
+            </div>
+            <div class="personal__text">
+              <p>
+                Деятельность фонда «БлагоТворю» направлена на помощь
+                детям-сиротам, на популяризацию донорства и культуры взятия
+                животных из приютов, в общем, на разного рода благие дела.
+                И мы верим в то, что с нашей помощью сотни и тысячи людей начнут
+                заниматься благотворительностью!».
+              </p>
+              <p>
+                Создателями проекта являются честные молодые девушки,
+                не имеющими отношения к крупным корпоративным структурам.
+                Финансирование проекта планируется из трёх источников:
+                пожертвования сторонников, пожертвования со стороны бизнеса,
+                государственное финансирование.
+              </p>
+              <p>
+                Мы просто стараемся воплотить в жизнь то, во что верим. А верим
+                мы в то, что каждый ребенок на свете имеет неотъемлемое право на
+                любовь и поддержку взрослых, каждое животное заслуживает счастья
+                и дома, а всем людям обязательно стоит хотя бы несколько раз в
+                год делать добрые дела!
+              </p>
+            </div>
+          </div>
+          <div class="purpose">
+            <div class="purpose__container">
+              <h2 class="purpose__title">Цели</h2>
+              <div class="purpose__body">
+                <div class="purpose__item">
+                  <div class="purpose__item-image">
+                    <img src="./assets/images/purpose/goals1.png" alt="" />
+                  </div>
+                  <div class="purpose__item-title">
+                    Привлечение общественного внимания к социально значимым
+                    вопросам
+                  </div>
+                </div>
+                <div class="purpose__item">
+                  <div class="purpose__item-image">
+                    <img src="./assets/images/purpose/goals2.png" alt="" />
+                  </div>
+                  <div class="purpose__item-title">
+                    Участие в воспитании молодёжи
+                  </div>
+                </div>
+                <div class="purpose__item">
+                  <div class="purpose__item-image">
+                    <img src="./assets/images/purpose/goals3.png" alt="" />
+                  </div>
+                  <div class="purpose__item-title">
+                    Выявление талантливых и выдающихся детей
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-our-activity">
+            Деятельность фонда «БлагоТворю» направлена на помощь детям-сиротам,
+            на популяризацию донорства и культуры взятия животных из приютов,
+            в общем, на разного рода благие дела. И мы верим в то, что с нашей
+            помощью сотни и тысячи людей начнут заниматься
+            благотворительностью!».
+          </div>
+          <div class="principles">
+            <div class="principles__container">
+              <h2 class="principles__title">
+                Базовые принципы деятельности фонда, ценности, которые фонд
+                поддерживает и отстаивает:
+              </h2>
+              <div class="principles__body">
+                <div class="principles__item">
+                  <div class="principles__text">
+                    <span>ПОМОГАЕМ</span> благотворителям и волонтерам
+                    реализовать их потребность в помощи нуждающимся
+                  </div>
+                </div>
+                <div class="principles__item">
+                  <div class="principles__text">
+                    <span>ПОМОГАЕМ</span> компаниям внедрять их социальные
+                    инициативы. Бескомпромиссная вера в потенциал каждого
+                    ребенка.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plans">
+            <div class="plans__container">
+              <h2 class="plans__title">Планы:</h2>
+              <div class="plans__body">
+                <div class="plans__info">
+                  <div class="plans__item">
+                    <div class="plans__text">
+                      Ежемесячно пополнять нужды наших домов ребенка средствами
+                      гигиены, моющими средствами, подгузниками и другими
+                      вещами, без которых сложно сохранять здоровье малышей,
+                      новыми игрушками, материалами для творчества, развивающими
+                      играми и т. д.
                     </div>
-                </div>
-
-            </header>
-
-
-            <main>
-                <div class="personal personal-heart">
-                    <img src="assets/images/team_page/heart.svg" alt="лого" class="personal__img">
-
-                    <p class="personal__caption"> О нас</p>
-                    <p class="personal__text">Благотворительный фонд помощи людям, оказавшимся в трудной
-                        жизненной ситуации, детским домам, людям с ограниченными
-                        возможностями, детям сиротам, людям без определенного места
-                        жительства.
-
-                </div>
-
-                <div class="personal personal-slaider">
-                    <div class="personal__img">
-                        <img src="assets/images/abot_we/development1.png" alt="фото" class="personal__img ">
+                  </div>
+                  <div class="plans__item">
+                    <div class="plans__text">
+                      Раз в два месяца организуем для детей-сирот и детей
+                      с ограниченными возможностями здоровья праздничные
+                      концерты с участием артистов фонда и приглашенных
+                      помощников, непременно одаривая каждого ребенка
+                      индивидуальным подарком. Каждый раз выбираем актуальный
+                      повод и знакомим наших детей с радостью жизни.
                     </div>
-                    <div class="personal__text">
-                        <p>Деятельность фонда «БлагоТворю» направлена на помощь детям-сиротам, на популяризацию
-                            донорства и культуры взятия животных из приютов, в общем, на разного рода благие дела.
-                            И мы верим в то, что с нашей помощью сотни и тысячи людей начнут заниматься
-                            благотворительностью!».</p>
-                        <p>Создателями проекта являются честные молодые девушки, не имеющими отношения к крупным
-                            корпоративным структурам. Финансирование проекта планируется из трёх источников:
-                            пожертвования сторонников, пожертвования со стороны бизнеса, государственное финансирование.
-                        </p>
-                        <p>Мы просто стараемся воплотить в жизнь то, во что верим. А верим мы в то, что каждый ребенок
-                            на свете имеет неотъемлемое право на любовь и поддержку
-                            взрослых, каждое животное заслуживает счастья и дома, а всем людям
-                            обязательно стоит хотя бы несколько раз в год делать добрые дела!</p>
+                  </div>
+                  <div class="plans__item">
+                    <div class="plans__text">
+                      Фонд в поиске сотрудничества с другими организациями и
+                      учреждениями, рассматривая различные способы сделать жизнь
+                      детей светлее и лучше. Дети не должны страдать из-за
+                      равнодушия взрослых!
                     </div>
-
+                  </div>
+                  <div class="plans__item">
+                    <div class="plans__text">
+                      И конечно, мы всегда будем отчитываемся перед своими
+                      партнерами не только списком необходимых документов, но и
+                      видеоотчетами, рассказывающими о наших благотворительных
+                      поездках.
+                    </div>
+                  </div>
                 </div>
-
-
-
-            </main>
-
-            <footer>
-                <img src="assets/images/footer/icon.png" alt="иконка" class="footer__blagodaru">
-                <p class="footer__header">БЛАГОТВОРИТЕЛЬНЫЙ ФОНД ОРГАНИЗАЦИИ ПАТРИОТКИ РОССИИ</p>
-                <div class="social-network">
-                    <a href="#" class="social-network__link">
-                        <img src="assets/images/footer/VK.svg" alt="" class="social-network__icon">
-                    </a>
-                    <a href="#" class="social-network__link">
-                        <img src="assets/images/footer/youtube.svg" alt="" class="social-network__icon">
-                    </a>
+                <div class="plans__images">
+                  <div class="plans__image1">
+                    <img src="./assets/images/purpose/Heard1.png" alt="" />
+                  </div>
+                  <div class="plans__image2">
+                    <img src="./assets/images/purpose/Heard2.png" alt="" />
+                  </div>
                 </div>
-                <div class="footer__contacts">
-                    <p class="footer__subtitle">Контакты</p>
-                    <p class="footer__text">blagotvoryu_fond@mail.ru</p>
-                    <p class="footer__text">+7 (916) 154-10-37</p>
-                </div>
-                <div class="footer__documents">
-                    <p class="footer__subtitle">Ссылки</p>
-                    <a href="#" class="footer__liks">
-                        <p>Договор пожертвования</p>
-                    </a>
-                    <a href="#" class="footer__liks">
-                        <p>О персональных данных</p>
-                    </a>
-                    <a href="#" class="footer__liks">
-                        <p>Политика конфиденциальности</p>
-                    </a>
-                </div>
-                <div class="footer__team">
-                    <a href="./team.html" style="text-decoration: none;">
-                        <p class="footer__subtitle">Команда</p>
-                    </a>
+              </div>
+            </div>
+          </div>
+        </main>
 
-                </div>
-
-            </footer>
-
-        </div>
+        <footer>
+          <img
+            src="assets/images/footer/icon.png"
+            alt="иконка"
+            class="footer__blagodaru"
+          />
+          <p class="footer__header">
+            БЛАГОТВОРИТЕЛЬНЫЙ ФОНД ОРГАНИЗАЦИИ ПАТРИОТКИ РОССИИ
+          </p>
+          <div class="social-network">
+            <a href="#" class="social-network__link">
+              <img
+                src="assets/images/footer/VK.svg"
+                alt=""
+                class="social-network__icon"
+              />
+            </a>
+            <a href="#" class="social-network__link">
+              <img
+                src="assets/images/footer/youtube.svg"
+                alt=""
+                class="social-network__icon"
+              />
+            </a>
+          </div>
+          <div class="footer__contacts">
+            <p class="footer__subtitle">Контакты</p>
+            <p class="footer__text">blagotvoryu_fond@mail.ru</p>
+            <p class="footer__text">+7 (916) 154-10-37</p>
+          </div>
+          <div class="footer__documents">
+            <p class="footer__subtitle">Ссылки</p>
+            <a href="#" class="footer__liks">
+              <p>Договор пожертвования</p>
+            </a>
+            <a href="#" class="footer__liks">
+              <p>О персональных данных</p>
+            </a>
+            <a href="#" class="footer__liks">
+              <p>Политика конфиденциальности</p>
+            </a>
+          </div>
+          <div class="footer__team">
+            <a href="./team.html" style="text-decoration: none">
+              <p class="footer__subtitle">Команда</p>
+            </a>
+          </div>
+        </footer>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/index.js"></script>
 </html>
