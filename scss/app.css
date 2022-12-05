@@ -2898,13 +2898,14 @@ footer {
   letter-spacing: 0.005em;
   color: rgb(84, 38, 158);
   text-align: center;
+  padding-top: 40px;
 }
 
 .about-our-activity {
   display: flex;
   flex-direction: column;
   max-width: 70vw;
-  padding: 50px 15px 50px;
+  padding: 10px 15px 10px;
   margin: 0px auto;
   font-family: "Nunito", sans-serif;
   font-style: normal;
@@ -2963,11 +2964,6 @@ footer {
   color: #5b5a7a;
 }
 .principles__text span {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 120%;
-  letter-spacing: -0.005em;
-  color: rgb(84, 38, 158);
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -3010,7 +3006,7 @@ footer {
   width: 25px;
   height: 27px;
   position: absolute;
-  top: 3px;
+  top: 10px;
   left: 0;
 }
 .plans__item {
@@ -3018,7 +3014,7 @@ footer {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-left: 40px;
+  padding: 0px 5px 20px 40px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -3031,7 +3027,250 @@ footer {
   flex: 0 1 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
+}
+.plans__image1 {
+  max-width: 400px;
+}
+.plans__image1 img {
+  width: 100%;
+}
+.plans__image2 {
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+.plans__image2 img {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .plans__images {
+    flex: 0 1 50%;
+  }
+  .plans__info {
+    flex: 0 1 50%;
+  }
+  .plans__image1, .plans__image2 {
+    max-width: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  .purpose__item-title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: rgb(84, 38, 158);
+  }
+  .about-our-activity {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+  }
+  .plans__images {
+    flex: 0 1 50%;
+  }
+  .plans__info {
+    flex: 0 1 50%;
+  }
+  .plans__image1, .plans__image2 {
+    max-width: 250px;
+  }
+  .plans__item {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+  }
+  .principles__text {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+  }
+  .principles__text span {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: rgb(84, 38, 158);
+  }
+}
+@media (max-width: 1100px) {
+  .purpose__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.2px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747FF;
+  }
+  .principles__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.2px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747FF;
+  }
+  .principles__item::before {
+    content: "";
+    background: url(../assets/images/purpose/Group20.png);
+    width: 20px;
+    height: 22px;
+  }
+  .principles__text {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+  }
+  .plans__body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .plans__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.2px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747FF;
+  }
+  .plans__item::before {
+    content: "";
+    background: url(../assets/images/purpose/Group20.png);
+    width: 20px;
+    height: 22px;
+  }
+  .plans__images {
+    align-items: center;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 950px) {
+  .purpose__item {
+    padding: 10px;
+  }
+  .purpose__item-title {
+    padding-top: 15px;
+  }
+  .principles__text span {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: rgb(84, 38, 158);
+  }
+}
+@media (max-width: 766px) {
+  .plans__images {
+    margin-left: 90px;
+  }
+  .plans__image1, .plans__image2 {
+    max-width: 220px;
+  }
+  .plans__item::before {
+    content: "";
+    background: url(../assets/images/purpose/Group16.png);
+    width: 16px;
+    height: 17px;
+    top: 6px;
+  }
+  .principles__item::before {
+    content: "";
+    background: url(../assets/images/purpose/Group16.png);
+    width: 16px;
+    height: 17px;
+  }
+}
+@media (max-width: 620px) {
+  .purpose__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747FF;
+  }
+  .purpose__body {
+    flex-direction: column;
+  }
+  .plans__body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plans__images {
+    flex: 0 1 100%;
+    align-items: flex-end;
+    margin-left: 90px;
+  }
+  .plans__image1, .plans__image2 {
+    max-width: 200px;
+  }
+  .plans__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747FF;
+  }
+  .principles__body {
+    flex-direction: column;
+  }
+  .principles__item {
+    margin-bottom: 20px;
+  }
+  .principles__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: #9747FF;
+  }
+}
+@media (max-width: 420px) {
+  .principles__container {
+    padding: 10px;
+  }
+  .plans__title, .plans__info {
+    display: none;
+  }
+  .plans__container {
+    padding: 10px;
+  }
+  .plans__images {
+    margin-left: 90px;
+  }
 }
 body {
   background-color: #e8e4ef;
