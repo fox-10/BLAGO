@@ -1601,6 +1601,7 @@ footer {
 }
 .projects-2__projectSlider-2 {
   align-self: flex-start;
+  justify-items: center;
 }
 
 @media (max-width: 950px) {
@@ -2624,6 +2625,7 @@ footer {
 }
 .projects-2__projectSlider-2 {
   align-self: flex-start;
+  justify-items: center;
 }
 
 @media (max-width: 950px) {
