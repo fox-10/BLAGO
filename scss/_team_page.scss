@@ -1,3 +1,20 @@
+.personalButton {
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+    padding-bottom: 200px;
+}
+
+.personalButton__caption {
+    @include font-style-Nunito(700, 2.25em, 1.2, #9747FF);
+    padding-bottom: 20px;
+}
+
+.personalButton__text {
+    @include font-style-Nunito(400, 1.125em, 1.2, #5B5A7A);
+    padding-bottom: 45px;
+}
+
 .personal {
     display: grid;
     width: 63%;
