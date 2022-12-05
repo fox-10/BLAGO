@@ -123,7 +123,7 @@
       span {
         position: absolute;
         background-color: $text_color;
-        left: 20px;
+        left: 130px;
         width: 100%;
         height: 2px;
         top: 9px;
@@ -138,7 +138,7 @@
       position: absolute;
       width: 100%;
       height: 2px;
-      left: 20px;
+      left: 130px;
       transition: all 0.3s ease 0s;
     }
 
@@ -213,6 +213,15 @@
     &__logo-image {
       width: 110px;
     }
+    span {
+      left: 80px;
+    }
+    &__burger::before,
+    &__burger::after {
+      content: "";
+
+      left: 80px;
+    }
   }
 }
 
@@ -231,6 +240,15 @@
 
     &__link {
       font-size: 20px;
+    }
+    span {
+      left: 60px;
+    }
+    &__burger::before,
+    &__burger::after {
+      content: "";
+
+      left: 60px;
     }
   }
 }
