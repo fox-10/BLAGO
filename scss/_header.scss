@@ -214,9 +214,11 @@
     &__logo-image {
       width: 110px;
     }
+
     span {
       left: 80px;
     }
+
     &__burger::before,
     &__burger::after {
       content: "";
@@ -242,9 +244,11 @@
     &__link {
       font-size: 20px;
     }
+
     span {
       left: 60px;
     }
+
     &__burger::before,
     &__burger::after {
       content: "";
