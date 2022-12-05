@@ -1,0 +1,91 @@
+.contactsNumber,
+.contactsMailText {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.contactsTitle {
+    @include font-style-Nunito(700, 28px, 1.2, #6A68B0);
+    margin-bottom: 30px
+}
+
+.contactsNumberText,
+.contactsMailTitle {
+    @include font-style-Nunito(700, 20px, 1.2, #54269E);
+    letter-spacing: -0.005em
+}
+
+.contactsPhone,
+.contactsMail {
+    @include font-style-Nunito(400, 14px, 1.2, #5B5A7A);
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1101px) and (max-width: 2500px) {
+    .contactsMap {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .contactsSecondColumn {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contactsFirstColumn {
+        width: 35vw;
+    }
+
+    .contactsContainer {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .contactsMap {
+        width: 35vw;
+    }
+
+    .contactsSecondColumn {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contactsFirstColumn {
+        width: 35vw;
+    }
+
+    .contactsContainer {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contactsMap {
+        width: 80vw;
+    }
+
+    .contactsSecondColumn {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contactsFirstColumn {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .contactsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: auto;
+    }
+}

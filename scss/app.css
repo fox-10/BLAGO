@@ -23,6 +23,8 @@
   padding: 0px 15px;
 }
 .header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -34,6 +36,8 @@
   z-index: 3;
 }
 .header__logo-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +51,8 @@
   margin-left: 20px;
 }
 .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -106,16 +112,18 @@
   }
   .header__burger span {
     position: absolute;
-    background-color: #54269E;
+    background-color: #54269e;
     left: 130px;
     width: 100%;
     height: 2px;
     top: 9px;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-  .header__burger::before, .header__burger::after {
+  .header__burger::before,
+  .header__burger::after {
     content: "";
-    background-color: #54269E;
+    background-color: #54269e;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -148,6 +156,7 @@
     width: 55%;
     height: 370px;
     overflow: auto;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: #a682df;
     padding: 100px 10px 20px 10px;
@@ -181,7 +190,8 @@
   .header span {
     left: 80px;
   }
-  .header__burger::before, .header__burger::after {
+  .header__burger::before,
+  .header__burger::after {
     content: "";
     left: 80px;
   }
@@ -200,7 +210,8 @@
   .header span {
     left: 60px;
   }
-  .header__burger::before, .header__burger::after {
+  .header__burger::before,
+  .header__burger::after {
     content: "";
     left: 60px;
   }
@@ -222,7 +233,7 @@
 
 .volButton_h {
   border: none;
-  background-color: #54269E;
+  background-color: #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -230,18 +241,19 @@
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: white;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-bottom: 15px;
 }
 
 .volButton_h:hover {
-  color: #54269E;
-  border: 2px solid #54269E;
+  color: #54269e;
+  border: 2px solid #54269e;
   background-color: white;
 }
 
 .partButton_h {
-  border: 2px solid #54269E;
+  border: 2px solid #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -249,12 +261,13 @@
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #5b5a7a;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .partButton_h:hover {
   color: white;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .fundButtonsHeader {
@@ -262,6 +275,8 @@
 }
 
 .fundButtons_h {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -275,6 +290,8 @@
 }
 @media (min-width: 1001px) and (max-width: 2500px) {
   .logoAndButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
   }
@@ -285,7 +302,7 @@
     margin-right: 50px;
   }
   .volButton_h,
-.partButton_h {
+  .partButton_h {
     border-radius: 15px;
     align-items: center;
     padding: 5px 15px;
@@ -300,11 +317,13 @@
 }
 @media (min-width: 766px) and (max-width: 1000px) {
   .logoAndButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
   }
   .volButton_h,
-.partButton_h {
+  .partButton_h {
     border-radius: 15px;
     align-items: center;
     padding: 3px 15px;
@@ -341,6 +360,8 @@
     display: none;
   }
   .fundButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -348,6 +369,8 @@
 }
 @media (min-width: 1301px) and (max-width: 2500px) {
   .firstColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,6 +382,8 @@
     width: 30vw;
   }
   .fund {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 70vw;
@@ -374,10 +399,10 @@
     font-size: 3em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 50px;
     width: 220px;
     border-radius: 20px;
@@ -389,7 +414,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
   }
 }
 @media (min-width: 1101px) and (max-width: 1300px) {
@@ -400,9 +425,11 @@
     font-size: 2.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
   }
   .firstColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -414,6 +441,8 @@
     width: 30vw;
   }
   .fund {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 70vw;
@@ -423,7 +452,7 @@
     padding-bottom: 50px;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 50px;
     width: 220px;
     border-radius: 20px;
@@ -435,7 +464,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -446,9 +475,11 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
   }
   .firstColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,6 +491,8 @@
     width: 30vw;
   }
   .fund {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 70vw;
@@ -475,10 +508,10 @@
     font-size: 2em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 56px;
     width: 200px;
     border-radius: 20px;
@@ -486,6 +519,8 @@
 }
 @media screen and (max-width: 700px) {
   .firstColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -494,6 +529,8 @@
   }
   .fundHeartImg {
     width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 30px auto 20px auto;
   }
@@ -511,7 +548,7 @@
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6A68B0;
+    color: #6a68b0;
     text-align: center;
   }
   .fundSubtitle {
@@ -521,11 +558,11 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5B5A7A;
+    color: #5b5a7a;
     text-align: center;
   }
   .volButton,
-.partButton {
+  .partButton {
     height: 15vw;
     width: 70vw;
     max-width: 300px;
@@ -539,7 +576,7 @@
 
 .volButton {
   border: none;
-  background-color: #54269E;
+  background-color: #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -547,31 +584,32 @@
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: white;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-bottom: 15px;
 }
 
 .volButton:hover {
-  color: #54269E;
-  border: 2px solid #54269E;
+  color: #54269e;
+  border: 2px solid #54269e;
   background-color: white;
 }
 
 .partButton {
-  border: 2px solid #54269E;
+  border: 2px solid #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.1em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
+  color: #5b5a7a;
   transition: all 0.5s ease-in-out;
 }
 
 .partButton:hover {
   color: white;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 @media (min-width: 1101px) and (max-width: 2500px) {
@@ -597,7 +635,7 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -606,11 +644,13 @@
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
     margin-bottom: 10px;
     margin-left: 5px;
   }
   .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 70vw;
@@ -620,7 +660,7 @@
   .ourGoal {
     width: 25vw;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -646,7 +686,7 @@
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -655,11 +695,13 @@
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
     margin-bottom: 10px;
     margin-left: 5px;
   }
   .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 70vw;
@@ -669,7 +711,7 @@
   .ourGoal {
     width: 25vw;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 700px) {
@@ -696,7 +738,7 @@
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -705,11 +747,13 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
     margin-bottom: 10px;
     margin-left: 5px;
   }
   .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     width: 70vw;
@@ -719,7 +763,7 @@
   .ourGoal {
     width: 80vw;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     margin: auto;
   }
 }
@@ -739,22 +783,30 @@
 }
 
 .aboutSecondColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .whoTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
 }
 
 .weDoTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
 }
 
 .whoLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   padding-bottom: 5px;
@@ -794,17 +846,17 @@ footer {
 
 .footer__contacts {
   grid-area: contacts;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .footer__documents {
   grid-area: documents;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .footer__team {
   grid-area: team;
-  background-color: #A682DF;
+  background-color: #a682df;
 }
 
 .footer__header {
@@ -814,7 +866,7 @@ footer {
   font-size: 0.875em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
   padding-bottom: 16px;
   padding-top: 40px;
 }
@@ -826,7 +878,7 @@ footer {
   font-size: 1.25em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
 }
 
 .footer__text {
@@ -836,7 +888,7 @@ footer {
   font-size: 1.125em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
 }
 
 .footer__liks {
@@ -846,7 +898,7 @@ footer {
   font-size: 1.125em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #F1E9FF;
+  color: #f1e9ff;
   text-decoration: none;
 }
 
@@ -880,9 +932,11 @@ footer {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .projectSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -905,9 +959,10 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -917,6 +972,7 @@ footer {
     top: 0;
     left: 0;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -926,7 +982,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -944,9 +1000,11 @@ footer {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
   }
   .projectSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -969,9 +1027,10 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -981,6 +1040,7 @@ footer {
     top: 0;
     left: 0;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -990,7 +1050,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 10px solid #6C68AF;
+    outline: 10px solid #6c68af;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -1008,10 +1068,12 @@ footer {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .projectSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -1035,9 +1097,10 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 3vw solid #6C68AF;
+    outline: 3vw solid #6c68af;
     outline-offset: -2.99vw;
     border-radius: 6vw;
   }
@@ -1047,6 +1110,7 @@ footer {
     top: 0;
     left: 0;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -1056,7 +1120,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 3vw solid #6C68AF;
+    outline: 3vw solid #6c68af;
     outline-offset: -2.99vw;
     border-radius: 6vw;
   }
@@ -1074,7 +1138,7 @@ footer {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .team {
@@ -1133,7 +1197,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -1145,7 +1209,7 @@ footer {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .team {
@@ -1204,7 +1268,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1216,7 +1280,7 @@ footer {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     text-align: center;
   }
   .team {
@@ -1270,7 +1334,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
 }
 .personal {
@@ -1445,6 +1509,8 @@ footer {
   }
 }
 .crew__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   max-width: 70vw;
@@ -1452,6 +1518,8 @@ footer {
   margin: 0px auto;
 }
 .crew__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   margin: 0px -20px;
@@ -1463,12 +1531,14 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
+  color: #9747ff;
   letter-spacing: -0.005em;
 }
 .crew__item {
   flex: 0 1 25%;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -1482,7 +1552,7 @@ footer {
   font-size: 24px;
   line-height: 1.38;
   letter-spacing: 0.005em;
-  color: #54269E;
+  color: #54269e;
 }
 .crew__item-text {
   font-family: "Nunito", sans-serif;
@@ -1504,6 +1574,8 @@ footer {
   flex: 0 1 90%;
   position: relative;
   padding: 0px 0px 53% 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1517,7 +1589,7 @@ footer {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .partners__container {
@@ -1532,11 +1604,13 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
+  color: #9747ff;
   letter-spacing: -0.005em;
   padding: 20px 0px 30px;
 }
 .partners__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: grid;
   justify-content: center;
@@ -1571,7 +1645,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
+  color: #9747ff;
 }
 
 @media (max-width: 950px) {
@@ -1585,7 +1659,7 @@ footer {
     font-size: 19px;
     line-height: 1.38;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .crew__item-text {
     font-family: "Nunito", sans-serif;
@@ -1634,7 +1708,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     justify-content: center;
   }
   .crew__item-text {
@@ -1663,7 +1737,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     justify-content: center;
   }
 }
@@ -1699,6 +1773,7 @@ footer {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
+  -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -1736,19 +1811,21 @@ footer {
   font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6A68B0;
+  color: #6a68b0;
   text-align: center;
   margin-bottom: 1em;
 }
 
 .formVol__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .formVolButton:hover {
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 .formVolButton:active {
@@ -1762,6 +1839,8 @@ footer {
 @media (min-width: 1101px) and (max-width: 2500px) {
   .formVol__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -1776,12 +1855,13 @@ footer {
     border-radius: 2em;
     margin: 0 0 1em 0;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1794,12 +1874,15 @@ footer {
     color: white;
     border: none;
     border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
 @media (min-width: 701px) and (max-width: 1100px) {
   .formVol__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -1814,12 +1897,13 @@ footer {
     border-radius: 2em;
     margin: 0 0 1em 0;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1832,12 +1916,15 @@ footer {
     color: white;
     border: none;
     border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
 @media (min-width: 415px) and (max-width: 700px) {
   .formVol__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -1850,12 +1937,13 @@ footer {
     border-radius: 2em;
     margin: 20px;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1868,12 +1956,15 @@ footer {
     color: white;
     border: none;
     border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
 @media screen and (max-width: 414px) {
   .formVol__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -1886,12 +1977,13 @@ footer {
     border-radius: 2em;
     margin: 20px;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1904,6 +1996,7 @@ footer {
     color: white;
     border: none;
     border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
@@ -1919,6 +2012,7 @@ footer {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
+  -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -1956,27 +2050,29 @@ footer {
   font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6A68B0;
+  color: #6a68b0;
   text-align: center;
   margin-bottom: 1em;
 }
 
 .formPar__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .inputForm::-webkit-input-placeholder {
-  color: #7D66A3;
+  color: #7d66a3;
 }
 
 .inputForm::-moz-placeholder {
-  color: #7D66A3;
+  color: #7d66a3;
 }
 
 .formParButton:hover {
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 .formParButton:active {
@@ -2004,10 +2100,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -2020,10 +2116,13 @@ footer {
     color: white;
     border: none;
     border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -2038,13 +2137,14 @@ footer {
     border-radius: 2em;
     margin: 0 0 1em 0;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2055,7 +2155,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -2069,10 +2169,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -2085,10 +2185,13 @@ footer {
     color: white;
     border: none;
     border-radius: 1em;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -2103,13 +2206,14 @@ footer {
     border-radius: 2em;
     margin: 0 0 1em 0;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2120,7 +2224,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 @media (min-width: 415px) and (max-width: 700px) {
@@ -2134,10 +2238,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -2150,10 +2254,13 @@ footer {
     color: white;
     border: none;
     border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -2166,13 +2273,14 @@ footer {
     border-radius: 2em;
     margin: 20px;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2183,7 +2291,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 @media screen and (max-width: 414px) {
@@ -2197,10 +2305,10 @@ footer {
     font-size: 0.8em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .formParButton {
-    background-color: #54269E;
+    background-color: #54269e;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -2213,10 +2321,13 @@ footer {
     color: white;
     border: none;
     border-radius: 5vw;
+    -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -2229,13 +2340,14 @@ footer {
     border-radius: 2em;
     margin: 20px;
     position: relative;
+    -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: translate(0px, -100%);
   }
   .inputForm {
     width: 92%;
-    border: 2px solid #54269E;
+    border: 2px solid #54269e;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2246,7 +2358,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7D66A3;
+    color: #7d66a3;
   }
 }
 .personal {
@@ -2421,6 +2533,8 @@ footer {
   }
 }
 .crew__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   max-width: 70vw;
@@ -2428,6 +2542,8 @@ footer {
   margin: 0px auto;
 }
 .crew__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   margin: 0px -20px;
@@ -2439,12 +2555,14 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
+  color: #9747ff;
   letter-spacing: -0.005em;
 }
 .crew__item {
   flex: 0 1 25%;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -2458,7 +2576,7 @@ footer {
   font-size: 24px;
   line-height: 1.38;
   letter-spacing: 0.005em;
-  color: #54269E;
+  color: #54269e;
 }
 .crew__item-text {
   font-family: "Nunito", sans-serif;
@@ -2480,6 +2598,8 @@ footer {
   flex: 0 1 90%;
   position: relative;
   padding: 0px 0px 53% 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2493,7 +2613,7 @@ footer {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .partners__container {
@@ -2508,11 +2628,13 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
+  color: #9747ff;
   letter-spacing: -0.005em;
   padding: 20px 0px 30px;
 }
 .partners__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: grid;
   justify-content: center;
@@ -2547,7 +2669,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747FF;
+  color: #9747ff;
 }
 
 @media (max-width: 950px) {
@@ -2561,7 +2683,7 @@ footer {
     font-size: 19px;
     line-height: 1.38;
     letter-spacing: 0.005em;
-    color: #54269E;
+    color: #54269e;
   }
   .crew__item-text {
     font-family: "Nunito", sans-serif;
@@ -2610,7 +2732,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     justify-content: center;
   }
   .crew__item-text {
@@ -2639,7 +2761,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747FF;
+    color: #9747ff;
     justify-content: center;
   }
 }
@@ -2690,19 +2812,19 @@ body {
   /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
   line-height: 1;
   /*Задаём высоту строки (можно в пикселях)*/
-  color: #9747FF;
+  color: #9747ff;
   /*Задаём цвет ссылки*/
 }
 
 .link-comand {
-  color: #5B5A7A;
+  color: #5b5a7a;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
+  color: #5b5a7a;
 }
 
 .link a:after {
@@ -2714,8 +2836,9 @@ body {
   /*задаём высоту линии*/
   width: 0%;
   /*задаём начальную ширину элемента (линии)*/
-  background-color: #9747FF;
+  background-color: #9747ff;
   /*цвет фона элемента*/
+  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
@@ -2726,7 +2849,7 @@ body {
 }
 
 .link a:hover {
-  color: #9747FF;
+  color: #9747ff;
 }
 
 /* попытаюсь анимировать кнопки*/
@@ -2739,7 +2862,7 @@ body {
 
 .vol_Button {
   border: none;
-  background-color: #54269E;
+  background-color: #54269e;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2750,7 +2873,7 @@ body {
 }
 
 .part_Button {
-  border: 2px solid #54269E;
+  border: 2px solid #54269e;
   margin-left: 15px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
@@ -2758,5 +2881,5 @@ body {
   font-size: 1.1em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5B5A7A;
-}/*# sourceMappingURL=app.css.map */
+  color: #5b5a7a;
+} /*# sourceMappingURL=app.css.map */
