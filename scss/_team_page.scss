@@ -1,7 +1,4 @@
-.personal-slaider {
-    grid-template-areas:
-        "personal__img personal__text ";
-}
+
 
 .personalButton {
     display: block;
@@ -96,6 +93,10 @@
     grid-template-rows: auto auto auto;
     padding-left: 15%;
     padding-right: 15%;
+}
+.personal-slaider{
+    grid-template-areas:
+        "personal__img personal__text ";
 }
 
 .personal__caption {
@@ -214,6 +215,13 @@
 
     .personal__text {
         padding-left: 0px;
+    }
+    .personal-slaider{
+        grid-template-areas:
+            "personal__img"
+            "personal__text";
+            grid-template-columns: 1FR;
+        grid-template-rows: auto auto;
     }
 }
 
