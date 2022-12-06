@@ -111,6 +111,11 @@
     justify-content: space-around;
     margin: 0px -20px;
   }
+  &__body-feed {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px -20px;
+  }
 
   &__info {
     display: flex;
@@ -162,6 +167,48 @@
     }
     transform: translate(-50%, -50%);
   }
+  &__info-feed {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 60%;
+  }
+  &__heart {
+    flex: 0 1 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    max-width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.feed-projects {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    padding: 50px 15px 50px;
+    margin: 0px auto;
+  }
+
+  &__title {
+    @include font-style-Nunito(700, 36px, 1.36, $text-caption_color);
+    letter-spacing: -0.005em;
+    align-self: center;
+  }
+
+  &__image {
+    max-width: 580px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 1400px) {
@@ -184,6 +231,7 @@
       @include font-style-Nunito(400, 14px, 1.2, rgba(84, 38, 158, 1));
     }
   }
+
   .about-our-activity {
     @include font-style-Nunito(400, 14px, 1.2, #5b5a7a);
   }
@@ -214,6 +262,11 @@
 
 @media (max-width: 1100px) {
   .purpose {
+    &__title {
+      @include font-style-Nunito(700, 27.2px, 1.36, $text-caption_color);
+    }
+  }
+  .feed-projects {
     &__title {
       @include font-style-Nunito(700, 27.2px, 1.36, $text-caption_color);
     }
@@ -275,12 +328,22 @@
 }
 @media (max-width: 766px) {
   .plans {
+    &__body-feed {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__img {
+      max-width: 300px;
+    }
     &__images {
       margin-left: 90px;
     }
     &__image1,
     &__image2 {
       max-width: 220px;
+    }
+    &__item {
+      align-self: flex-start;
     }
     &__item::before {
       content: "";
@@ -300,6 +363,11 @@
   }
 }
 @media (max-width: 620px) {
+  .feed-projects {
+    &__title {
+      @include font-style-Nunito(700, 24px, 1.36, $text-caption_color);
+    }
+  }
   .purpose {
     &__title {
       @include font-style-Nunito(700, 24px, 1.36, $text-caption_color);
@@ -313,6 +381,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    &__img {
+      max-width: 280px;
     }
     &__images {
       flex: 0 1 100%;
