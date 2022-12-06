@@ -1,3 +1,15 @@
+@charset "UTF-8";
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #e8e4ef;
+  z-index: 2;
+}
+
 .header {
   box-sizing: border-box;
   top: 0;
@@ -94,17 +106,16 @@
   }
   .header__burger span {
     position: absolute;
-    background-color: #54269e;
+    background-color: #54269E;
     left: 130px;
     width: 100%;
     height: 2px;
     top: 9px;
     transition: all 0.3s ease 0s;
   }
-  .header__burger::before,
-  .header__burger::after {
+  .header__burger::before, .header__burger::after {
     content: "";
-    background-color: #54269e;
+    background-color: #54269E;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -170,8 +181,7 @@
   .header span {
     left: 80px;
   }
-  .header__burger::before,
-  .header__burger::after {
+  .header__burger::before, .header__burger::after {
     content: "";
     left: 80px;
   }
@@ -190,8 +200,7 @@
   .header span {
     left: 60px;
   }
-  .header__burger::before,
-  .header__burger::after {
+  .header__burger::before, .header__burger::after {
     content: "";
     left: 60px;
   }
@@ -213,7 +222,7 @@
 
 .volButton_h {
   border: none;
-  background-color: #54269e;
+  background-color: #54269E;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -226,13 +235,13 @@
 }
 
 .volButton_h:hover {
-  color: #54269e;
-  border: 2px solid #54269e;
+  color: #54269E;
+  border: 2px solid #54269E;
   background-color: white;
 }
 
 .partButton_h {
-  border: 2px solid #54269e;
+  border: 2px solid #54269E;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -245,7 +254,7 @@
 
 .partButton_h:hover {
   color: white;
-  background-color: #a682df;
+  background-color: #A682DF;
 }
 
 .fundButtonsHeader {
@@ -276,7 +285,7 @@
     margin-right: 50px;
   }
   .volButton_h,
-  .partButton_h {
+.partButton_h {
     border-radius: 15px;
     align-items: center;
     padding: 5px 15px;
@@ -295,7 +304,7 @@
     flex-direction: row;
   }
   .volButton_h,
-  .partButton_h {
+.partButton_h {
     border-radius: 15px;
     align-items: center;
     padding: 3px 15px;
@@ -365,10 +374,10 @@
     font-size: 3em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6a68b0;
+    color: #6A68B0;
   }
   .volButton,
-  .partButton {
+.partButton {
     height: 50px;
     width: 220px;
     border-radius: 20px;
@@ -380,7 +389,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5b5a7a;
+    color: #5B5A7A;
   }
 }
 @media (min-width: 1101px) and (max-width: 1300px) {
@@ -391,7 +400,7 @@
     font-size: 2.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6a68b0;
+    color: #6A68B0;
   }
   .firstColumn {
     display: flex;
@@ -414,7 +423,7 @@
     padding-bottom: 50px;
   }
   .volButton,
-  .partButton {
+.partButton {
     height: 50px;
     width: 220px;
     border-radius: 20px;
@@ -426,7 +435,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5b5a7a;
+    color: #5B5A7A;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -437,7 +446,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5b5a7a;
+    color: #5B5A7A;
   }
   .firstColumn {
     display: flex;
@@ -466,10 +475,10 @@
     font-size: 2em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6a68b0;
+    color: #6A68B0;
   }
   .volButton,
-  .partButton {
+.partButton {
     height: 56px;
     width: 200px;
     border-radius: 20px;
@@ -502,7 +511,7 @@
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #6a68b0;
+    color: #6A68B0;
     text-align: center;
   }
   .fundSubtitle {
@@ -512,11 +521,11 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #5b5a7a;
+    color: #5B5A7A;
     text-align: center;
   }
   .volButton,
-  .partButton {
+.partButton {
     height: 15vw;
     width: 70vw;
     max-width: 300px;
@@ -530,7 +539,7 @@
 
 .volButton {
   border: none;
-  background-color: #54269e;
+  background-color: #54269E;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -543,26 +552,26 @@
 }
 
 .volButton:hover {
-  color: #54269e;
-  border: 2px solid #54269e;
+  color: #54269E;
+  border: 2px solid #54269E;
   background-color: white;
 }
 
 .partButton {
-  border: 2px solid #54269e;
+  border: 2px solid #54269E;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.1em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5b5a7a;
+  color: #5B5A7A;
   transition: all 0.5s ease-in-out;
 }
 
 .partButton:hover {
   color: white;
-  background-color: #a682df;
+  background-color: #A682DF;
 }
 
 @media (min-width: 1101px) and (max-width: 2500px) {
@@ -588,7 +597,7 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -597,7 +606,7 @@
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
     margin-bottom: 10px;
     margin-left: 5px;
   }
@@ -611,7 +620,7 @@
   .ourGoal {
     width: 25vw;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -637,7 +646,7 @@
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -646,7 +655,7 @@
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
     margin-bottom: 10px;
     margin-left: 5px;
   }
@@ -660,7 +669,7 @@
   .ourGoal {
     width: 25vw;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 @media screen and (max-width: 700px) {
@@ -687,7 +696,7 @@
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .whoSubtitle {
     font-family: "Nunito", sans-serif;
@@ -696,7 +705,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
     margin-bottom: 10px;
     margin-left: 5px;
   }
@@ -710,7 +719,7 @@
   .ourGoal {
     width: 80vw;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     margin: auto;
   }
 }
@@ -785,17 +794,17 @@ footer {
 
 .footer__contacts {
   grid-area: contacts;
-  background-color: #a682df;
+  background-color: #A682DF;
 }
 
 .footer__documents {
   grid-area: documents;
-  background-color: #a682df;
+  background-color: #A682DF;
 }
 
 .footer__team {
   grid-area: team;
-  background-color: #a682df;
+  background-color: #A682DF;
 }
 
 .footer__header {
@@ -805,7 +814,7 @@ footer {
   font-size: 0.875em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #f1e9ff;
+  color: #F1E9FF;
   padding-bottom: 16px;
   padding-top: 40px;
 }
@@ -817,7 +826,7 @@ footer {
   font-size: 1.25em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #f1e9ff;
+  color: #F1E9FF;
 }
 
 .footer__text {
@@ -827,7 +836,7 @@ footer {
   font-size: 1.125em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #f1e9ff;
+  color: #F1E9FF;
 }
 
 .footer__liks {
@@ -837,7 +846,7 @@ footer {
   font-size: 1.125em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #f1e9ff;
+  color: #F1E9FF;
   text-decoration: none;
 }
 
@@ -871,7 +880,7 @@ footer {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .projectSlider {
     display: flex;
@@ -898,7 +907,7 @@ footer {
     left: 0;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 10px solid #6c68af;
+    outline: 10px solid #6C68AF;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -917,7 +926,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 10px solid #6c68af;
+    outline: 10px solid #6C68AF;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -935,7 +944,7 @@ footer {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .projectSlider {
     display: flex;
@@ -962,7 +971,7 @@ footer {
     left: 0;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 10px solid #6c68af;
+    outline: 10px solid #6C68AF;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -981,7 +990,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 10px solid #6c68af;
+    outline: 10px solid #6C68AF;
     outline-offset: -9px;
     border-radius: 25px;
   }
@@ -999,7 +1008,7 @@ footer {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     text-align: center;
   }
   .projectSlider {
@@ -1028,7 +1037,7 @@ footer {
     left: 0;
     transition: all 0.5s ease-in-out;
     margin: 0;
-    outline: 3vw solid #6c68af;
+    outline: 3vw solid #6C68AF;
     outline-offset: -2.99vw;
     border-radius: 6vw;
   }
@@ -1047,7 +1056,7 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    outline: 3vw solid #6c68af;
+    outline: 3vw solid #6C68AF;
     outline-offset: -2.99vw;
     border-radius: 6vw;
   }
@@ -1092,7 +1101,7 @@ footer {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     text-align: center;
   }
   .team {
@@ -1151,7 +1160,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -1163,7 +1172,7 @@ footer {
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     text-align: center;
   }
   .team {
@@ -1222,7 +1231,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1234,7 +1243,7 @@ footer {
     font-size: 1.5em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     text-align: center;
   }
   .team {
@@ -1288,7 +1297,7 @@ footer {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
 }
 .personalButton {
@@ -1524,7 +1533,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
 }
 .crew__item {
@@ -1543,7 +1552,7 @@ footer {
   font-size: 24px;
   line-height: 1.38;
   letter-spacing: 0.005em;
-  color: #54269e;
+  color: #54269E;
 }
 .crew__item-text {
   font-family: "Nunito", sans-serif;
@@ -1578,7 +1587,7 @@ footer {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .partners__container {
@@ -1593,7 +1602,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
   padding: 20px 0px 30px;
 }
@@ -1647,7 +1656,7 @@ footer {
     font-size: 19px;
     line-height: 1.38;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
   .crew__item-text {
     font-family: "Nunito", sans-serif;
@@ -1671,7 +1680,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .partners__container {
     padding: 50px 15% 50px;
@@ -1693,7 +1702,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
 }
 @media (max-width: 700px) {
@@ -1714,7 +1723,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     justify-content: center;
   }
   .crew__item-text {
@@ -1743,7 +1752,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     justify-content: center;
   }
 }
@@ -1816,7 +1825,7 @@ footer {
   font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6a68b0;
+  color: #6A68B0;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -1828,7 +1837,7 @@ footer {
 }
 
 .formVolButton:hover {
-  background-color: #9747ff;
+  background-color: #9747FF;
 }
 
 .formVolButton:active {
@@ -1861,7 +1870,7 @@ footer {
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1899,7 +1908,7 @@ footer {
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -1935,7 +1944,7 @@ footer {
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -1971,7 +1980,7 @@ footer {
     transform: translate(0px, -100%);
   }
   .formVolButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -2036,7 +2045,7 @@ footer {
   font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6a68b0;
+  color: #6A68B0;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -2048,15 +2057,15 @@ footer {
 }
 
 .inputForm::-webkit-input-placeholder {
-  color: #7d66a3;
+  color: #7D66A3;
 }
 
 .inputForm::-moz-placeholder {
-  color: #7d66a3;
+  color: #7D66A3;
 }
 
 .formParButton:hover {
-  background-color: #9747ff;
+  background-color: #9747FF;
 }
 
 .formParButton:active {
@@ -2084,10 +2093,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
   .formParButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -2124,7 +2133,7 @@ footer {
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269e;
+    border: 2px solid #54269E;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2135,7 +2144,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7d66a3;
+    color: #7D66A3;
   }
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -2149,10 +2158,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
   .formParButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 20em;
     height: 3em;
     margin: auto;
@@ -2189,7 +2198,7 @@ footer {
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269e;
+    border: 2px solid #54269E;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2200,7 +2209,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7d66a3;
+    color: #7D66A3;
   }
 }
 @media (min-width: 415px) and (max-width: 700px) {
@@ -2214,10 +2223,10 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
   .formParButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -2252,7 +2261,7 @@ footer {
   }
   .inputForm {
     width: 95%;
-    border: 2px solid #54269e;
+    border: 2px solid #54269E;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2263,7 +2272,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7d66a3;
+    color: #7D66A3;
   }
 }
 @media screen and (max-width: 414px) {
@@ -2277,10 +2286,10 @@ footer {
     font-size: 0.8em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
   .formParButton {
-    background-color: #54269e;
+    background-color: #54269E;
     width: 60vw;
     height: 15vw;
     margin: auto;
@@ -2315,7 +2324,7 @@ footer {
   }
   .inputForm {
     width: 92%;
-    border: 2px solid #54269e;
+    border: 2px solid #54269E;
     border-radius: 1em;
     height: 3em;
     padding-top: 1.5em;
@@ -2326,7 +2335,7 @@ footer {
     font-size: 1em;
     line-height: 1.2;
     letter-spacing: 0.005em;
-    color: #7d66a3;
+    color: #7D66A3;
   }
 }
 .personalButton {
@@ -2562,7 +2571,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
 }
 .crew__item {
@@ -2581,7 +2590,7 @@ footer {
   font-size: 24px;
   line-height: 1.38;
   letter-spacing: 0.005em;
-  color: #54269e;
+  color: #54269E;
 }
 .crew__item-text {
   font-family: "Nunito", sans-serif;
@@ -2616,7 +2625,7 @@ footer {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .partners__container {
@@ -2631,7 +2640,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
   padding: 20px 0px 30px;
 }
@@ -2685,7 +2694,7 @@ footer {
     font-size: 19px;
     line-height: 1.38;
     letter-spacing: 0.005em;
-    color: #54269e;
+    color: #54269E;
   }
   .crew__item-text {
     font-family: "Nunito", sans-serif;
@@ -2709,7 +2718,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .partners__container {
     padding: 50px 15% 50px;
@@ -2731,7 +2740,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
 }
 @media (max-width: 700px) {
@@ -2752,7 +2761,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     justify-content: center;
   }
   .crew__item-text {
@@ -2781,7 +2790,7 @@ footer {
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
     justify-content: center;
   }
 }
@@ -2819,7 +2828,7 @@ footer {
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #6a68b0;
+  color: #6A68B0;
   margin-bottom: 30px;
 }
 
@@ -2831,7 +2840,7 @@ footer {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #54269e;
+  color: #54269E;
   letter-spacing: -0.005em;
 }
 
@@ -2843,7 +2852,7 @@ footer {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5b5a7a;
+  color: #5B5A7A;
   margin-bottom: 30px;
 }
 
@@ -2917,7 +2926,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
 }
 .purpose__body {
@@ -2977,7 +2986,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
 }
 .principles__body {
@@ -3033,7 +3042,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
 }
 .plans__body {
@@ -3127,7 +3136,7 @@ footer {
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.005em;
-  color: #9747ff;
+  color: #9747FF;
   letter-spacing: -0.005em;
   align-self: center;
 }
@@ -3145,8 +3154,7 @@ footer {
   .plans__info {
     flex: 0 1 50%;
   }
-  .plans__image1,
-  .plans__image2 {
+  .plans__image1, .plans__image2 {
     max-width: 300px;
   }
 }
@@ -3175,8 +3183,7 @@ footer {
   .plans__info {
     flex: 0 1 50%;
   }
-  .plans__image1,
-  .plans__image2 {
+  .plans__image1, .plans__image2 {
     max-width: 250px;
   }
   .plans__item {
@@ -3215,7 +3222,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .feed-projects__title {
     font-family: "Nunito", sans-serif;
@@ -3224,7 +3231,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .principles__title {
     font-family: "Nunito", sans-serif;
@@ -3233,7 +3240,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .principles__item::before {
     content: "";
@@ -3261,7 +3268,7 @@ footer {
     font-size: 27.2px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .plans__item::before {
     content: "";
@@ -3302,8 +3309,7 @@ footer {
   .plans__images {
     margin-left: 90px;
   }
-  .plans__image1,
-  .plans__image2 {
+  .plans__image1, .plans__image2 {
     max-width: 220px;
   }
   .plans__item {
@@ -3331,7 +3337,7 @@ footer {
     font-size: 24px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .purpose__title {
     font-family: "Nunito", sans-serif;
@@ -3340,7 +3346,7 @@ footer {
     font-size: 24px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .purpose__body {
     flex-direction: column;
@@ -3358,8 +3364,7 @@ footer {
     align-items: flex-end;
     margin-left: 90px;
   }
-  .plans__image1,
-  .plans__image2 {
+  .plans__image1, .plans__image2 {
     max-width: 200px;
   }
   .plans__title {
@@ -3369,7 +3374,7 @@ footer {
     font-size: 24px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
   .principles__body {
     flex-direction: column;
@@ -3384,15 +3389,14 @@ footer {
     font-size: 24px;
     line-height: 1.36;
     letter-spacing: 0.005em;
-    color: #9747ff;
+    color: #9747FF;
   }
 }
 @media (max-width: 420px) {
   .principles__container {
     padding: 10px;
   }
-  .plans__title,
-  .plans__info {
+  .plans__title, .plans__info {
     display: none;
   }
   .plans__container {
@@ -3400,6 +3404,237 @@ footer {
   }
   .plans__images {
     margin-left: 90px;
+  }
+}
+#slider_bl .wrapper {
+  max-width: 60em;
+  margin: 1em auto;
+  position: relative;
+}
+
+#slider_bl input {
+  display: none;
+}
+
+#slider_bl .inner {
+  width: 500%;
+  line-height: 0;
+}
+
+#slider_bl article {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+
+#slider_bl article img {
+  width: 100%;
+}
+
+#slider_bl .slider-prev-next-control {
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+#slider_bl .slider-prev-next-control label {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.7;
+}
+
+#slider_bl .slider-prev-next-control label:hover {
+  opacity: 1;
+}
+
+#slider_bl .slider-dot-control {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+#slider_bl .slider-dot-control label {
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  transition: all 0.3s;
+}
+
+#slider_bl .slider-dot-control label:hover {
+  background: #ccc;
+  border-color: #777;
+}
+
+#slider_bl .info {
+  position: absolute;
+  font-style: italic;
+  line-height: 20px;
+  opacity: 0;
+  color: #000;
+  text-align: left;
+  transition: all 1s ease-out 0.6s;
+}
+
+#slider_bl .info h3 {
+  color: #fcfff4;
+  margin: 0 0 5px;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+#slider_bl .info.top-left {
+  top: 30px;
+  left: 30px;
+}
+
+#slider_bl .info.top-right {
+  top: 30px;
+  right: 30px;
+}
+
+#slider_bl .info.bottom-left {
+  bottom: 30px;
+  left: 30px;
+}
+
+#slider_bl .info.bottom-right {
+  bottom: 30px;
+  right: 30px;
+}
+
+#slider_bl .slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #666;
+  background: #fff;
+  background: #fcfff4;
+  transform: translateZ(0);
+  transition: all 0.5s ease-out;
+}
+
+#slider_bl .slider-wrapper .inner {
+  transform: translateZ(0);
+  transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after,
+#slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: inherit;
+  margin: 0;
+  line-height: 38px;
+  font-size: 3em;
+  display: block;
+  color: #777;
+}
+
+#slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after,
+#slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after {
+  content: "\f105";
+  padding-left: 15px;
+}
+
+#slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(1) {
+  display: block;
+  float: right;
+  margin-right: 5px;
+}
+
+#slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(5),
+#slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(1), #slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(2),
+#slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(3),
+#slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(4) {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+
+#slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after {
+  content: "\f104";
+  padding-left: 8px;
+}
+
+#slider_bl #slide1:checked ~ .slider-dot-control label:nth-child(1),
+#slider_bl #slide2:checked ~ .slider-dot-control label:nth-child(2),
+#slider_bl #slide3:checked ~ .slider-dot-control label:nth-child(3), #slider_bl #slide4:checked ~ .slider-dot-control label:nth-child(4), #slider_bl #slide5:checked ~ .slider-dot-control label:nth-child(5) {
+  background: rgb(249, 239, 239);
+}
+
+#slider_bl #slide1:checked ~ .slider-wrapper article:nth-child(1) .info,
+#slider_bl #slide2:checked ~ .slider-wrapper article:nth-child(2) .info, #slider_bl #slide3:checked ~ .slider-wrapper article:nth-child(3) .info,
+#slider_bl #slide4:checked ~ .slider-wrapper article:nth-child(4) .info,
+#slider_bl #slide5:checked ~ .slider-wrapper article:nth-child(5) .info {
+  opacity: 1;
+}
+
+#slider_bl #slide1:checked ~ .slider-wrapper .inner {
+  margin-left: 0;
+}
+
+#slider_bl #slide2:checked ~ .slider-wrapper .inner {
+  margin-left: -100%;
+}
+
+#slider_bl #slide3:checked ~ .slider-wrapper .inner {
+  margin-left: -200%;
+}
+
+#slider_bl #slide4:checked ~ .slider-wrapper .inner {
+  margin-left: -300%;
+}
+
+#slider_bl #slide5:checked ~ .slider-wrapper .inner {
+  margin-left: -400%;
+}
+
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  #slider_bl .slider-wrapper {
+    border-radius: 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #slider_bl .slider-wrapper {
+    border-radius: 0;
+  }
+  #slider_bl .slider-wrapper .info {
+    opacity: 0;
+  }
+}
+@media only screen and (min-width: 850px) {
+  #slider_bl body {
+    padding: 0 80px;
   }
 }
 body {
@@ -3429,19 +3664,19 @@ body {
   /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
   line-height: 1;
   /*Задаём высоту строки (можно в пикселях)*/
-  color: #9747ff;
+  color: #9747FF;
   /*Задаём цвет ссылки*/
 }
 
 .link-comand {
-  color: #5b5a7a;
+  color: #5B5A7A;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5b5a7a;
+  color: #5B5A7A;
 }
 
 .link a:after {
@@ -3453,7 +3688,7 @@ body {
   /*задаём высоту линии*/
   width: 0%;
   /*задаём начальную ширину элемента (линии)*/
-  background-color: #9747ff;
+  background-color: #9747FF;
   /*цвет фона элемента*/
   transition: width 0.4s ease-in-out;
   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
@@ -3465,7 +3700,7 @@ body {
 }
 
 .link a:hover {
-  color: #9747ff;
+  color: #9747FF;
 }
 
 /* попытаюсь анимировать кнопки*/
@@ -3478,7 +3713,7 @@ body {
 
 .vol_Button {
   border: none;
-  background-color: #54269e;
+  background-color: #54269E;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -3489,7 +3724,7 @@ body {
 }
 
 .part_Button {
-  border: 2px solid #54269e;
+  border: 2px solid #54269E;
   margin-left: 15px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
@@ -3497,7 +3732,7 @@ body {
   font-size: 1.1em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  color: #5b5a7a;
+  color: #5B5A7A;
 }
 
 .link a {
@@ -3507,11 +3742,11 @@ body {
   /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
   line-height: 1;
   /*Задаём высоту строки (можно в пикселях)*/
-  color: #9747ff;
+  color: #9747FF;
   /*Задаём цвет ссылки*/
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 1.25em;
   line-height: 1.2;
   letter-spacing: 0.005em;
-} /*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
