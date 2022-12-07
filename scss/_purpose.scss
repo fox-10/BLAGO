@@ -61,11 +61,22 @@
     @include font-style-Nunito(700, 36px, 1.36, $text-caption_color);
     letter-spacing: -0.005em;
   }
+  &__title-2 {
+    @include font-style-Nunito(700, 36px, 1.36, rgba(106, 104, 176, 1));
+    letter-spacing: -0.005em;
+  }
 
-  &__body {
+  &__body,
+  &__body-2 {
     display: flex;
     justify-content: space-around;
     margin: 0px -20px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 0 1 50%;
   }
 
   &__item {
@@ -83,12 +94,51 @@
     top: 3px;
     left: 0;
   }
+  &__item-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  &__item-2::before {
+    content: "";
+    background: url(../assets/images/purpose/Group1.png);
+    width: 25px;
+    height: 27px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
 
   &__text {
     span {
       @include font-style-Nunito(700, 18px, 1.2, rgba(84, 38, 158, 1));
     }
     @include font-style-Nunito(400, 18px, 1.2, #5b5a7a);
+  }
+  &__text-2 {
+    @include font-style-Nunito(700, 32px, 1.36, rgba(84, 38, 158, 1));
+  }
+  &__text-3 {
+    display: flex;
+    flex: 1 1 auto;
+    @include font-style-Nunito(400, 18px, 1.2, #5b5a7a);
+    padding-bottom: 40px;
+  }
+  &__link-2 {
+    @include font-style-Nunito(700, 20px, 1.25, #9747ff);
+    text-decoration: none;
+  }
+  &__link-2:hover {
+    color: rgba(84, 38, 158, 1);
+  }
+
+  &__image {
+    padding: 40px 10px;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -251,11 +301,18 @@
     }
   }
   .principles {
-    &__text {
+    &__text,
+    &__text-3 {
       span {
         @include font-style-Nunito(700, 14px, 1.2, rgba(84, 38, 158, 1));
       }
       @include font-style-Nunito(400, 14px, 1.2, #5b5a7a);
+    }
+    &__text-2 {
+      @include font-style-Nunito(700, 27px, 1.36, rgba(84, 38, 158, 1));
+    }
+    &__item-2::before {
+      top: 8px;
     }
   }
 }
@@ -273,17 +330,20 @@
   }
 
   .principles {
-    &__title {
+    &__title,
+    &__title-2 {
       @include font-style-Nunito(700, 27.2px, 1.36, $text-caption_color);
     }
-    &__item::before {
+    &__item::before,
+    &__item-2::before {
       content: "";
       background: url(../assets/images/purpose/Group20.png);
       width: 20px;
       height: 22px;
     }
-    &__text {
-      @include font-style-Nunito(400, 12px, 1.2, #5b5a7a);
+
+    &__item-2::before {
+      top: 6px;
     }
   }
   .plans {
@@ -319,10 +379,11 @@
   }
 
   .principles {
-    &__text {
-      span {
-        @include font-style-Nunito(700, 10px, 1.2, rgba(84, 38, 158, 1));
-      }
+    &__text-2 {
+      @include font-style-Nunito(700, 20px, 1.36, rgba(84, 38, 158, 1));
+    }
+    &__item-2::before {
+      top: 5px;
     }
   }
 }
@@ -354,11 +415,15 @@
     }
   }
   .principles {
-    &__item::before {
+    &__item::before,
+    &__item-2::before {
       content: "";
       background: url(../assets/images/purpose/Group16.png);
       width: 16px;
       height: 17px;
+    }
+    &__body-2 {
+      flex-direction: column;
     }
   }
 }
@@ -405,7 +470,8 @@
     &__item {
       margin-bottom: 20px;
     }
-    &__title {
+    &__title,
+    &__title-2 {
       @include font-style-Nunito(700, 24px, 1.36, $text-caption_color);
     }
   }
