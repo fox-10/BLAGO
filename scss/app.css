@@ -3195,31 +3195,6 @@ footer {
   width: 100%;
 }
 
-.feed-projects__container {
-  display: flex;
-  flex-direction: column;
-  max-width: 70vw;
-  padding: 50px 15px 50px;
-  margin: 0px auto;
-}
-.feed-projects__title {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.36;
-  letter-spacing: 0.005em;
-  color: #9747FF;
-  letter-spacing: -0.005em;
-  align-self: center;
-}
-.feed-projects__image {
-  max-width: 580px;
-}
-.feed-projects__image img {
-  width: 100%;
-}
-
 @media (max-width: 1400px) {
   .plans__images {
     flex: 0 1 50%;
