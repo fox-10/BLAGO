@@ -70,12 +70,13 @@
   &__body-2 {
     display: flex;
     justify-content: space-around;
-    margin: 0px -20px;
+    margin: 0px -15px;
   }
+
   &__items {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px 10px;
     flex: 0 1 50%;
   }
 
@@ -135,7 +136,8 @@
   }
 
   &__image {
-    padding: 40px 10px;
+    max-width: 580px;
+    padding: 40px 0px;
     img {
       width: 100%;
     }
@@ -191,9 +193,6 @@
     @include font-style-Nunito(400, 18px, 1.2, #5b5a7a);
   }
 
-  &__text {
-  }
-
   &__images {
     flex: 0 1 60%;
 
@@ -232,29 +231,6 @@
   }
   &__img {
     max-width: 400px;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.feed-projects {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    max-width: 70vw;
-    padding: 50px 15px 50px;
-    margin: 0px auto;
-  }
-
-  &__title {
-    @include font-style-Nunito(700, 36px, 1.36, $text-caption_color);
-    letter-spacing: -0.005em;
-    align-self: center;
-  }
-
-  &__image {
-    max-width: 580px;
     img {
       width: 100%;
     }

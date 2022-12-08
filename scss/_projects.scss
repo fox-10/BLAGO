@@ -1,259 +1,234 @@
 @media (min-width: 1101px) and (max-width: 2500px) {
-    .projectsH3 {
-        @include font-style-Nunito(700, 36px, 1.2, $text-caption_color);
-    }
+  .projectsH3 {
+    @include font-style-Nunito(700, 36px, 1.2, $text-caption_color);
+  }
 
-    .projectSlider {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        justify-items: left;
-        // border: 1px solid red;
-    }
+  .projectSlider {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-items: left;
+    // border: 1px solid red;
+  }
 
-    .projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 70vw;
-        margin: auto;
-        // border: 1px solid red;
-    }
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70vw;
+    margin: auto;
+    // border: 1px solid red;
+  }
 
-    .progectDiv {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
+  .progectDiv {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
-    .projectImg {
-        height: 18vw;
-        z-index: 5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 0.5s ease-in-out;
-        margin: 0;
-        outline: 10px solid #6C68AF;
-        outline-offset: -9px;
-        border-radius: 25px;
-    }
+  .projectImg {
+    height: 18vw;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    outline: 10px solid #6c68af;
+    outline-offset: -9px;
+    border-radius: 25px;
+  }
 
-    .projectImg:hover {
-        height: 18vw;
-        z-index: 5;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
+  .projectImg:hover {
+    height: 18vw;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
 
-    .projectCover {
-        height: 18vw;
-        border-radius: 25px;
-        z-index: 4;
-        top: 0;
-        left: 0;
-        position: absolute;
-        outline: 10px solid #6C68AF;
-        outline-offset: -9px;
-        border-radius: 25px;
-    }
+  .projectCover {
+    height: 18vw;
+    border-radius: 25px;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    position: absolute;
+    outline: 10px solid #6c68af;
+    outline-offset: -9px;
+    border-radius: 25px;
+  }
 
-
-    .progectDiv {
-        margin-right: 50px;
-        height: 18vw;
-        width: 29vw;
-    }
+  .progectDiv {
+    margin-right: 50px;
+    height: 18vw;
+    width: 29vw;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1100px) {
-    .projectsH3 {
-        @include font-style-Nunito(700, 1.7em, 1.2, $text-caption_color);
-    }
+  .projectsH3 {
+    @include font-style-Nunito(700, 1.7em, 1.2, $text-caption_color);
+  }
 
-    .projectSlider {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        justify-items: left;
-        // border: 1px solid red;
-    }
+  .projectSlider {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-items: left;
+    // border: 1px solid red;
+  }
 
-    .projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 70vw;
-        margin: auto;
-        // border: 1px solid red;
-    }
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70vw;
+    margin: auto;
+    // border: 1px solid red;
+  }
 
-    .progectDiv {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
+  .progectDiv {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
-    .projectImg {
-        height: 18vw;
-        z-index: 5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 0.5s ease-in-out;
-        margin: 0;
-        outline: 10px solid #6C68AF;
-        outline-offset: -9px;
-        border-radius: 25px;
-    }
+  .projectImg {
+    height: 18vw;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    outline: 10px solid #6c68af;
+    outline-offset: -9px;
+    border-radius: 25px;
+  }
 
-    .projectImg:hover {
-        height: 18vw;
-        z-index: 5;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
+  .projectImg:hover {
+    height: 18vw;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
 
-    .projectCover {
-        height: 18vw;
-        border-radius: 25px;
-        z-index: 4;
-        top: 0;
-        left: 0;
-        position: absolute;
-        outline: 10px solid #6C68AF;
-        outline-offset: -9px;
-        border-radius: 25px;
-    }
+  .projectCover {
+    height: 18vw;
+    border-radius: 25px;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    position: absolute;
+    outline: 10px solid #6c68af;
+    outline-offset: -9px;
+    border-radius: 25px;
+  }
 
-
-    .progectDiv {
-        margin-right: 50px;
-        height: 18vw;
-        width: 29vw;
-    }
+  .progectDiv {
+    margin-right: 50px;
+    height: 18vw;
+    width: 29vw;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .projectsH3 {
-        @include font-style-Nunito(700, 1.5em, 1.2, $text-caption_color);
-        text-align: center;
-    }
+  .projectsH3 {
+    @include font-style-Nunito(700, 1.5em, 1.2, $text-caption_color);
+    text-align: center;
+  }
 
-    .projectSlider {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        justify-items: left;
-        // border: 1px solid red;
-    }
+  .projectSlider {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-items: left;
+    // border: 1px solid red;
+  }
 
-    .projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 80vw;
-        margin: auto;
-        // border: 1px solid red;
-    }
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80vw;
+    margin: auto;
+    // border: 1px solid red;
+  }
 
-    .progectDiv {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 30px;
-    }
+  .progectDiv {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+  }
 
-    .projectImg {
-        height: 50vw;
-        z-index: 5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 0.5s ease-in-out;
-        margin: 0;
-        outline: 3vw solid #6C68AF;
-        outline-offset: -2.99vw;
-        border-radius: 6vw;
-    }
+  .projectImg {
+    height: 50vw;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    outline: 3vw solid #6c68af;
+    outline-offset: -2.99vw;
+    border-radius: 6vw;
+  }
 
-    .projectImg:hover {
-        height: 50vw;
-        z-index: 5;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
+  .projectImg:hover {
+    height: 50vw;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
 
-    .projectCover {
-        height: 50vw;
-        border-radius: 25px;
-        z-index: 4;
-        top: 0;
-        left: 0;
-        position: absolute;
-        outline: 3vw solid #6C68AF;
-        outline-offset: -2.99vw;
-        border-radius: 6vw;
-    }
+  .projectCover {
+    height: 50vw;
+    border-radius: 25px;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    position: absolute;
+    outline: 3vw solid #6c68af;
+    outline-offset: -2.99vw;
+    border-radius: 6vw;
+  }
 
-
-    .progectDiv {
-        height: 50vw;
-        width: 80vw;
-    }
+  .progectDiv {
+    height: 50vw;
+    width: 80vw;
+  }
 }
-
-
-
-
-
 
 @media (min-width: 1101px) and (max-width: 2500px) {
-    .projectImg3 {
-        height: 18vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-    }
+  .projectImg3 {
+    height: 18vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1100px) {
-    .projectImg3 {
-        height: 18vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-    }
+  .projectImg3 {
+    height: 18vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
-
-    .projectImg3 {
-        height: 50vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-    }
-}
-
-
-.projects {
-
-    &__container {
-    }
-
-    &__title {
-    }
-
-    &__body {
-    }
-
-    &__image {
-    }
+  .projectImg3 {
+    height: 50vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
 }
