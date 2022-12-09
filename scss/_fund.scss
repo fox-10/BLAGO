@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 30px;
+        // margin-right: 30px;
         grid-area: firstColumn;
         width: 40vw;
     }
@@ -15,8 +15,8 @@
     .fund {
         display: flex;
         flex-direction: row;
-        width: 70vw;
-        margin: auto;
+        // width: 90vw;
+        margin-left: 15vw;
         justify-content: left;
         padding-top: 10px;
         padding-bottom: 50px;
@@ -47,8 +47,8 @@
     .firstColumn {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-right: 30px;
+        justify-content: left;
+        // margin-right: 30px;
         grid-area: firstColumn;
         width: 40vw;
     }
@@ -60,8 +60,8 @@
     .fund {
         display: flex;
         flex-direction: row;
-        width: 70vw;
-        margin: auto;
+        // width: 70vw;
+        margin-left: 15vw;
         justify-content: left;
         padding-top: 10px;
         padding-bottom: 50px;
@@ -80,7 +80,7 @@
     }
 }
 
-@media (min-width: 700px) and (max-width: 1100px) {
+@media (min-width: 801px) and (max-width: 1100px) {
     .fundSubtitle {
         @include font-style-Nunito(400, 20px, 1.2, #5B5A7A);
     }
@@ -89,9 +89,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 30px;
+        // margin-right: 30px;
         grid-area: firstColumn;
         width: 40vw;
+        // margin-left: 15vw;
     }
 
     .fundHeartImg {
@@ -101,8 +102,8 @@
     .fund {
         display: flex;
         flex-direction: row;
-        width: 70vw;
-        margin: auto;
+        // width: 70vw;
+        margin-left: 15vw;
         justify-content: left;
         padding-top: 30px;
         padding-bottom: 50px;
@@ -110,6 +111,47 @@
 
     .fundTitle {
         @include font-style-Nunito(700, 2em, 1.2, #6A68B0);
+    }
+
+    .volButton,
+    .partButton {
+        height: 56px;
+        width: 200px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .fundSubtitle {
+        @include font-style-Nunito(400, 20px, 1.2, #5B5A7A);
+    }
+
+    .firstColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // margin-right: 30px;
+        grid-area: firstColumn;
+        width: 40vw;
+        // margin-left: 15vw;
+    }
+
+    .fundHeartImg {
+        width: 30vw;
+    }
+
+    .fund {
+        display: flex;
+        flex-direction: row;
+        // width: 70vw;
+        margin-left: 15vw;
+        justify-content: left;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .fundTitle {
+        @include font-style-Nunito(700, 1.8em, 1.2, #6A68B0);
     }
 
     .volButton,
@@ -138,8 +180,10 @@
     .fund {
         display: grid;
         width: 100%;
-        width: 80vw;
+        width: 90vw;
         margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "secondColumn"
             "firstColumn";
     }
@@ -162,11 +206,16 @@
         max-height: 50px;
         border-radius: 15px;
     }
+
+    .secondColumn {
+        grid-area: secondColumn;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        // margin-left: 17.5vw;
+    }
 }
 
-.secondColumn {
-    grid-area: secondColumn;
-}
+
 
 .volButton {
     border: none;
@@ -194,4 +243,143 @@
 .partButton:hover {
     color: white;
     background-color: $bg2_color
+}
+
+
+
+// -----стили для анимации------
+
+@media (min-width: 701px) and (max-width: 2500px) {
+    .all {
+        position: relative;
+    }
+
+    .blue {
+        position: absolute;
+        width: 12.4vw;
+        z-index: 4;
+        animation-name: blueHand;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+
+    }
+
+    .pink {
+        position: absolute;
+        width: 11.1vw;
+        z-index: 4;
+        animation-name: pinkHand;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+
+    }
+
+    .heart {
+        position: absolute;
+        width: 25.5vw;
+        z-index: 5;
+        top: 0.5vw;
+        left: 7.85vw;
+    }
+
+    .heartBack {
+        position: absolute;
+        width: 40vw;
+        z-index: 5;
+        left: 0.28vw;
+    }
+
+    @keyframes pinkHand {
+        from {
+            top: 10.9vw;
+            left: 0.29vw;
+        }
+
+        to {
+            top: 4.87vw;
+            left: 12.1vw;
+        }
+    }
+
+    @keyframes blueHand {
+        from {
+            top: 0.29vw;
+            left: 27vw;
+        }
+
+        to {
+            top: 3.6vw;
+            left: 20.5vw;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .all {
+        position: relative;
+    }
+
+    .blue {
+        position: absolute;
+        width: 27.8vw;
+        z-index: 4;
+        animation-name: blueHand;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+
+    }
+
+    .pink {
+        position: absolute;
+        width: 24.55vw;
+        z-index: 4;
+        animation-name: pinkHand;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+
+    }
+
+    .heart {
+        position: absolute;
+        width: 57.3vw;
+        z-index: 5;
+        top: 1.14vw;
+        left: 17.7vw;
+    }
+
+    .heartBack {
+        position: absolute;
+        width: 90vw;
+        z-index: 5;
+        left: 0.4vw;
+    }
+
+    @keyframes pinkHand {
+        from {
+            top: 24.5vw;
+            left: 0.65vw;
+        }
+
+        to {
+            top: 10.96vw;
+            left: 27.3vw;
+        }
+    }
+
+    @keyframes blueHand {
+        from {
+            top: 0.65vw;
+            left: 60.7vw;
+        }
+
+        to {
+            top: 8.18vw;
+            left: 46.3vw;
+        }
+    }
 }

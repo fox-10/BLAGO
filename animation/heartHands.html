@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (min-width: 701px) and (max-width: 2500px) {
+            .all {
+                position: relative;
+            }
+
+            .blue {
+                position: absolute;
+                width: 17vw;
+                z-index: 40;
+                animation-name: blueHand;
+                animation-duration: 1.5s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+
+            }
+
+            .pink {
+                position: absolute;
+                width: 15vw;
+                z-index: 40;
+                animation-name: pinkHand;
+                animation-duration: 1.5s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+
+            }
+
+            .heart {
+                position: absolute;
+                width: 35vw;
+                z-index: 5;
+                top: 0.7vw;
+                left: 10.8vw;
+            }
+
+            .heartBack {
+                position: absolute;
+                width: 55vw;
+                z-index: 5;
+                left: 3px;
+            }
+
+            @keyframes pinkHand {
+                from {
+                    top: 15vw;
+                    left: 0.4vw;
+                }
+
+                to {
+                    top: 6.7vw;
+                    left: 16.7vw;
+                }
+            }
+
+            @keyframes blueHand {
+                from {
+                    top: 0.4vw;
+                    left: 37.1vw;
+                }
+
+                to {
+                    top: 5vw;
+                    left: 28.3vw;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .all {
+                position: relative;
+            }
+
+            .blue {
+                position: absolute;
+                width: 17vw;
+                z-index: 40;
+                animation-name: blueHand;
+                animation-duration: 1.5s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+
+            }
+
+            .pink {
+                position: absolute;
+                width: 15vw;
+                z-index: 40;
+                animation-name: pinkHand;
+                animation-duration: 1.5s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+
+            }
+
+            .heart {
+                position: absolute;
+                width: 35vw;
+                z-index: 5;
+                top: 0.7vw;
+                left: 10.8vw;
+            }
+
+            .heartBack {
+                position: absolute;
+                width: 55vw;
+                z-index: 5;
+                left: 3px;
+            }
+
+            @keyframes pinkHand {
+                from {
+                    top: 15vw;
+                    left: 0.4vw;
+                }
+
+                to {
+                    top: 6.7vw;
+                    left: 16.7vw;
+                }
+            }
+
+            @keyframes blueHand {
+                from {
+                    top: 0.4vw;
+                    left: 37.1vw;
+                }
+
+                to {
+                    top: 5vw;
+                    left: 28.3vw;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <img class="heartBack" src="./15.png" alt="">
+        <img class="heart" src="./heart2.svg" alt="">
+        <img class="blue" src="./blueHand.png" alt="">
+        <img class="pink" src="./pinkHand.png" alt="">
+    </div>
+</body>
+
+</html>
