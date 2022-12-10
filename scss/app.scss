@@ -114,3 +114,30 @@ body {
     line-height: 1.2;
     letter-spacing: 0.005em;
 }
+
+
+@media (min-width: 1001px) and (max-width: 2500px) {
+    .blocks {
+        display: grid;
+        // grid-template-columns: 40vw 1fr;
+        grid-template-rows: 35vw auto auto auto;
+        grid-template-areas: "fund"
+            "goals"
+            "projects"
+            "team";
+
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    .blocks {
+        display: grid;
+        // grid-template-columns: 40vw 1fr;
+        grid-template-rows: 42vw auto auto auto;
+        grid-template-areas: "fund"
+            "goals"
+            "projects"
+            "team";
+
+    }
+}

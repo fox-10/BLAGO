@@ -176,6 +176,7 @@
   }
   .header__menu.active {
     top: 0;
+    z-index: 200;
   }
   .header__list {
     display: block;
@@ -395,6 +396,10 @@
     margin: auto;
   }
 }
+.fund {
+  grid-area: fund;
+}
+
 @media (min-width: 1301px) and (max-width: 2500px) {
   .firstColumn {
     display: -webkit-box;
@@ -410,23 +415,19 @@
     grid-area: firstColumn;
     width: 40vw;
   }
+  .secondColumn {
+    margin-top: 30px;
+    grid-area: secondColumn;
+  }
   .fundHeartImg {
     width: 30vw;
   }
   .fund {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: grid;
     margin-left: 15vw;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "firstColumn secondColumn";
   }
   .fundTitle {
     font-family: "Nunito", sans-serif;
@@ -458,7 +459,7 @@
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.7em;
+    font-size: 2.08em;
     line-height: 1.2;
     letter-spacing: 0.005em;
     color: #6A68B0;
@@ -475,25 +476,21 @@
         -ms-flex-pack: left;
             justify-content: left;
     grid-area: firstColumn;
-    width: 40vw;
+    width: 30vw;
+  }
+  .secondColumn {
+    margin-top: 30px;
+    grid-area: secondColumn;
   }
   .fundHeartImg {
     width: 30vw;
   }
   .fund {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: grid;
     margin-left: 15vw;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "firstColumn secondColumn";
   }
   .volButton,
 .partButton {
@@ -535,23 +532,20 @@
     grid-area: firstColumn;
     width: 40vw;
   }
+  .secondColumn {
+    margin-top: 30px;
+    grid-area: secondColumn;
+  }
   .fundHeartImg {
     width: 30vw;
   }
   .fund {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: grid;
+    width: 70vw;
     margin-left: 15vw;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "firstColumn secondColumn";
   }
   .fundTitle {
     font-family: "Nunito", sans-serif;
@@ -593,23 +587,20 @@
     grid-area: firstColumn;
     width: 40vw;
   }
+  .secondColumn {
+    margin-top: 30px;
+    grid-area: secondColumn;
+  }
   .fundHeartImg {
     width: 30vw;
   }
   .fund {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: grid;
+    width: 70vw;
     margin-left: 15vw;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "firstColumn secondColumn";
   }
   .fundTitle {
     font-family: "Nunito", sans-serif;
@@ -655,7 +646,7 @@
     width: 90vw;
     margin: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 60vw 1fr;
     grid-template-areas: "secondColumn" "firstColumn";
   }
   .fundTitle {
@@ -690,6 +681,7 @@
     grid-area: secondColumn;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: -6.5vw;
   }
 }
 .volButton {
@@ -737,7 +729,7 @@
   }
   .blue {
     position: absolute;
-    width: 12.4vw;
+    width: 16.5vw;
     z-index: 4;
     -webkit-animation-name: blueHand;
             animation-name: blueHand;
@@ -748,7 +740,7 @@
   }
   .pink {
     position: absolute;
-    width: 11.1vw;
+    width: 13.87vw;
     z-index: 4;
     -webkit-animation-name: pinkHand;
             animation-name: pinkHand;
@@ -759,55 +751,55 @@
   }
   .heart {
     position: absolute;
-    width: 25.5vw;
+    width: 31.87vw;
     z-index: 5;
-    top: 0.5vw;
-    left: 7.85vw;
+    top: 0.63vw;
+    left: 9.81vw;
   }
   .heartBack {
     position: absolute;
-    width: 40vw;
+    width: 50vw;
     z-index: 5;
-    left: 0.28vw;
+    left: 0.35vw;
   }
   @-webkit-keyframes pinkHand {
     from {
-      top: 10.9vw;
-      left: 0.29vw;
+      top: 13.63vw;
+      left: 0.36vw;
     }
     to {
-      top: 4.87vw;
-      left: 12.1vw;
+      top: 5.59vw;
+      left: 14.12vw;
     }
   }
   @keyframes pinkHand {
     from {
-      top: 10.9vw;
-      left: 0.29vw;
+      top: 13.63vw;
+      left: 0.36vw;
     }
     to {
-      top: 4.87vw;
-      left: 12.1vw;
+      top: 5.59vw;
+      left: 14.12vw;
     }
   }
   @-webkit-keyframes blueHand {
     from {
-      top: 0.29vw;
-      left: 27vw;
+      top: 0.36vw;
+      left: 33.75vw;
     }
     to {
-      top: 3.6vw;
-      left: 20.5vw;
+      top: 4.2vw;
+      left: 24.9vw;
     }
   }
   @keyframes blueHand {
     from {
-      top: 0.29vw;
-      left: 27vw;
+      top: 0.36vw;
+      left: 33.75vw;
     }
     to {
-      top: 3.6vw;
-      left: 20.5vw;
+      top: 4.2vw;
+      left: 24.9vw;
     }
   }
 }
@@ -817,7 +809,7 @@
   }
   .blue {
     position: absolute;
-    width: 27.8vw;
+    width: 32.34vw;
     z-index: 4;
     -webkit-animation-name: blueHand;
             animation-name: blueHand;
@@ -828,7 +820,7 @@
   }
   .pink {
     position: absolute;
-    width: 24.55vw;
+    width: 27vw;
     z-index: 4;
     -webkit-animation-name: pinkHand;
             animation-name: pinkHand;
@@ -839,58 +831,62 @@
   }
   .heart {
     position: absolute;
-    width: 57.3vw;
+    width: 63vw;
     z-index: 5;
-    top: 1.14vw;
-    left: 17.7vw;
+    top: 1.25vw;
+    left: 19.47vw;
   }
   .heartBack {
     position: absolute;
-    width: 90vw;
+    width: 99vw;
     z-index: 5;
-    left: 0.4vw;
+    left: 0.44vw;
   }
   @-webkit-keyframes pinkHand {
     from {
-      top: 24.5vw;
-      left: 0.65vw;
+      top: 26.95vw;
+      left: 0.72vw;
     }
     to {
       top: 10.96vw;
-      left: 27.3vw;
+      left: 27.67vw;
     }
   }
   @keyframes pinkHand {
     from {
-      top: 24.5vw;
-      left: 0.65vw;
+      top: 26.95vw;
+      left: 0.72vw;
     }
     to {
       top: 10.96vw;
-      left: 27.3vw;
+      left: 27.67vw;
     }
   }
   @-webkit-keyframes blueHand {
     from {
-      top: 0.65vw;
-      left: 60.7vw;
+      top: 0.72vw;
+      left: 66.77vw;
     }
     to {
-      top: 8.18vw;
-      left: 46.3vw;
+      top: 8.23vw;
+      left: 48.8vw;
     }
   }
   @keyframes blueHand {
     from {
-      top: 0.65vw;
-      left: 60.7vw;
+      top: 0.72vw;
+      left: 66.77vw;
     }
     to {
-      top: 8.18vw;
-      left: 46.3vw;
+      top: 8.23vw;
+      left: 48.8vw;
     }
   }
 }
+.goals {
+  grid-area: goals;
+}
+
 @media (min-width: 1101px) and (max-width: 2500px) {
   .whoWe {
     -ms-flex-item-align: start;
@@ -1236,6 +1232,10 @@ footer {
     background-image: url(../assets/images/footer/line-min.svg);
   }
 }
+.projects {
+  grid-area: projects;
+}
+
 @media (min-width: 1101px) and (max-width: 2500px) {
   .projectsH3 {
     font-family: "Nunito", sans-serif;
@@ -1477,6 +1477,10 @@ footer {
     margin: 0;
   }
 }
+.team {
+  grid-area: team;
+}
+
 @media (min-width: 1101px) and (max-width: 2500px) {
   .team__header {
     grid-area: header;
@@ -4564,4 +4568,19 @@ body {
   font-size: 1.25em;
   line-height: 1.2;
   letter-spacing: 0.005em;
+}
+
+@media (min-width: 1001px) and (max-width: 2500px) {
+  .blocks {
+    display: grid;
+    grid-template-rows: 35vw auto auto auto;
+    grid-template-areas: "fund" "goals" "projects" "team";
+  }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .blocks {
+    display: grid;
+    grid-template-rows: 42vw auto auto auto;
+    grid-template-areas: "fund" "goals" "projects" "team";
+  }
 }/*# sourceMappingURL=app.css.map */

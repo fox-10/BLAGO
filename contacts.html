@@ -30,7 +30,7 @@
                     <div class="header__body">
                         <div class="header__logo">
                             <a href="./index.html" class="header__logo-image">
-                                <img src="./assets/images/logotype2.png" alt="" />
+                                <img src="./assets/images/logotype2.png" alt="">
                             </a>
                         </div>
                         <div class="header__burger">
@@ -39,7 +39,7 @@
                         <nav class="header__menu">
                             <ul class="header__list">
                                 <li class="header__item">
-                                    <a href="abot_we.html" class="header__link">О&nbspнас</a>
+                                    <a href="abot_we.html" class="header__link">О&nbsp;нас</a>
                                 </li>
                                 <li class="header__item ">
                                     <a href="team.html" class="header__link">Команда</a>
@@ -55,9 +55,13 @@
                         </nav>
                         <div class="fundButtonsHeader">
                             <div class="fundButtons_h ">
-                                <a href="#formVol"><button class=" volButton_h">Стать волонтером</button></a>
+                                <form action="#formVol">
+                                    <button type="submit" class="volButton">Стать волонтером</button>
+                                </form>
 
-                                <a href="#formPar"><button class=" partButton_h">Стать партнером</button></a>
+                                <form action="#formPar">
+                                    <button type="submit" class="partButton">Стать партнером</button>
+                                </form>
                             </div>
                         </div>
 
@@ -161,8 +165,8 @@
                             </div>
                             <div class="inputDiv">
                                 <p class="inputPlaceholder1">Какое направление интересует</p>
-                                <select id="" class="inputForm" style="height: 4.5em; width: 99%;" name="project"
-                                    required>
+                                <select id="direction" class="inputForm" style="height: 4.5em; width: 99%;"
+                                    name="project">
                                     <option>Корми с добром</option>
                                     <option>Навстречу переменам</option>
                                     <option>Другое</option>
@@ -170,7 +174,7 @@
                             </div>
                             <div class="inputDiv">
                                 <p class="inputPlaceholder1">Чем можешь быть полезен в фонде</p>
-                                <textarea id="" cols="30" rows="20" class="inputForm"
+                                <textarea id="use" cols="30" rows="20" class="inputForm"
                                     style="padding-top: 40px; min-height: 10em;"
                                     placeholder="Расскажи чем можешь помочь" name="details" required></textarea>
                             </div>
@@ -210,7 +214,7 @@
                             </div>
                             <div class="inputDiv">
                                 <p class="inputPlaceholder1">Чем можем быть полезны друг другу</p>
-                                <textarea id="" cols="30" rows="20" class="inputForm"
+                                <textarea id="use2" cols="30" rows="20" class="inputForm"
                                     style="padding-top: 40px; min-height: 10em;"
                                     placeholder="Расскажи чем мы можем друг другу помочь" name="details"
                                     required></textarea>
@@ -226,6 +230,7 @@
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"
             integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
+    </div>
 </body>
 
 </html>

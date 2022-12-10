@@ -183,6 +183,7 @@
 
     &__menu.active {
       top: 0;
+      z-index: 200;
     }
 
     &__list {
