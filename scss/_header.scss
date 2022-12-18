@@ -6,7 +6,7 @@
   width: 100%;
   height: 140px;
   background-color: #e8e4ef;
-  z-index: 6;
+  z-index: 15;
 }
 
 .header {
@@ -32,7 +32,7 @@
   }
 
   &__logo {
-    z-index: 9;
+    z-index: 20;
   }
 
   &__logo-image {
@@ -58,7 +58,7 @@
 
     text-transform: uppercase;
 
-    z-index: 6;
+    z-index: 20;
     padding: 0px;
     margin: 0px;
 
@@ -77,7 +77,7 @@
   }
 
   &__link {
-    @include font-style-Nunito(700, 12px, 1.36, #54269e);
+    @include font-style-Nunito(700, 12px, 1.36, #9747ff);
     letter-spacing: -0.005em;
   }
 
@@ -86,7 +86,160 @@
   }
 }
 
-//---------------------------адаптив-бургер------------------------------------
+//--------------------------кнопки--------------------------------- .volButton_h,
+.volButton_h,
+.partButton_h {
+  align-items: center;
+  padding: 5px 20px;
+
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 105%;
+
+  text-align: center;
+  margin: 8px;
+
+  max-width: 300px;
+  max-height: 48px;
+  border-radius: 20px;
+}
+
+.volButton_h {
+  border: none;
+  background-color: $text_color;
+  @include font-style-Nunito(700, 1.1em, 1.2, white);
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.volButton_h:hover {
+  color: $text_color;
+  border: 2px solid $text_color;
+  background-color: white;
+}
+
+.partButton_h {
+  border: 2px solid $text_color;
+  background-color: white;
+  @include font-style-Nunito(700, 1.1em, 1.2, $text_color);
+  transition: all 0.5s ease-in-out;
+}
+
+.partButton_h:hover {
+  color: white;
+  background-color: $bg2_color;
+}
+
+.fundButtonsHeader {
+  z-index: 20;
+}
+
+.fundButtons_h {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  z-index: 20;
+}
+
+//---------------------------адаптив------------------------------------
+
+@media (max-width: 1200px) {
+  .header {
+    &__item {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 2500px) {
+  .logoAndButtons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header {
+    &__menu {
+      margin-left: 10px;
+    }
+
+    &__list {
+      li {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .volButton_h,
+  .partButton_h {
+    border-radius: 15px;
+
+    align-items: center;
+    padding: 5px 15px;
+    min-height: 35px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 105%;
+
+    text-align: center;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logoAndButtons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .volButton_h,
+  .partButton_h {
+    border-radius: 15px;
+
+    align-items: center;
+    padding: 3px 15px;
+    min-height: 35px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 105%;
+
+    text-align: center;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 870px) {
+
+  .volButton_h,
+  .partButton_h {
+    border-radius: 15px;
+
+    align-items: center;
+    padding: 3px 15px;
+    min-height: 35px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 105%;
+
+    text-align: center;
+    margin: 8px;
+  }
+
+  .header {
+    &__list {
+      li {
+        margin-right: 10px;
+      }
+    }
+
+    &__link {
+      font-size: 10px;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   body.lock {
@@ -108,7 +261,9 @@
     }
 
     &__link {
+      // @include font-style-Nunito(700, 12px, 1.36, #e8e4ef);
       font-size: 24px;
+      color: #e8e4ef;
     }
 
     &__burger {
@@ -117,7 +272,7 @@
       width: 30px;
       height: 20px;
       position: relative;
-      z-index: 9;
+      z-index: 20;
       margin: 0 auto;
 
       span {
@@ -171,19 +326,20 @@
     &__menu {
       position: fixed;
       top: -100%;
-
-      width: 55%;
-      height: 370px;
+      overflow: auto;
+      width: 40%;
+      height: 230px;
       overflow: auto;
       transition: all 0.3s ease 0s;
       background-color: #a682df;
-      padding: 100px 10px 20px 10px;
+      padding: 120px 10px 20px 10px;
       border-radius: 15px;
+      z-index: 10;
     }
 
     &__menu.active {
       top: 0;
-      z-index: 200;
+      // z-index: 200;
     }
 
     &__list {
@@ -191,7 +347,7 @@
       padding-left: 70px;
 
       li {
-        margin: 50px 0px 20px 0px;
+        margin: 20px 0px 10px 0px;
       }
     }
   }
@@ -199,17 +355,45 @@
   .content {
     padding-top: 50px;
   }
+
+  .fundButtonsHeader {
+    display: none;
+  }
+
+  .menuTitle {
+    display: none;
+  }
+
+  .fundButtons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 @media (max-width: 560px) {
+  .header::before {
+    height: 90px;
+  }
+
   .header {
     &__menu {
-      width: 45%;
-      height: 350px;
+      width: 40%;
+      height: 230px;
+      padding: 80px 10px 20px 10px;
+    }
+
+    &__body {
+      min-height: 60px;
+      padding: 10px;
     }
 
     &__list {
       padding-left: 20px;
+
+      li {
+        margin: 20px 0px 10px 0px;
+      }
     }
 
     &__logo-image {
@@ -230,15 +414,23 @@
 }
 
 @media (max-width: 420px) {
+  .header::before {
+    height: 70px;
+  }
+
   .header {
     &__menu {
-      width: 45%;
-      height: 300px;
+      width: 40%;
+      height: 180px;
+    }
+
+    &__body {
+      min-height: 40px;
     }
 
     &__list {
       li {
-        margin: 40px 0px 10px 0px;
+        margin: 15px 0px 10px 0px;
       }
     }
 
@@ -259,157 +451,41 @@
   }
 }
 
-//--------------------------кнопки--------------------------------- .volButton_h,
-.volButton_h,
-.partButton_h {
-  align-items: center;
-  padding: 5px 20px;
-
-  letter-spacing: 0.2px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 105%;
-
-  text-align: center;
-  margin: 8px;
-
-  max-width: 300px;
-  max-height: 48px;
-  border-radius: 20px;
-}
-
-.volButton_h {
-  border: none;
-  background-color: $text_color;
-  @include font-style-Nunito(700, 1.1em, 1.2, white);
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 15px;
-}
-
-.volButton_h:hover {
-  color: $text_color;
-  border: 2px solid $text_color;
-  background-color: white;
-}
-
-.partButton_h {
-  border: 2px solid $text_color;
-  @include font-style-Nunito(700, 1.1em, 1.2, #5b5a7a);
-  transition: all 0.5s ease-in-out;
-}
-
-.partButton_h:hover {
-  color: white;
-  background-color: $bg2_color;
-}
-
-.fundButtonsHeader {
-  z-index: 9;
-}
-
-.fundButtons_h {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  z-index: 9;
-}
-
-//------------------------------адаптив-------------------------------
-@media (max-width: 1200px) {
-  .header {
-    &__item {
-      margin-right: 20px;
-    }
-  }
-}
-
-@media (min-width: 1001px) and (max-width: 2500px) {
-  .logoAndButtons {
-    display: flex;
-    flex-direction: row;
+@media (max-width: 376px) {
+  .header::before {
+    height: 45px;
   }
 
   .header {
     &__menu {
-      margin-left: 10px;
+      width: 40%;
+      height: 180px;
+      padding: 40px 10px 20px 10px;
+    }
+
+    &__body {
+      min-height: 25px;
     }
 
     &__list {
-      li {
-        margin-right: 50px;
-      }
-    }
-  }
-
-  .volButton_h,
-  .partButton_h {
-    border-radius: 15px;
-
-    align-items: center;
-    padding: 5px 15px;
-    min-height: 35px;
-    letter-spacing: 0.2px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 105%;
-
-    text-align: center;
-    margin: 8px;
-  }
-}
-
-@media (min-width: 766px) and (max-width: 1000px) {
-  .logoAndButtons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .volButton_h,
-  .partButton_h {
-    border-radius: 15px;
-
-    align-items: center;
-    padding: 3px 15px;
-    min-height: 35px;
-    letter-spacing: 0.2px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 105%;
-
-    text-align: center;
-    margin: 8px;
-  }
-
-  .header {
-    &__menu {
-      margin-left: 5px;
-    }
-
-    &__list {
-      li {
-        margin-right: 20px;
-      }
+      padding-left: 10px;
     }
 
     &__link {
-      @include font-style-Nunito(700, 10px, 1.36, #54269e);
-      letter-spacing: -0.005em;
+      font-size: 20px;
+    }
+
+    span {
+      left: 60px;
+    }
+
+    &__burger::before,
+    &__burger::after {
+      content: "";
+
+      left: 60px;
     }
   }
 }
 
-@media screen and (max-width: 767px) {
-  .fundButtonsHeader {
-    display: none;
-  }
-
-  .menuTitle {
-    display: none;
-  }
-
-  .fundButtons {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-}
+//------------------------------адаптив-------------------------------

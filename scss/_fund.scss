@@ -1,3 +1,35 @@
+.volButton {
+    border: none;
+    background-color: $text_color;
+    @include font-style-Nunito(700, 1.1em, 1.2, white);
+    transition: all .5s ease-in-out;
+    // margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.volButton:hover {
+    color: $text_color;
+    border: 2px solid $text_color;
+    background-color: white;
+}
+
+
+.partButton {
+    border: 2px solid $text_color;
+    background-color: white;
+    // margin-left: 15px;
+    @include font-style-Nunito(700, 1.1em, 1.2, $text_color);
+    transition: all .5s ease-in-out;
+}
+
+.partButton:hover {
+    color: white;
+    background-color: $bg2_color
+}
+
+
+
+
 .fund {
     grid-area: fund;
 }
@@ -243,33 +275,7 @@
 
 
 
-.volButton {
-    border: none;
-    background-color: $text_color;
-    @include font-style-Nunito(700, 1.1em, 1.2, white);
-    transition: all .5s ease-in-out;
-    // margin-right: 10px;
-    margin-bottom: 15px;
-}
 
-.volButton:hover {
-    color: $text_color;
-    border: 2px solid $text_color;
-    background-color: white;
-}
-
-
-.partButton {
-    border: 2px solid $text_color;
-    // margin-left: 15px;
-    @include font-style-Nunito(700, 1.1em, 1.2, #5B5A7A);
-    transition: all .5s ease-in-out;
-}
-
-.partButton:hover {
-    color: white;
-    background-color: $bg2_color
-}
 
 
 
