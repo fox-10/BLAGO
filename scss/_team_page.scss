@@ -154,7 +154,7 @@
 
     .personal {
         display: grid;
-        width: 90%;
+        width: 40%;
         grid-template-areas:
             " personal__img"
             "personal__article"
@@ -173,7 +173,11 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
     }
+    .v_dve_col{
+        display: flex;
+        flex-wrap: wrap;
 
+    }
     .personal-heart {
         width: 70%;
         grid-template-areas:
