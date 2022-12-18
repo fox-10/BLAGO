@@ -221,10 +221,11 @@
         padding-left: 0px;
     }
     .personal-slaider{
+        width: 90%;
         grid-template-areas:
             "personal__img"
             "personal__text";
-            grid-template-columns: 1FR;
+            grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
 }
