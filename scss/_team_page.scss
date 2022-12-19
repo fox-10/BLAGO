@@ -46,12 +46,12 @@
     padding-left: 20px;
     padding-bottom: 13px;
     margin-bottom: 0px;
-    @include font-style-Nunito(700, 32px, 1.2, #54269e);
+    @include font-style-Nunito(700, 2em, 1.2, #54269e);
 }
 
 .personal__text {
     grid-area: personal__text;
-    padding-left: 20px;
+    padding-left:1.25em;
     @include font-style-Nunito(400, 18px, 1.2, #5b5a7a);
     margin-top: 0%;
 }
@@ -154,29 +154,50 @@
 
     .personal {
         display: grid;
-        width: 40%;
+        width: 90%;
         grid-template-areas:
             " personal__img"
             "personal__article"
             " personal__link";
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .personal-left {
+        display: grid;
+        width:90%;
         grid-template-areas:
             "personal__img"
             " personal__article"
             " personal__link";
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     .v_dve_col{
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left:0;
+        padding-right: 0;
 
+    }
+    .personal__header {
+        grid-area: personal__header;
+        padding-left: 20px;
+        padding-bottom: 13px;
+        margin-bottom: 0px;
+        @include font-style-Nunito(700, 1.4em, 1.2, #54269e);
+    }
+    
+    .personal__text {
+        grid-area: personal__text;
+        padding-left:1.25em;
+        @include font-style-Nunito(400, 0.8em, 1.2, #5b5a7a);
+        margin-top: 0%;
     }
     .personal-heart {
         width: 70%;

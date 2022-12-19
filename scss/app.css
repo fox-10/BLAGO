@@ -1817,7 +1817,7 @@ footer {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #54269e;
@@ -1825,7 +1825,7 @@ footer {
 
 .personal__text {
   grid-area: personal__text;
-  padding-left: 20px;
+  padding-left: 1.25em;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1925,24 +1925,53 @@ footer {
   }
   .personal {
     display: grid;
-    width: 40%;
+    width: 90%;
     grid-template-areas: " personal__img" "personal__article" " personal__link";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .personal-left {
+    display: grid;
+    width: 90%;
     grid-template-areas: "personal__img" " personal__article" " personal__link";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .v_dve_col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .personal__header {
+    grid-area: personal__header;
+    padding-left: 20px;
+    padding-bottom: 13px;
+    margin-bottom: 0px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #54269e;
+  }
+  .personal__text {
+    grid-area: personal__text;
+    padding-left: 1.25em;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+    margin-top: 0%;
   }
   .personal-heart {
     width: 70%;
@@ -3026,7 +3055,7 @@ footer {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #54269e;
@@ -3034,7 +3063,7 @@ footer {
 
 .personal__text {
   grid-area: personal__text;
-  padding-left: 20px;
+  padding-left: 1.25em;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -3134,24 +3163,53 @@ footer {
   }
   .personal {
     display: grid;
-    width: 40%;
+    width: 90%;
     grid-template-areas: " personal__img" "personal__article" " personal__link";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .personal-left {
+    display: grid;
+    width: 90%;
     grid-template-areas: "personal__img" " personal__article" " personal__link";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .v_dve_col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .personal__header {
+    grid-area: personal__header;
+    padding-left: 20px;
+    padding-bottom: 13px;
+    margin-bottom: 0px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #54269e;
+  }
+  .personal__text {
+    grid-area: personal__text;
+    padding-left: 1.25em;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #5b5a7a;
+    margin-top: 0%;
   }
   .personal-heart {
     width: 70%;
