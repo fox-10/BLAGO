@@ -196,7 +196,7 @@
     .personal__text {
         grid-area: personal__text;
         padding-left:1.25em;
-        @include font-style-Nunito(400, 0.8em, 1.2, #5b5a7a);
+        @include font-style-Nunito(400, 1em, 1.2, #5b5a7a);
         margin-top: 0%;
     }
     .personal-heart {
