@@ -260,159 +260,188 @@
 
 //  ---------анимация слайдера---------
 
-@media (min-width: 701px) and (max-width: 2500px) {
+@media (min-width: 1001px) and (max-width: 2500px) {
   .infiniteSlider {
-    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    width: 19vw;
+    height: 19vw;
+    overflow: hidden;
+  }
+
+  .infiniteSlider div {
+    animation: animationSlider 15s linear infinite;
     position: relative;
+    height: 300px;
+    width: 19vw;
   }
 
-  .infiniteSliderImg1 {
-    position: absolute;
-    animation: animationSlider1 16s infinite ease-in;
-  }
-
-  .infiniteSliderImg2 {
-    position: absolute;
-    animation: animationSlider2 16s infinite ease-in-out;
-  }
-
-  .infiniteSliderImg3 {
-    position: absolute;
-    animation: animationSlider3 16s infinite ease-in-out;
+  .infiniteSlider img {
+    display: block;
+    width: 19vw;
   }
 
 
-  @keyframes animationSlider1 {
+  @keyframes animationSlider {
     0% {
-      opacity: 0;
+      left: 0px;
+    }
+
+    30% {
+      left: 0px;
     }
 
     33% {
-      opacity: 1;
+      left: -19vw;
+    }
+
+    63% {
+      left: -19vw;
     }
 
     66% {
-      opacity: 0;
+      left: -38vw;
+    }
+
+    96% {
+      left: -38vw;
+    }
+
+    99.999% {
+      left: -57vw;
     }
 
     100% {
-      opacity: 0;
+      left: 0px;
     }
   }
+}
 
-  @keyframes animationSlider2 {
+@media (min-width: 701px) and (max-width: 1001px) {
+  .infiniteSlider {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 3vw;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+  }
+
+  .infiniteSlider div {
+    animation: animationSlider 15s linear infinite;
+    position: relative;
+    height: 300px;
+    width: 25vw;
+  }
+
+  .infiniteSlider img {
+    display: block;
+    width: 25vw;
+  }
+
+
+  @keyframes animationSlider {
     0% {
-      opacity: 0;
+      left: 0px;
+    }
+
+    30% {
+      left: 0px;
     }
 
     33% {
-      opacity: 0;
+      left: -25vw;
+    }
+
+    63% {
+      left: -25vw;
     }
 
     66% {
-      opacity: 1;
+      left: -50vw;
+    }
+
+    96% {
+      left: -50vw;
+    }
+
+    99.999% {
+      left: -75vw;
     }
 
     100% {
-      opacity: 0;
-    }
-  }
-
-  @keyframes animationSlider3 {
-    0% {
-      opacity: 1;
-    }
-
-    33% {
-      opacity: 0;
-    }
-
-    66% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
+      left: 0px;
     }
   }
 }
 
 
 
+
+
 @media screen and (max-width: 700px) {
   .infiniteSlider {
-    padding-top: 25px;
-    height: 105vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    // padding-top: 20px;
+    width: 70vw;
+    height: 70vw;
+    overflow: hidden;
+  }
+
+  .infiniteSlider div {
+    animation: animationSlider 15s linear infinite;
     position: relative;
+    // height: 70vw;
+    width: 70vw;
   }
 
-  .infiniteSliderImg1 {
-    position: absolute;
-    animation: animationSlider1 16s infinite ease-in;
-  }
-
-  .infiniteSliderImg2 {
-    position: absolute;
-    animation: animationSlider2 16s infinite ease-in-out;
-  }
-
-  .infiniteSliderImg3 {
-    position: absolute;
-    animation: animationSlider3 16s infinite ease-in-out;
+  .infiniteSlider img {
+    display: block;
+    width: 70vw;
   }
 
 
-  @keyframes animationSlider1 {
+  @keyframes animationSlider {
     0% {
-      opacity: 0;
+      left: 0px;
+    }
+
+    30% {
+      left: 0px;
     }
 
     33% {
-      opacity: 1;
+      left: -70vw;
+    }
+
+    63% {
+      left: -70vw;
     }
 
     66% {
-      opacity: 0;
+      left: -140vw;
+    }
+
+    96% {
+      left: -140vw;
+    }
+
+    99.999% {
+      left: -210vw;
     }
 
     100% {
-      opacity: 0;
+      left: 0px;
     }
   }
 
-  @keyframes animationSlider2 {
-    0% {
-      opacity: 0;
-    }
 
-    33% {
-      opacity: 0;
-    }
-
-    66% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-  @keyframes animationSlider3 {
-    0% {
-      opacity: 1;
-    }
-
-    33% {
-      opacity: 0;
-    }
-
-    66% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
+  .slider_description {
+    width: 70vw;
+    margin: auto;
   }
 }
