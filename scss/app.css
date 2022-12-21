@@ -121,6 +121,7 @@
   letter-spacing: 0.005em;
   color: white;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-bottom: 15px;
 }
@@ -142,6 +143,7 @@
   letter-spacing: 0.005em;
   color: #54269E;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -287,6 +289,7 @@
     height: 2px;
     top: 9px;
     -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
   .header__burger::before, .header__burger::after {
@@ -297,6 +300,7 @@
     height: 2px;
     left: 130px;
     -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
   .header__burger::before {
@@ -307,11 +311,13 @@
   }
   .header__burger.active::before {
     -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 9px;
   }
   .header__burger.active::after {
     -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 9px;
   }
@@ -320,6 +326,7 @@
   }
   .header__burger.active span {
     -webkit-transform: scale(0);
+        -ms-transform: scale(0);
             transform: scale(0);
   }
   .header__menu {
@@ -330,6 +337,7 @@
     height: 230px;
     overflow: auto;
     -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: #a682df;
     padding: 120px 10px 20px 10px;
@@ -458,6 +466,7 @@
   letter-spacing: 0.005em;
   color: white;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-bottom: 15px;
 }
@@ -479,6 +488,7 @@
   letter-spacing: 0.005em;
   color: #54269E;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1328,6 +1338,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 10px solid #6c68af;
@@ -1341,6 +1352,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -1399,6 +1411,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 10px solid #6c68af;
@@ -1412,6 +1425,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -1472,6 +1486,7 @@ footer {
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin: 0;
     outline: 3vw solid #6c68af;
@@ -1485,6 +1500,7 @@ footer {
     left: 0;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .projectCover {
@@ -2317,6 +2333,7 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -2335,6 +2352,7 @@ footer {
 
 .formVol:target .formVol__content {
   -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -2407,9 +2425,11 @@ footer {
     margin: 0 0 1em 0;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .formVolButton {
@@ -2427,6 +2447,7 @@ footer {
     border: none;
     border-radius: 1em;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
@@ -2454,9 +2475,11 @@ footer {
     margin: 0 0 1em 0;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .formVolButton {
@@ -2474,6 +2497,7 @@ footer {
     border: none;
     border-radius: 1em;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
@@ -2499,9 +2523,11 @@ footer {
     margin: 20px;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .formVolButton {
@@ -2519,6 +2545,7 @@ footer {
     border: none;
     border-radius: 5vw;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
@@ -2544,9 +2571,11 @@ footer {
     margin: 20px;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .formVolButton {
@@ -2564,6 +2593,7 @@ footer {
     border: none;
     border-radius: 5vw;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
 }
@@ -2580,6 +2610,7 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
@@ -2598,6 +2629,7 @@ footer {
 
 .formPar:target .formPar__content {
   -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -2688,6 +2720,7 @@ footer {
     border: none;
     border-radius: 1em;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
@@ -2713,9 +2746,11 @@ footer {
     margin: 0 0 1em 0;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .inputForm {
@@ -2762,6 +2797,7 @@ footer {
     border: none;
     border-radius: 1em;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
@@ -2787,9 +2823,11 @@ footer {
     margin: 0 0 1em 0;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .inputForm {
@@ -2836,6 +2874,7 @@ footer {
     border: none;
     border-radius: 5vw;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
@@ -2859,9 +2898,11 @@ footer {
     margin: 20px;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .inputForm {
@@ -2908,6 +2949,7 @@ footer {
     border: none;
     border-radius: 5vw;
     -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
   .formPar__body {
@@ -2931,9 +2973,11 @@ footer {
     margin: 20px;
     position: relative;
     -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     opacity: 0;
     -webkit-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
             transform: translate(0px, -100%);
   }
   .inputForm {
@@ -3989,6 +4033,7 @@ footer {
 .plans__image2 {
   max-width: 400px;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 .plans__image2 img {
@@ -4374,6 +4419,7 @@ footer {
   top: 50%;
   width: 100%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -4405,6 +4451,7 @@ footer {
   height: 10px;
   background: #bbb;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -4421,6 +4468,7 @@ footer {
   color: #000;
   text-align: left;
   -webkit-transition: all 1s ease-out 0.6s;
+  -o-transition: all 1s ease-out 0.6s;
   transition: all 1s ease-out 0.6s;
 }
 
@@ -4461,15 +4509,19 @@ footer {
   background: #fff;
   background: #fcfff4;
   -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 #slider_bl .slider-wrapper .inner {
   -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -4878,6 +4930,7 @@ body {
   background-color: #9747FF;
   /*цвет фона элемента*/
   -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
@@ -4952,4 +5005,8 @@ body {
     grid-template-rows: 42vw auto auto auto;
     grid-template-areas: "fund" "goals" "projects" "team";
   }
-}/*# sourceMappingURL=app.css.map */
+}
+iframe {
+  width: 100%;
+  height: auto;
+}
